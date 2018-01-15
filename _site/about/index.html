@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About</title>
+  <meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/css/swiper.min.css">
+
+  <link rel="canonical" href="http://localhost:4000/about/">
+  <link rel="alternate" type="application/rss+xml" title="Monsun" href="/feed.xml">
+
+  
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+
+  <script src="/assets/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+
+
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+   
+  <nav class="navbar navbar-sidebar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/assets/img/monsun_logo.svg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+             
+        <li class="">
+          <a href="/" style="color:;"><i data-feather="arrow-right"></i>Home</a>
+        </li>
+             
+        <li class="">
+          <a href="/om/" style="color:;"><i data-feather="arrow-right"></i>Om_Monsun</a>
+        </li>
+             
+        <li class="">
+          <a href="/kontakt/" style="color:;"><i data-feather="arrow-right"></i>Kontakt</a>
+        </li>
+         
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+
+    <section class="section slideshow box--slide">
+  <div class="swiper-container s1">
+    <div class="swiper-wrapper">
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+  window.swiper1 = new Swiper('.s1', {
+   nextButton: '.swiper-button-next',
+   prevButton: '.swiper-button-prev',
+   pagination: '.swiper-pagination',
+   paginationType: 'progress'
+ });
+  </script>
+
+</section>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      <span class="typewrite">
+          <!-- <span class="typewrite" data-period="2000" data-type='[ "", "About" ]'> -->
+          <span class="wrap">About</span>
+      </span>
+  </header>
+
+  <div class="post-content">
+    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+
+<p>You can find the source code for Minima at GitHub:
+<a href="https://github.com/jekyll">jekyll</a> /
+<a href="https://github.com/jekyll/minima">minima</a></p>
+
+<p>You can find the source code for Jekyll at GitHub:
+<a href="https://github.com/jekyll">jekyll</a> /
+<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+
+
+  </div>
+<script>
+
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 1000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 150 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+    };
+
+
+</script>
+
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-2">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</p>
+      </div>
+      <div class="footer-col footer-col-1">
+        <address>
+        <ul class="contact-list">
+            <li class="footer-heading">Monsun</li>
+            
+            <li>Nørrebrograde 5C, 1. sal tv. 2200 København N
+</li>
+            
+            
+            <li><a href="mailto:info@monsun.dk">info@monsun.dk</a></li>
+            
+            
+            <li>+45 3539 7331</li>
+            
+            <!--<li><p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></li>-->
+        </ul>
+        </address>
+      </div>
+
+      <div class="footer-col footer-col-3"></div>
+      <div class="footer-col footer-col-4">
+        <ul class="some_list">
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_fb.svg"></a></li>
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_vimeo.svg"></a></li>
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_linkedin.svg"></a></li>
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_fb.svg"></a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  feather.replace()
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>
