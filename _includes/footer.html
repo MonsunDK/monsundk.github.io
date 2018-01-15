@@ -1,0 +1,47 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-2">
+        <p>{{ site.description | escape }}</p>
+      </div>
+      <div class="footer-col footer-col-1">
+        <address>
+        <ul class="contact-list">
+            <li class="footer-heading">{{ site.title | escape }}</li>
+            {% if site.address %}
+            <li>{{ site.address | escape }}</li>
+            {% endif %}
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+            {% if site.phone %}
+            <li>{{ site.phone }}</li>
+            {% endif %}
+            <!--<li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li>-->
+        </ul>
+        </address>
+      </div>
+
+      <div class="footer-col footer-col-3"></div>
+      <div class="footer-col footer-col-4">
+        <ul class="some_list">
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_fb.svg"></a></li>
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_vimeo.svg"></a></li>
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_linkedin.svg"></a></li>
+          <li><a class="some_icon" href="#!"><img src="/assets/img/circle_fb.svg"></a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+  feather.replace()
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

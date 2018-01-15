@@ -1,0 +1,73 @@
+<section class="page-content flex-grid portfolio">
+  {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
+
+  <div class="box--{{ box.type }} animated {{ box.width }}-col" style="background-image:url(/assets/img/{{ box.image }}.jpg); background-color:{{ box.color }};">
+    <div class="box--size-outer">
+      <a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">
+        <p class="tag" style="color:{{ box.text-color }};">{{ box.tag }}</p>
+          <div class="box--text-container" style="color:{{ box.text-color }};">
+            <p class="box-title">{{ box.title }}</p>
+            <p class="box-description">{{ box.description }}</p>
+          </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal modal_multi permalink" id="{{ box.id }}_{{ box.title | slugify }}" tabindex="-1" role="dialog" aria-labelledby="{{ box.id }}_{{ box.title | slugify }}" aria-hidden="false">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="/assets/img/x.svg" alt="Close"/></button>
+
+    <div class="modal-dialog">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <p class="box-title">{{ box.title }}</p>
+          <div class="box-description-wrap">
+          <p class="box-description">{{ box.description }}</p>
+          </div>
+        </div>
+        <div class="modal-body" id="yt-player">
+          {% for item in box.items %}
+          <div class="modal-item">
+            <div class="media-content">
+              {% if item.image %}
+              <picture><img src="/assets/img/{{ item.image }}.jpg" alt="{{ item.title }}" style="width:100%;"></picture>
+              {% endif %}
+              {% if item.video %}
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="{{ item.video }}?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+              </div>
+              {% endif %}
+            </div>
+            <div class="box--bottom-container">
+              <p class="box-title">{{ item.title }}</p>
+              <p class="box-description">{{ item.description }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  {% endif %} {% endfor %}
+
+  <script>
+
+    $(document).ready(function() {
+      $(".modal.permalink").each(function() {
+        if (window.location.href.indexOf($(this).attr("id")) != -1) {
+          $(this).modal('show');
+        }
+      });
+    });
+
+
+  </script>
+
+
+
+</section>

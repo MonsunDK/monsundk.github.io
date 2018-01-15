@@ -1,0 +1,9 @@
+- title: Home
+  url: /
+- title: Om_Monsun
+  url: /om/
+  color: "SKYBLUE"
+
+- title: Kontakt
+  url: /kontakt/
+  color: "AZURE"

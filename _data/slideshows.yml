@@ -1,0 +1,38 @@
+# Color Codes = htmlcolorcodes.com
+
+- title: Frontpage-Slideshow
+  url: /
+  slides:
+    - title: Title
+      description: Description
+      image: KreativtKooperativ_v1
+      color: DODGERBLUE
+      text-color:
+    - title: Frontpage-Slide 2
+      description: Swipe right!
+      image: mccarthy
+      color: DODGERBLUE
+      text-color: white
+    - title: Frontpage-Slide 3
+      description: Swipe right!
+      image: conway
+      color: black
+      text-color: white
+- title: Kontakt-Slideshow
+  url: 
+  slides:
+    - title: Contact-Slide 1
+      description: Swipe right!
+      image: conway
+      color: DODGERBLUE
+      text-color: white
+    - title: Contact-Slide 2
+      description: Swipe right!
+      image: conway
+      color: DODGERBLUE
+      text-color: white
+    - title: Contact-Slide 3
+      description: Swipe right!
+      image: conway
+      color: black
+      text-color: white

@@ -1,0 +1,38 @@
+<section class="section slideshow box--slide">
+  <div class="swiper-container s1">
+    <div class="swiper-wrapper">
+      {% assign slideshows = site.data.slideshows %}
+      {% for slideshow in slideshows %}
+      {% if page.url == slideshow.url %}
+      {% for slide in slideshow.slides %}
+      <div class="swiper-slide" style="background-color:{{ slides.color }};">
+        <div class="box--size-outer">
+          <div class="box--size-inner">
+            <picture>
+              <img src="/assets/img/{{ slide.image }}.jpg" srcset="/assets/img/{{ slide.image }}.jpg 1x, /assets/img/{{ slide.image }}@2x.jpg 2x" alt="{{ slide.title }}" style="width:100%;">
+            </picture>
+            <div class="box--bottom-container" style="color:{{ slide.text-color }};">
+              <p class="box-title">{{ slide.title }}</p>
+              <p class="box-description">{{ slide.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+  window.swiper1 = new Swiper('.s1', {
+   nextButton: '.swiper-button-next',
+   prevButton: '.swiper-button-prev',
+   pagination: '.swiper-pagination',
+   paginationType: 'progress'
+ });
+  </script>
+
+</section>

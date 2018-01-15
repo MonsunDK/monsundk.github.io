@@ -1,0 +1,239 @@
+# Color: htmlcolorcodes.com
+# Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
+# Type: quote, embed, media, spot, footer, employee, background, area
+
+
+- title: LO Hovedstaden
+  description: Drupal 8 website
+  image: loh_web@2x
+  type: background
+  width: three
+  color: "#364F6B"
+  text-color: black
+  published: true
+  id: "03"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: loh_web_box1@2x
+
+- title: Logoer
+  description: Blandede
+  image: kickstart
+  type: background
+  width: one
+  color: "#43DDE6"
+  text-color: orangered
+  published: true
+  id: "04"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: kickstart_box1@2x
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: københavnerier@2x
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: brønshøjkirke@2x
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: defocus@2x
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: biologiskfagråd@2x
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: unge
+
+- title: PsykInfo
+  description: Plakat + flyers
+  tag:
+  type: background
+  image: silence@2x
+  width: one
+  color:
+  text-color: LEMONCHIFFON
+  published: true
+  id: "02"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: silence_square@2x
+
+- title: Vindmølleindustrien
+  description: Folder + illustraioner
+  image: vindmølle@2x
+  type: background
+  width: one
+  color: "#FC5185"
+  text-color: black
+  published: true
+  id: "05"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: vindmølle_box1
+
+- title: Vilde Liv
+  description: Video
+  image: vildeliv_video
+  type: background
+  width: two
+  color: PEACHPUFF
+  text-color: "#f0f0f0"
+  published: true
+  id: "07"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image:
+      video: "https://www.youtube.com/embed/8s0_iZg9CeA"
+
+- title: SF KBH
+  description: Portrætter
+  tag:
+  image: sf_cover@2x
+  type: background
+  width: three
+  color:
+  text-color: FIREBRICK
+  published: true
+  id: "01"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: sf
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: sf_cover@2x
+
+- title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
+  description: blah blah
+  image:
+  tag:
+  type: quote
+  width: one
+  color: "#EA3E3E"
+  text-color: AQUA
+  published: true
+  id: "08"
+
+- title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
+  description: blah blah
+  image:
+  tag:
+  type: quote
+  width: two
+  color: GOLD
+  text-color: black
+  published: true
+  id: "12"
+
+- title: NOAH
+  description: Website + Foldere
+  image: noah_folder_cover
+  type: background
+  width: two
+  color: MEDIUMSEAGREEN
+  text-color: "#0E6655"
+  published: true
+  id: "09"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: noah_web@2x
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: noah_folder2
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: noah_folder1
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: noah_folder3
+
+
+
+- title: 3F Kastrup
+  description: Avis layout
+  image: 3f_avis_blue2@2x
+  type: background
+  width: four
+  color:
+  text-color: orangered
+  published: true
+  id: "11"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: 3f_avis_blue2@2x
+
+
+
+- title: Kampen_om_ungdomshuset
+  description: Bog layout
+  image: ungdomshuset
+  type: background
+  width: one
+  color:
+  text-color: black
+  published: true
+  id: "12"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: ungdomshuset
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: ungdomshusbog1
+
+- title: NOAH
+  description: spisornli.nu
+  image: spisornli
+  type: background
+  width: three
+  color: PEACHPUFF
+  text-color: black
+  published: true
+  id: "10"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: spisornli
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: spisornli_1
+    - title: CaseItem 2
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: spisornli_2
+    - title: CaseItem 2
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      image: spisornli_3
+
+- title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
+  description: blah blah
+  image:
+  tag:
+  type: quote
+  width: two
+  color: GOLD
+  text-color: black
+  published: true
+  id: "12"
+
+
+- title: Studenterrådet
+  description: Studiebog
+  tag:
+  image: studenterrådet@2x
+  type: background
+  width: two
+  color:
+  text-color:
+  published: true
+  id: "06"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: studenterrådet_box1
