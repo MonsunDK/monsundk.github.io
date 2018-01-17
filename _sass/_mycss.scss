@@ -23,7 +23,6 @@ p, ul, blockquote {
 
   @media only screen and (min-width: $screen-sm) {
     max-width: 50%;
-
   }
 }
 
@@ -65,6 +64,16 @@ img {
 
 .portfolio {
   margin-bottom: 100px;
+}
+
+.section-header {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 20px;
 }
 
 // Site header

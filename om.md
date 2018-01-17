@@ -3,7 +3,7 @@ layout: page
 label: Om
 title: "Kreativt kooperativ"
 permalink: /om/
-image:
+image: monsun_pan
 ---
 
 Monsun er et kooperativ af journalister, grafikere, fotografer og IT-folk, der er samlet om en fælles vision om udvikling af nye kommunikationsformer.

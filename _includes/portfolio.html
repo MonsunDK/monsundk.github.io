@@ -1,6 +1,6 @@
 <section class="page-content flex-grid portfolio">
+  <div class="section-header">Portfolio</div>
   {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
-
   <div class="box--{{ box.type }} animated {{ box.width }}-col" style="background-image:url(/assets/img/{{ box.image }}.jpg); background-color:{{ box.color }};">
     <div class="box--size-outer">
       <a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">

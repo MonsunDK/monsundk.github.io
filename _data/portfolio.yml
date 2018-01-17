@@ -237,3 +237,18 @@
     - title: CaseItem 1
       description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       image: studenterrådet_box1
+
+- title: Fotos
+  description: Portrætter
+  tag:
+  image: studenterrådet@2x
+  type: background
+  width: two
+  color:
+  text-color:
+  published: true
+  id: "06"
+  items:
+    - title: CaseItem 1
+      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      image: studenterrådet_box1
