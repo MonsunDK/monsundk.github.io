@@ -13,7 +13,7 @@ a, button {
 }
 
 article {
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6, .post-url, form,
 p, ul, blockquote {
   margin-left: auto;
   margin-right: auto;
@@ -35,14 +35,16 @@ blockquote {
   line-height: 1.45;
 }
 
+.big {
+  font-size: 20px;
+
+}
+}
+
 hr {
   margin: 50px 0;
   border-top: 1px solid #e5e5e5;
 }
-
-}
-
-
 
 img {
   width: 100%;
@@ -70,32 +72,60 @@ img {
   display: block;
   width: 100%;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 0 20px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-size: 20px;
+  font-size: 15px;
+  background-color: #eee;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  line-height:48px;
+  height: 50px;
+
+  span.section-title {
+    background-color: #f0f0f0;
+    padding: 0 15px;
+  }
+
+  span.v-lines {
+    position: absolute;
+    top:50%;
+    left:0;
+    width: 100%;
+    transform: translate(0, -50%);
+    z-index: -1;
+    span {
+      width: 100%;
+      height: 0px;
+      border-bottom: 1px solid #ddd;
+      display: block;
+      margin: 2px 0;
+    }
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+
+    span.v-lines {
+      span {
+        border-bottom: 1px solid rgba(blue, .1);
+        @include transition($slow);
+
+      }
+    }
+  }
+
 }
 
 // Site header
 
 .site-header {
-  position: absolute;
+  position: relative;
   z-index: 99;
   width: 100%;
-  top: 0;
-  @media only screen and (min-width: $screen-sm) {
-    position: fixed;
-  }
-
-  .site-logo {
-    width: 85px;
-    height: auto;
-    display: inline-block;
-
-    img {
-      float: left;
-    }
-  }
+  @media only screen and (min-width: $screen-sm) {}
 
   .header-box {
     position: relative;
@@ -120,10 +150,30 @@ img {
 
 // Header Logo
 
-.navbar .navbar-header {
+.site-header {
+  padding: 0;
+  position: relative;
+  top:0;
+
+  &:after {
+    content: '';
+    border-bottom: none;
+    width: 100%;
+    display: block;
+    opacity: .1;
+    position: absolute;
+    left:0;
+    right:0;
+  }
   .navbar-brand {
-    max-width: 100px;
-    height: auto;
+    width: 100px;
+    display: inline-block;
+    img {
+      position: relative;
+      top:50%;
+      width: 100%;
+      transform: translate(0, -50%);
+    }
   }
 }
 
@@ -134,6 +184,107 @@ img {
 }
 
 
+.navbar-top {
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  height: 50px;
+  padding: 0 0px;
+}
+
+.navbar-nav {
+  > li {}
+  > li > a {
+    position: relative;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 48px;
+    height: 50px;
+    padding: 0 8px;
+    font-weight: 400;
+
+    .feather {
+      height: 10px;
+      display: none;
+    }
+
+    span.title1 {display: block;}
+    span.title2 {display: none;}
+
+    &:hover {
+      span.title1 {display: none;}
+      span.title2 {display: block;}
+    }
+  }
+
+  > li.active > a,
+  > li > a:focus,
+  > li > a:hover {
+    color: $brand-primary !important;
+
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+
+  .icon-bar {
+    background-color: #888;
+  }
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+  border-color: transparent;
+}
+
+.navbar-toggle {
+  border-color: transparent;
+  border-radius: 0px;
+  display: block;
+  @media only screen and (min-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.navbar-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-default .navbar-collapse {
+  background-color: #f0f0f0;
+
+  .navbar-nav {
+    padding: 0 20px;
+
+    @media (min-width: $grid-float-breakpoint) {
+      padding: 0 20px;
+    }
+    > li {
+      border-top: 1px solid #e5e5e5;
+
+      @media (min-width: $grid-float-breakpoint) {
+        border: none;
+      }
+
+    }
+
+    > li > a {
+      &:hover, &:focus {
+      }
+    }
+  }
+}
+
+.navbar-header {
+  padding: 0 20px;
+}
+
+/*
+
 .navbar-nav,
 .navbar-nav .dropdown-menu,
 .navbar-nav .dropdown {
@@ -142,7 +293,7 @@ img {
   text-align: right;
 
   > li {
-    padding: 2px 0 2px 18px;
+    padding: 1px 0 1px 18px;
     flex: 0 0 auto;
     float: none;
   }
@@ -150,7 +301,7 @@ img {
   > li > a {
     position: relative;
     text-decoration: none;
-    padding: 0 2px 0 3px;
+    padding: 0px 3px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -301,6 +452,7 @@ img {
     }
 }
 
+*/
 
 // Nav Main
 
@@ -313,7 +465,7 @@ img {
   .navbar-nav {
     flex-direction: column;
     position: relative;
-    right: 0;
+    right: 0px;
     top:-2px;
 
     .dropdown {
@@ -325,7 +477,6 @@ img {
     }
   }
 }
-
 
 
 // Nav Sidebar
@@ -513,7 +664,7 @@ img {
 
 
 article.post {
-  margin: 40px 0;
+  margin: 0;
 
   .post-content,
   .post-header {
@@ -531,8 +682,15 @@ article.post {
 }
 
 .post-title {
-  margin-bottom: 40px;
+  margin: 0px auto 30px;
   line-height: 1.45;
+
+}
+
+.post-url {
+  margin-top: 60px;
+  font-size: 10px;
+
 }
 
 .typewrite {
@@ -540,17 +698,17 @@ article.post {
 
   > .wrap {
     position: relative;
-    background-color: $text-color;
-    color: $body-bg;
-    padding: 0 2px;
+    background-color: $body-bg;
+    color: $text-color;
+    padding: 0;
 
     &:after {
       content: '';
       position: absolute;
-      bottom: 0;
-      right: -7px;
+      bottom: 5px;
+      right: -10px;
       display: inline-block;
-      height: 54px;
+      height: 40px;
       width: 4px;
       background-color: $text-color;
       animation: blinker 1s linear infinite;
@@ -655,7 +813,7 @@ picture {
 
   .box--text-container {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 20px;
     right: 20px;
     margin: 0;
@@ -670,7 +828,6 @@ picture {
   font-size: 12px;
 
   @media only screen and (min-width: $screen-sm) {
-    font-size: inherit;
     margin-bottom: 0;
   }
 
@@ -679,9 +836,9 @@ picture {
 .tag,
 .box-description {
   margin: 0;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
-display: none;
+  display: none;
   @media only screen and (min-width: $screen-sm) {
     display: block;
   }
@@ -712,6 +869,10 @@ display: none;
 
 
 // sliders
+
+.slideshow {
+  width: 100%;
+}
 
 .swiper-container {
   width: 100%;
@@ -990,5 +1151,24 @@ display: none;
 
   to {
     background-color: rgba($body-bg,1);
+  }
+}
+
+
+
+// hero
+
+.fullpage-hero {
+  background-color: red;
+  background-position: right;
+  background-size: cover;
+
+  .box--size-outer {
+    &:before {
+      padding-top: (1 / 2) * 100%;
+    }
+  }
+  @media only screen and (min-width: $screen-sm) {
+    height: calc(100vh - 100px);
   }
 }

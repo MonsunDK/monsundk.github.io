@@ -1,9 +1,11 @@
-- title: Home
+- title: "opgaver"
+  secondary-title: "opgaver"
   url: /
-- title: Om_Monsun
-  url: /om/
-  color: "SKYBLUE"
 
-- title: Kontakt
+- title: "kontakt"
+  secondary-title: "kontakt"
   url: /kontakt/
-  color: "AZURE"
+
+- title: "monsun"
+  secondary-title: "monsun"
+  url: /om/

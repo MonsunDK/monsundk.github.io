@@ -15,7 +15,11 @@
   <link rel="canonical" href="http://localhost:4000/om/">
   <link rel="alternate" type="application/rss+xml" title="Monsun" href="/feed.xml">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.6.0/lazyload.min.js"></script>
+
+
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -33,36 +37,38 @@
   <body>
 
     <header class="site-header" role="banner">
+
    
-  <nav class="navbar navbar-sidebar navbar-default">
-  <div class="container-fluid">
+  
+
+<nav class="navbar navbar-top navbar-default">
     <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="/assets/img/monsun_logo.svg"></a>
+
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="/assets/img/monsun_logo.svg"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
              
         <li class="">
-          <a href="/" style="color:;"><i data-feather="arrow-right"></i>Home</a>
-        </li>
-             
-        <li class="active">
-          <a href="/om/" style="color:SKYBLUE;"><i data-feather="arrow-right"></i>Om_Monsun</a>
+          <a href="/" style="color:;"><i data-feather="arrow-right"></i><span class="title1">opgaver</span><span class="title2">opgaver</span></a>
         </li>
              
         <li class="">
-          <a href="/kontakt/" style="color:;"><i data-feather="arrow-right"></i>Kontakt</a>
+          <a href="/kontakt/" style="color:;"><i data-feather="arrow-right"></i><span class="title1">kontakt</span><span class="title2">kontakt</span></a>
+        </li>
+             
+        <li class="active">
+          <a href="/om/" style="color:;"><i data-feather="arrow-right"></i><span class="title1">monsun</span><span class="title2">monsun</span></a>
         </li>
          
 
       </ul>
     </div>
-  </div>
 </nav>
 
 </header>
@@ -98,34 +104,32 @@
       <div class="wrapper">
         
 <div class="image-wrapper">
-  <figure><img src="/assets/img/monsun_pan.jpg" alt="" style="width:100%;"/></figure>
+  <figure><img src="/assets/img/monsun_pan2.jpg" alt="" style="width:100%;"/></figure>
 </div>
+
+
 
 
 <article class="post">
   <header class="post-header">
+    <div class="post-url">http://localhost:4000/om/</div>
     <h1 class="post-title">
       <span class="typewrite">
           <!-- <span class="typewrite" data-period="2000" data-type='[ "", "Kreativt kooperativ" ]'> -->
           <span class="wrap">Kreativt kooperativ</span>
       </span>
+    </h1>
+
   </header>
 
   <div class="post-content">
     <p>Monsun er et kooperativ af journalister, grafikere, fotografer og IT-folk, der er samlet om en fælles vision om udvikling af nye kommunikationsformer.</p>
 
 <p>Monsun har siden starten i år 2000 udviklet egne teknikker for arbejdet fra ideudvikling til færdigt produkt. Vi yder skarpslebent håndværk, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab, og vi løser specialopgaver med journalistik, fotos, video og layout af høj kvalitet.</p>
+<hr />
 
-<p>Opgaver løses altid i tæt samarbejde med kunden. Vi er eksperter i maximalt udbytte inden for givne budgetrammer. Ingen opgave er for stor eller for lille.
-<!-- _includes/image.html --></p>
-<div class="image-wrapper">
-    
-        <figure><img src="http://localhost:4000/assets/img/loh_web@2x.jpg" alt="title for image" style="width:100%;" /></figure>
-    
-    
-        <p class="image-caption">caption for image</p>
-    
-</div>
+<p><span class="big">Opgaver løses altid i tæt samarbejde med kunden. Vi er eksperter i maximalt udbytte inden for givne budgetrammer. Ingen opgave er for stor eller for lille.</span></p>
+<hr />
 
 <p>Vi deler adresse med et kooperativt trykkeri og har et netværk af eksterne specialister, blandt andet tegnere, filmfolk og web-eksperter. Vi kan derfor forestå opgaver fra ideudvikling til færdigt produkt - hvad enten det er på tryk, digitalt eller til sociale medier. Vi holder snor i hele processen.</p>
 
@@ -135,6 +139,16 @@ Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fr
 <p>Vi samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder og er aktive i Erhvervsdemokratisk tænketank.</p>
 
 <hr />
+
+<!-- _includes/image.html -->
+<div class="image-wrapper">
+    
+        <figure><img src="http://localhost:4000/assets/img/loh_web@2x.jpg" alt="title for image" style="width:100%;" /></figure>
+    
+    
+        <p class="image-caption">caption for image</p>
+    
+</div>
 
 
   </div>
@@ -200,7 +214,7 @@ var TxtType = function(el, toRotate, period) {
 
       </div>
     </main>
-
+<hr>
     <footer class="site-footer">
 
   <div class="wrapper">

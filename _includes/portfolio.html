@@ -1,7 +1,16 @@
-<section class="page-content flex-grid portfolio">
-  <div class="section-header">Portfolio</div>
+<section class="page-content flex-grid portfolio" id="lazy-portfolio">
+  <a href="#scr-portfolio" class="section-header">
+    <span class="section-title">opgaver</span>
+    <span class="v-lines">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </a>
+  <a id="scr-portfolio"></a>
   {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
-  <div class="box--{{ box.type }} animated {{ box.width }}-col" style="background-image:url(/assets/img/{{ box.image }}.jpg); background-color:{{ box.color }};">
+  <div class="box--{{ box.type }} animated {{ box.width }}-col lazy" data-src="/assets/img/{{ box.image }}.jpg" style="background-color:{{ box.color }};">
     <div class="box--size-outer">
       <a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">
         <p class="tag" style="color:{{ box.text-color }};">{{ box.tag }}</p>
@@ -31,9 +40,15 @@
         <div class="modal-body" id="yt-player">
           {% for item in box.items %}
           <div class="modal-item">
-            <div class="media-content">
+            <div class="media-content" >
               {% if item.image %}
-              <picture><img src="/assets/img/{{ item.image }}.jpg" alt="{{ item.title }}" style="width:100%;"></picture>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/img/{{ item.image }}.jpg" />
+                <source media="(min-width: 500px)" srcset="/assets/img/{{ item.image }}.jpg" />
+                <img class="lazy" alt="{{ item.title }}" src="/assets/img/{{ item.image }}.jpg" style="width:100%;">
+              </picture>
+
+              <!--<picture><img data-src="/assets/img/{{ item.image }}.jpg" alt="{{ item.title }}" style="width:100%;"></picture>-->
               {% endif %}
               {% if item.video %}
               <div class="embed-responsive embed-responsive-16by9">
@@ -65,8 +80,28 @@
       });
     });
 
+    (function() {
+      new LazyLoad({
+        elements_selector: ".lazy"
+      });
+    }());
 
-  </script>
+
+var globalLazyLoad = new LazyLoad();
+</script>
+
+
+<script>
+var $root = $('html, body');
+
+$('a[href^="#scr-"]').click(function () {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+
+    return false;
+});
+</script>
 
 
 

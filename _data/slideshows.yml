@@ -1,7 +1,7 @@
 # Color Codes = htmlcolorcodes.com
 
 - title: Frontpage-Slideshow
-  url: /
+  url: 
   slides:
     - title: Title
       description: Description
@@ -19,7 +19,7 @@
       color: black
       text-color: white
 - title: Kontakt-Slideshow
-  url: 
+  url:
   slides:
     - title: Contact-Slide 1
       description: Swipe right!

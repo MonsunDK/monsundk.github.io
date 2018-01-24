@@ -221,10 +221,6 @@
   .icon-bar + .icon-bar {
     margin-top: 4px;
   }
-
-  @media (max-width: $grid-float-breakpoint) {
-    display: flex;
-  }
 }
 
 

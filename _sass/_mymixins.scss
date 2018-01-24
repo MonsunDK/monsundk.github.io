@@ -1,0 +1,17 @@
+
+
+
+
+@mixin transition($fast) {
+  -webkit-transition: all $fast ease;
+  -moz-transition: all $fast ease;
+  -o-transition: all $fast ease;
+  transition: all $fast ease;
+}
+
+@mixin transition($slow) {
+  -webkit-transition: all $slow ease;
+  -moz-transition: all $slow ease;
+  -o-transition: all $slow ease;
+  transition: all $slow ease;
+}
