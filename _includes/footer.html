@@ -3,14 +3,14 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-2">
-        <p>{{ site.description | escape }}</p>
+        <p>...</p>
       </div>
       <div class="footer-col footer-col-1">
         <address>
         <ul class="contact-list">
             <li class="footer-heading">{{ site.title | escape }}</li>
             {% if site.address %}
-            <li>{{ site.address | escape }}</li>
+            <li>{{ site.address | escape }}<br>{{ site.address2 | escape }}</li>
             {% endif %}
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
@@ -38,10 +38,3 @@
   </div>
 
 </footer>
-
-
-<script>
-  feather.replace()
-</script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

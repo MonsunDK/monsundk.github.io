@@ -1,11 +1,8 @@
-- title: "opgaver"
-  secondary-title: "opgaver"
+- title: "Hjem"
   url: /
 
-- title: "kontakt"
-  secondary-title: "kontakt"
+- title: "Kontakt"
   url: /kontakt/
 
-- title: "monsun"
-  secondary-title: "monsun"
+- title: "Om Monsun"
   url: /om/

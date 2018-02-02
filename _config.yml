@@ -16,13 +16,9 @@
 title: Monsun
 email: info@monsun.dk
 phone: +45 3539 7331
-address: >
-  Nørrebrograde 5C, 1. sal tv.
-  2200 København N
-description: >
-  Lorem Ipsum is simply dummy text of the
-  printing and typesetting industry.
-
+address: Nørrebrograde 5C, 1.sal
+address2: 2200 København N
+description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: monsun.dk
@@ -33,6 +29,7 @@ github_username: MonsunDK
 
 # Build settings
 markdown: kramdown
+
 plugins:
   - jekyll-feed
 

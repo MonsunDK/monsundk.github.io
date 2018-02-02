@@ -70,38 +70,7 @@
 
   {% endif %} {% endfor %}
 
-  <script>
-
-    $(document).ready(function() {
-      $(".modal.permalink").each(function() {
-        if (window.location.href.indexOf($(this).attr("id")) != -1) {
-          $(this).modal('show');
-        }
-      });
-    });
-
-    (function() {
-      new LazyLoad({
-        elements_selector: ".lazy"
-      });
-    }());
-
-
-var globalLazyLoad = new LazyLoad();
-</script>
-
-
-<script>
-var $root = $('html, body');
-
-$('a[href^="#scr-"]').click(function () {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-
-    return false;
-});
-</script>
+  
 
 
 

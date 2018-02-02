@@ -1,7 +1,10 @@
 // Typography
 
+body {
+  text-shadow: 0 1px 0px rgba(white, .3);
+}
+
 a {
-  color: inherit;
   text-decoration: underline;
 }
 
@@ -10,20 +13,6 @@ a, button {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-}
-
-article {
-h1, h2, h3, h4, h5, h6, .post-url, form,
-p, ul, blockquote {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  max-width: 100%;
-  padding: 0 20px;
-
-  @media only screen and (min-width: $screen-sm) {
-    max-width: 50%;
-  }
 }
 
 blockquote {
@@ -35,15 +24,38 @@ blockquote {
   line-height: 1.45;
 }
 
-.big {
-  font-size: 20px;
+.highlight {
+  padding-right: 1px;
+  text-shadow: 0 1px 0px rgba(white, 0);
+  font-weight: 400;
 
+  > .wrap {
+    position: relative;
+    background-color: rgba($brand-secondary, 1);
+    padding: 1px 0px 2px;
+  }
 }
+
+.big {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.65;
+}
+
+.big.highlight {
+  line-height: 2;
+  > .wrap {
+    padding: 4px 0px 4px;
+  }
+}
+
+p {
+  margin-bottom: 40px;
 }
 
 hr {
-  margin: 50px 0;
-  border-top: 1px solid #e5e5e5;
+  margin: 40px 0;
+  border-top: 1px solid #ddd;
 }
 
 img {
@@ -64,9 +76,7 @@ img {
   opacity: 0.8;
 }
 
-.portfolio {
-  margin-bottom: 100px;
-}
+.portfolio {}
 
 .section-header {
   display: block;
@@ -196,25 +206,19 @@ img {
   > li {}
   > li > a {
     position: relative;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
     line-height: 48px;
     height: 50px;
-    padding: 0 8px;
+    padding: 0 10px;
     font-weight: 400;
+    color: $gray;
 
     .feather {
       height: 10px;
       display: none;
     }
 
-    span.title1 {display: block;}
-    span.title2 {display: none;}
-
-    &:hover {
-      span.title1 {display: none;}
-      span.title2 {display: block;}
-    }
   }
 
   > li.active > a,
@@ -660,74 +664,112 @@ img {
 
 */
 
+
+.iframe-wrap {
+  margin-bottom: -6px;
+}
+
 // page
 
 
 article.post {
-  margin: 0;
+  margin: 60px auto 0px;
+  max-width: 100%;
+  padding: 0px 20px;
+  background-color: $body-bg;
+  position: relative;
+  z-index: 99;
 
-  .post-content,
-  .post-header {
-    overflow: hidden;
+  @media only screen and (min-width: $screen-sm) {
+    max-width: 50%;
   }
 
+  .post-header {
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+    .highlight {
+      margin-top: 30px;
+    }
+  }
+
+  .post-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .post-content {}
+
   .image-wrapper {
-    margin: 40px 0;
+    margin-bottom: 40px;
   }
 
   .image-caption {
     margin: 10px 0;
     font-size: 10px;
   }
+
+  .row {
+    margin-bottom: 40px;
+    p {
+      margin: 0;
+    }
+  }
 }
 
-.post-title {
-  margin: 0px auto 30px;
-  line-height: 1.45;
-
-}
-
-.post-url {
-  margin-top: 60px;
-  font-size: 10px;
-
-}
 
 .typewrite {
   padding-right: 1px;
+  font-weight: 500;
 
   > .wrap {
     position: relative;
-    background-color: $body-bg;
-    color: $text-color;
-    padding: 0;
+    background-color: SALMON;
+    padding: 1px 0 4px 0;
 
     &:after {
       content: '';
       position: absolute;
-      bottom: 5px;
+      bottom: 2px;
       right: -10px;
       display: inline-block;
-      height: 40px;
-      width: 4px;
+      height: 26px;
+      width: 2px;
       background-color: $text-color;
       animation: blinker 1s linear infinite;
     }
   }
 }
+
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
+
+
+// buttons
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
 // Site Footer
 
 .site-footer {
-  padding: 0px 0 30px;
+  padding: 65px 0 50px;
   font-size: 14px;
+
   .footer-col-wrapper {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
 
     .footer-col {
@@ -742,7 +784,7 @@ ul.some_list {
   display: flex;
   flex-direction: row;
   padding: 0;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
 
@@ -757,11 +799,11 @@ ul.some_list {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.27;
-  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.4;
 }
+
 
 address {
   margin-bottom: 10px !important;
@@ -1171,4 +1213,79 @@ picture {
   @media only screen and (min-width: $screen-sm) {
     height: calc(100vh - 100px);
   }
+}
+
+
+
+// forms
+
+form {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  border-bottom: 1px dotted #ccc;
+
+  button.btn {
+    width: 100%;
+    margin: 20px 0px 20px;
+    display: block;
+
+  }
+
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
+    height: 230px;
+    min-height: 230px;
+    max-height: 400px;
+
+  }
+}
+
+.formgroup {}
+
+.form-control {
+  border-style: solid;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  @include transition2(border-color, $slow);
+
+  &:focus {
+    box-shadow: none;
+    border-color: $brand-primary;
+
+  }
+}
+
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .form-group {
+    flex: 1;
+    max-width: 49%;
+
+    .form-control {
+      width: 100%;
+    }
+  }
+}
+
+.help-block {
+  font-size: 9px;
+  font-weight: 300;
+  padding: 0px 10px 30px 10px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  color: $gray-light;
+
+/*
+  &:before {
+    content: '*';
+    position: absolute;
+    top:0;
+    left:10px;
+    display: block;
+  }*/
 }

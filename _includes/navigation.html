@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-top navbar-default">
     <div class="navbar-header">
       <a class="navbar-brand" href="{{ "/" | relative_url }}"><img src="/assets/img/monsun_logo.svg"></a>
@@ -20,14 +18,14 @@
             <li role="separator" class="divider"></li>
             {% else %}
             <li>
-              <a href="{{ site.baseurl }}{{ sublink.url }}" style="color:{{ style }};"><i data-feather="arrow-right"></i>{{ sublink.title }}</a>
+              <a href="{{ site.baseurl }}{{ sublink.url }}" style="color:{{ style }};">{{ sublink.title }}</a>
             </li>
             {% endif %} {% endfor %}
           </ul>
         </li>
         {% else %}
         <li class="{{ class }}">
-          <a href="{{ site.baseurl }}{{ link.url }}" style="color:{{ style }};"><i data-feather="arrow-right"></i><span class="title1">{{ link.title }}</span><span class="title2">{{ link.secondary-title }}</span></a>
+          <a href="{{ site.baseurl }}{{ link.url }}" style="color:{{ style }};">{{ link.title }}</a>
         </li>
         {% endif %} {% endfor %}
 
