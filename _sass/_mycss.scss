@@ -230,13 +230,21 @@ img {
   > li {}
   > li > a {
     position: relative;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     line-height: 48px;
-    height: 50px;
-    padding: 0 10px;
+    height: auto;
+    padding: 0 3px;
     font-weight: 400;
     color: $gray;
+
+    @media (min-width: $grid-float-breakpoint) {
+      font-size: 12px;
+      height: 50px;
+      font-weight: 400;
+      line-height: 48px;
+
+    }
 
     .feather {
       height: 10px;
@@ -258,13 +266,18 @@ img {
 
   .icon-bar {
     background-color: #888;
+    @include transition($fast);
   }
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: transparent;
   border-color: transparent;
+  .icon-bar {
+    background-color: $brand-primary;
+    @include transition($slow);
+  }
 }
 
 .navbar-toggle {
@@ -283,25 +296,20 @@ img {
 }
 
 .navbar-default .navbar-collapse {
-  background-color: #f0f0f0;
+  background-color: $body-bg;
+  box-shadow: 0 0 10px rgba(black, 0.1);
+  border-top: 1px solid $border-color;
 
   .navbar-nav {
-    padding: 0 20px;
+    padding: 25px 30px 30px;
 
     @media (min-width: $grid-float-breakpoint) {
       padding: 0 20px;
     }
-    > li {
-      border-top: 1px solid #e5e5e5;
-
-      @media (min-width: $grid-float-breakpoint) {
-        border: none;
-      }
-
-    }
 
     > li > a {
       &:hover, &:focus {
+        background-color: #eee;
       }
     }
   }
@@ -309,6 +317,7 @@ img {
 
 .navbar-header {
   padding: 0 20px;
+  background-color: $body-bg;
 }
 
 /*

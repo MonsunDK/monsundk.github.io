@@ -5973,13 +5973,19 @@ img {
 
 .navbar-nav > li > a {
   position: relative;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   line-height: 48px;
-  height: 50px;
-  padding: 0 10px;
+  height: auto;
+  padding: 0 3px;
   font-weight: 400;
   color: #555555; }
+  @media (min-width: 768px) {
+    .navbar-nav > li > a {
+      font-size: 12px;
+      height: 50px;
+      font-weight: 400;
+      line-height: 48px; } }
   .navbar-nav > li > a .feather {
     height: 10px;
     display: none; }
@@ -5991,12 +5997,23 @@ img {
 .navbar-default .navbar-toggle {
   border-color: transparent; }
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888; }
+    background-color: #888;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease; }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: transparent;
   border-color: transparent; }
+  .navbar-default .navbar-toggle:hover .icon-bar,
+  .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: blue;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
 
 .navbar-toggle {
   border-color: transparent;
@@ -6012,20 +6029,20 @@ img {
   border-radius: 1px; }
 
 .navbar-default .navbar-collapse {
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.05); }
   .navbar-default .navbar-collapse .navbar-nav {
-    padding: 0 20px; }
+    padding: 25px 30px 30px; }
     @media (min-width: 768px) {
       .navbar-default .navbar-collapse .navbar-nav {
         padding: 0 20px; } }
-    .navbar-default .navbar-collapse .navbar-nav > li {
-      border-top: 1px solid #e5e5e5; }
-      @media (min-width: 768px) {
-        .navbar-default .navbar-collapse .navbar-nav > li {
-          border: none; } }
+    .navbar-default .navbar-collapse .navbar-nav > li > a:hover, .navbar-default .navbar-collapse .navbar-nav > li > a:focus {
+      background-color: #eee; }
 
 .navbar-header {
-  padding: 0 20px; }
+  padding: 0 20px;
+  background-color: #f0f0f0; }
 
 /*
 
