@@ -5868,17 +5868,46 @@ img {
   font-weight: 700;
   letter-spacing: 0.05em;
   font-size: 14px;
-  background-color: #eee;
+  background-color: #f0f0f0;
   text-align: center;
   position: relative;
   z-index: 3;
   text-decoration: none;
   line-height: 50px;
-  height: 50px;
-  color: #555555; }
+  height: 50px; }
   .section-header span.section-title {
+    display: inline-block;
     background-color: #f0f0f0;
-    padding: 0 15px; }
+    padding: 5px 15px;
+    width: 40px;
+    height: 40px;
+    box-sizing: content-box;
+    position: relative; }
+    .section-header span.section-title svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 40px;
+      width: auto;
+      -webkit-transition: all 0.1s ease;
+      -moz-transition: all 0.1s ease;
+      -o-transition: all 0.1s ease;
+      transition: all 0.1s ease;
+      color: rgba(85, 85, 85, 0.5); }
+    .section-header span.section-title:hover, .section-header span.section-title:focus {
+      text-decoration: none;
+      padding: 0px 15px;
+      width: 50px;
+      height: 50px; }
+      .section-header span.section-title:hover svg, .section-header span.section-title:focus svg {
+        height: 50px;
+        width: auto;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+        color: #555555; }
   .section-header span.v-lines {
     position: absolute;
     top: 50%;
@@ -5889,17 +5918,9 @@ img {
     .section-header span.v-lines span {
       width: 100%;
       height: 0px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 2px solid #e5e5e5;
       display: block;
       margin: 2px 0; }
-  .section-header:hover, .section-header:focus {
-    text-decoration: none; }
-    .section-header:hover span.v-lines span, .section-header:focus span.v-lines span {
-      border-bottom: 1px solid rgba(0, 0, 255, 0.1);
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease; }
 
 .site-header {
   position: relative;
@@ -6914,5 +6935,5 @@ form {
   color: #8c8c8c; }
 
 .mycontactform {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0px 0; }
