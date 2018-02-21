@@ -5,250 +5,323 @@
 
 - title: LO Hovedstaden
   description: Drupal 8 website
-  image: loh_web@2x
+  image: loh_web@2x_w3.jpg
   type: background
   width: three
-  color: "#364F6B"
-  text-color: black
+  text-color:
   published: true
-  id: "03"
+  id: "01"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: loh_web_box1@2x
+    - title:
+      description:
+      image: loh_web@2x_w3.jpg
 
 - title: Logoer
   description: Blandede
-  image: kickstart
+  image: kickstart_logo@2x.jpg
   type: background
   width: one
-  color: "#43DDE6"
-  text-color: orangered
-  published: true
-  id: "04"
-  items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: kickstart_box1@2x
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: københavnerier@2x
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: brønshøjkirke@2x
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: defocus@2x
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: biologiskfagråd@2x
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: unge
-
-- title: PsykInfo
-  description: Plakat + flyers
-  tag:
-  type: background
-  image: silence@2x
-  width: one
-  color:
-  text-color: LEMONCHIFFON
+  text-color: crimson
   published: true
   id: "02"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: silence_square@2x
+    - title: Danske Gymnasieelevers Sammenslutning
+      description: Kampagne branding
+      image: logo_kickstart1@2x_w3.jpg
+    - title: Brønshøj Kirke
+      description:
+      image: logo_brønshøjkirke@2x_w3.jpg
+    - title: Københavns Universitet
+      description:
+      image: logo_biologiskfagråd@2x_w3.jpg
+    - title:
+      description:
+      image: logo_københavnerier@2x_w3.jpg
+    - title:
+      description:
+      image: logo_ungestemmer1@2x_w3.jpg
+    - title:
+      description:
+      image: logo_ungestemmer3@2x_w3.jpg
+    - title:
+      description:
+      image: logo_frinova1@2x_w3.jpg
+    - title:
+      description:
+      image: logo_frinova2@2x_w3.jpg
+    - title:
+      description:
+      image: logo_defocus@2x_w3.jpg
+    - title:
+      description:
+      image: logo_concord@2x_w3.jpg
+    - title:
+      description:
+      image: logo_prosa@2x_w3.jpg
+    - title:
+      description:
+      image: logo_dgs1@2x_w3.jpg
 
-- title: Vindmølleindustrien
-  description: Folder + illustraioner
-  image: vindmølle@2x
+- title: PsykInfo
+  description: Plakat & flyer
+  tag:
   type: background
+  image: plakat_breakthesilence@2x_w2.jpg
   width: one
-  color: "#FC5185"
-  text-color: black
+  text-color: "#3d2b37"
   published: true
-  id: "05"
+  id: "03"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: vindmølle_box1
+    - title:
+      description:
+      image: plakat_breakthesilence@2x_w2.jpg
 
 - title: Vilde Liv
   description: Video
-  image: vildeliv_video
+  image: vildeliv_video@2x.jpg
   type: background
-  width: two
-  color: PEACHPUFF
+  width: three
   text-color: "#f0f0f0"
   published: true
-  id: "07"
+  id: "04"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image:
+    - title: Vilde Liv
+      description: Pass the loader name you want to use for this element to the data-loader attribute of those who should be lazy loaded. You can mix custom loaders and images in the same Lazy instance as well.
       video: "https://www.youtube.com/embed/8s0_iZg9CeA"
 
 - title: SF KBH
   description: Portrætter
   tag:
-  image: sf_cover@2x
+  image: sf_cover@2x_w3.jpg
   type: background
   width: three
-  color:
-  text-color: FIREBRICK
+  text-color: "#421112"
   published: true
-  id: "01"
+  id: "05"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: sf
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: sf_cover@2x
+    - title:
+      description:
+      image: sf_cover@2x_w3.jpg
+    - title: Kommunalvalg 2017
+      description: Portrætter af kandidater
+      image: sf_portrætter2@2x_w3.jpg
+    - title: Kommunalvalg 2013
+      description: Portrætter af kandidater
+      image: sf_portrætter3@2x_w3.jpg
 
 - title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
   description: blah blah
-  image:
   tag:
   type: quote
   width: one
   color: "#EA3E3E"
   text-color: AQUA
   published: true
-  id: "08"
+  id: "06"
 
 - title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
   description: blah blah
-  image:
   tag:
   type: quote
   width: two
   color: GOLD
   text-color: black
   published: true
-  id: "12"
+  id: "07"
 
 - title: NOAH
   description: Website + Foldere
-  image: noah_folder_cover
+  image: noah_cover@2x_w2.jpg
   type: background
   width: two
-  color: MEDIUMSEAGREEN
-  text-color: "#0E6655"
+  text-color: DARKGREEN
   published: true
-  id: "09"
+  id: "08"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: noah_web@2x
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: noah_folder2
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: noah_folder1
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: noah_folder3
-
-
+    - title:
+      description:
+      image: noah_website@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder1@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder2@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder3@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder@2x_w3.jpg
+    - title:
+      description:
+      image: noah_zigzag@2x_w3.jpg
 
 - title: 3F Kastrup
   description: Avis layout
-  image: 3f_avis_blue2@2x
-  type: background
-  width: four
-  color:
-  text-color: orangered
-  published: true
-  id: "11"
-  items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: 3f_avis_blue2@2x
-
-
-
-- title: Kampen om ungdomshuset
-  description: Bog layout
-  image: ungdomshuset
-  type: background
-  width: one
-  color:
-  text-color: black
-  published: true
-  id: "12"
-  items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: ungdomshuset
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: ungdomshusbog1
-
-- title: NOAH
-  description: spisornli.nu
-  image: spisornli
+  image: 3f_avis@2x_w3.jpg
   type: background
   width: three
-  color: PEACHPUFF
-  text-color: black
+  text-color: "#002c45"
+  published: true
+  id: "09"
+  items:
+    - title:
+      description:
+      image: 3f_avis@2x_w3.jpg
+
+- title: WeShelter
+  description: IndreBy Kirkemagasin
+  tag:
+  image: weshelter@2x_w3.jpg
+  type: background
+  width: one
+  text-color: "#424949"
   published: true
   id: "10"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: spisornli
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: spisornli_1
-    - title: CaseItem 2
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: spisornli_2
-    - title: CaseItem 2
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      image: spisornli_3
-
-- title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
-  description: blah blah
-  image:
-  tag:
-  type: quote
+    - title:
+      description:
+      image: weshelter@2x_w3.jpg
+    - title:
+      description:
+      image: weshelter_mag1@2x_w3.jpg
+    - title:
+      description:
+      image: weshelter_mag2@2x_w2.jpg
+- title: NOAH
+  description: spisornli.nu
+  image: spisornli_noah@2x_w4.jpg
+  type: background
   width: two
-  color: GOLD
-  text-color: black
+  text-color: "#cd5b5b"
   published: true
-  id: "12"
+  id: "11"
+  items:
+    - title:
+      description:
+      image: spisornli_noah@2x_w4.jpg
 
 
 - title: Studenterrådet
   description: Studiebog
   tag:
-  image: studenterrådet@2x
+  image: studenterrådet_illu1@2x_w2.jpg
   type: background
   width: two
-  color:
   text-color:
   published: true
-  id: "06"
+  id: "12"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: studenterrådet_box1
+    - title:
+      description:
+      image: studenterrådet-bog1@2x_w2.jpg
+    - title:
+      description:
+      image: studenterrådet@2x_w3.jpg
+    - title:
+      description:
+      image: studenterrådet2@2x_w3.jpg
+    - title:
+      description:
+      image: studenterrådet_illu1@2x_w2.jpg
+    - title:
+      description:
+      image: studenterrådet_illu2@2x_w2.jpg
 
-- title: Fotos
-  description: Portrætter
+
+- title: Vindmølleindustrien
+  description: Folder + illustraioner
+  image: vindmølleindustrien@2x_w2.jpg
+  type: background
+  width: one
+  text-color: "#354d1a"
+  published: true
+  id: "13"
+  items:
+    - title:
+      description:
+      image: vindmølleindustrien@2x_w2.jpg
+    - title:
+      description:
+      image: vindmølleindustrien2@2x_w3.jpg
+- title: PsykInfo
+  description: IndreBy Kirkemagasin
   tag:
-  image: studenterrådet@2x
+  image: psykinfo@2x_w2.jpg
   type: background
   width: two
-  color:
+  text-color: PEACHPUFF
+  published: true
+  id: "14"
+  items:
+    - title:
+      description:
+      image: psykinfo@2x_w2.jpg
+    - title:
+      description:
+      image: psykinfo2@2x_w3.jpg
+
+- title: Kampen om ungdomshuset
+  description: Bog layout
+  image: ungdomshusbog@2x_w2.jpg
+  type: background
+  width: one
   text-color:
   published: true
-  id: "06"
+  id: "15"
   items:
-    - title: CaseItem 1
-      description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      image: studenterrådet_box1
+    - title:
+      description:
+      image: ungdomshusbog@2x_w2.jpg
+    - title:
+      description:
+      image: ungdomshusbog2@2x_w3.jpg
+    - title:
+      description:
+      image: ungdomshusbog3@2x_w2.jpg
+    - title:
+      description:
+      image: ungdomshusbog4@2x_w2.jpg
+
+- title: Domkirken
+  description: IndreBy Kirkemagasin
+  tag:
+  image: indreby@2x_w2.jpg
+  type: background
+  width: two
+  text-color:
+  published: true
+  id: "16"
+  items:
+    - title:
+      description:
+      image: indreby@2x_w2.jpg
+    - title:
+      description:
+      image: indreby2@2x_w3.jpg
+    - title:
+      description:
+      image: indreby3@2x_w3.jpg
+- title: ViVil
+  description: ???
+  tag:
+  image: vivil_brikker4@2x_w3.jpg
+  type: background
+  width: two
+  text-color: "#c1cfdc"
+  published: true
+  id: "17"
+  items:
+    - title:
+      description:
+      image: vivil_brikker4@2x_w3.jpg
+    - title:
+      description:
+      image: vivil_cover@2x_w3.jpg
+    - title:
+      description:
+      image: vivil_brikker2@2x_w3.jpg
+    - title:
+      description:
+      image: vivil_brikker3@2x_w3.jpg

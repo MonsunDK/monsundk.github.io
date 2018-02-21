@@ -16,13 +16,13 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-
+    <span class="post-label">{{ page.label | escape }}</span>
     <h1 class="post-title">
           <!-- <span class="typewrite" data-period="2000" data-type='[ "{{ page.title-intro | escape }}", "{{ page.title | escape }}" ]'> -->
-          {{ page.title | escape }}
+        <span class="">  {{ page.title | escape }}</span>
     </h1>
     {% if page.manchet %}
-    <p class="big highlight"><span class="wrap">{{ page.manchet | escape }}</span></p>
+    <p class="post-manchet"><span class="wrap">{{ page.manchet | escape }}</span></p>
     {% endif %}
   </header>
 
