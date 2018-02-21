@@ -1302,7 +1302,7 @@ button.close:hover {
       padding-top: (1 / 2) * 100%;
     }
   }
-  @media only screen and (min-width: $screen-sm) {
+  @media only screen and (min-width: $screen-md) {
     height: calc(100vh - 100px);
   }
 }

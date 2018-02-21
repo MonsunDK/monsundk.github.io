@@ -6886,7 +6886,7 @@ button.close:hover {
   background-size: cover; }
   .fullpage-hero .box--size-outer:before {
     padding-top: 50%; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .fullpage-hero {
       height: calc(100vh - 100px); } }
 
