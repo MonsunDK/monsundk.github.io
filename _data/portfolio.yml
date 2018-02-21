@@ -206,7 +206,7 @@
 - title: Studenterrådet
   description: Studiebog
   tag:
-  image: studenterrådet_illu1@2x_w2.jpg
+  image: studenterraadet_illu1@2x_w2.jpg
   type: background
   width: two
   text-color:
@@ -215,19 +215,19 @@
   items:
     - title:
       description:
-      image: studenterrådet-bog1@2x_w2.jpg
+      image: studenterraadet-bog1@2x_w2.jpg
     - title:
       description:
-      image: studenterrådet@2x_w3.jpg
+      image: studenterraadet@2x_w3.jpg
     - title:
       description:
-      image: studenterrådet2@2x_w3.jpg
+      image: studenterraadet2@2x_w3.jpg
     - title:
       description:
-      image: studenterrådet_illu1@2x_w2.jpg
+      image: studenterraadet_illu1@2x_w2.jpg
     - title:
       description:
-      image: studenterrådet_illu2@2x_w2.jpg
+      image: studenterraadet_illu2@2x_w2.jpg
 
 
 - title: Vindmølleindustrien
