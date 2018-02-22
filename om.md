@@ -7,7 +7,8 @@ title: >
 manchet: >
   Aliquam dolor velit, lacinia eget egestas tempus, pretium quis ex. Ut tempor sem quis ex imperdiet molestie. Sed sed sapien sapien. Proin ornare, turpis non pellentesque molestie.
 permalink: /om/
-image: monsun_pan2
+image:
+hero: monsun_pan2.jpg
 ---
 Monsun er et kooperativ af journalister, grafikere, fotografer og IT-folk, der er samlet om en fælles vision om udvikling af nye kommunikationsformer.
 

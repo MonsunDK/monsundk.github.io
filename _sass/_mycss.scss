@@ -227,22 +227,21 @@ img {
 }
 
 .navbar-nav {
-  > li {}
+  > li {margin: 0px 0px;}
   > li > a {
     position: relative;
     font-size: 16px;
     text-decoration: none;
     line-height: 48px;
     height: auto;
-    padding: 0 3px;
+    padding: 0 10px;
     font-weight: 400;
     color: $gray;
 
     @media (min-width: $grid-float-breakpoint) {
       font-size: 12px;
       height: 50px;
-      font-weight: 400;
-      line-height: 48px;
+      background-color: transparent;
 
     }
 
@@ -297,8 +296,8 @@ img {
 
 .navbar-default .navbar-collapse {
   background-color: $body-bg;
-  box-shadow: 0 0 10px rgba(black, 0.1);
-  border-top: 1px solid $border-color;
+  box-shadow: none;
+  border-top: none;
 
   .navbar-nav {
     padding: 25px 30px 30px;
@@ -312,6 +311,11 @@ img {
         background-color: #eee;
       }
     }
+  }
+
+  @media (max-width: $grid-float-breakpoint) {
+    box-shadow: 0 0 10px rgba(black, 0.1);
+    border-top: 1px solid $border-color;
   }
 }
 
@@ -706,7 +710,7 @@ img {
 
 
 article.post {
-  margin: 60px auto 100px;
+  margin: 0px auto 100px;
   max-width: 100%;
   padding: 0px 20px;
   position: relative;
@@ -721,18 +725,18 @@ article.post {
   .post-title {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 8vw;
     letter-spacing: -0.015em;
     margin-left: -1px;
-    line-height: 1.35;
+    line-height: 1.45;
 
   }
 
   .post-manchet {
     font-size: 18px;
     line-height: 1.7;
-    margin-bottom: 5rem;
+    margin-bottom: 5vw;
     font-weight: 400;
   }
 
