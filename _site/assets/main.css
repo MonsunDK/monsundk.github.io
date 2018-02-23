@@ -5878,31 +5878,29 @@ img {
   .section-header span.section-title {
     display: inline-block;
     background-color: #f0f0f0;
-    padding: 5px 15px;
-    width: 40px;
-    height: 40px;
+    padding: 0;
+    width: 50px;
+    height: 50px;
     box-sizing: content-box;
-    position: relative; }
+    position: relative;
+    text-align: center; }
     .section-header span.section-title svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      color: rgba(85, 85, 85, 0.5);
       height: 40px;
       width: auto;
-      -webkit-transition: all 0.1s ease;
-      -moz-transition: all 0.1s ease;
-      -o-transition: all 0.1s ease;
-      transition: all 0.1s ease;
-      color: rgba(85, 85, 85, 0.5); }
+      top: 5px;
+      -webkit-animation: bounce 1s 3s 4 alternate;
+      -moz-animation: bounce 1s 3s 4 alternate;
+      -o-animation: bounce 1s 3s 4 alternate;
+      animation: bounce 1s 3s 4 alternate; }
     .section-header span.section-title:hover, .section-header span.section-title:focus {
-      text-decoration: none;
-      padding: 0px 15px;
-      width: 50px;
-      height: 50px; }
+      text-decoration: none; }
       .section-header span.section-title:hover svg, .section-header span.section-title:focus svg {
-        height: 50px;
-        width: auto;
         -webkit-transition: all 0.1s ease;
         -moz-transition: all 0.1s ease;
         -o-transition: all 0.1s ease;
@@ -6426,14 +6424,14 @@ article.post {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 2rem;
-    margin-top: 8vw;
+    margin-top: 5vw;
     letter-spacing: -0.015em;
     margin-left: -1px;
     line-height: 1.45; }
   article.post .post-manchet {
     font-size: 18px;
     line-height: 1.7;
-    margin-bottom: 5vw;
+    margin-bottom: 4vw;
     font-weight: 400; }
   article.post .image-wrapper {
     margin-bottom: 40px; }
@@ -6877,38 +6875,13 @@ button.close:hover {
   opacity: 1;
   cursor: pointer; }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0; }
-  to {
-    top: 0;
-    opacity: 1; } }
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0; }
-  to {
-    top: 0;
-    opacity: 1; } }
-@-webkit-keyframes fadein {
-  from {
-    background-color: rgba(240, 240, 240, 0); }
-  to {
-    background-color: #f0f0f0; } }
-@keyframes fadein {
-  from {
-    background-color: rgba(240, 240, 240, 0); }
-  to {
-    background-color: #f0f0f0; } }
 .fullpage-hero {
   background-color: red;
   background-position: right;
   background-size: cover; }
   .fullpage-hero .box--size-outer:before {
     padding-top: 50%; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 1200px) {
     .fullpage-hero {
       height: calc(100vh - 100px); } }
 
@@ -6959,3 +6932,34 @@ form {
 .mycontactform {
   max-width: 500px;
   margin: 0px 0; }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    background-color: rgba(240, 240, 240, 0); }
+  to {
+    background-color: #f0f0f0; } }
+@keyframes fadein {
+  from {
+    background-color: rgba(240, 240, 240, 0); }
+  to {
+    background-color: #f0f0f0; } }
+@keyframes bounce {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-10px); } }

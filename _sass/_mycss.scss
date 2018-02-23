@@ -101,32 +101,29 @@ img {
   span.section-title {
     display: inline-block;
     background-color: $body-bg;
-    padding: 5px 15px;
-    width: 40px;
-    height: 40px;
+    padding: 0;
+    width: 50px;
+    height: 50px;
     box-sizing: content-box;
     position: relative;
+    text-align: center;
 
     svg {
-      position: absolute;
-      top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
+      position: relative;
+      @include transition($slow);
+      color: rgba($text-color, .5);
       height: 40px;
       width: auto;
-      @include transition($fast);
-      color: rgba($text-color, .5);
+      top:5px;
+      -webkit-animation: bounce 1s 3s 4 alternate;
+      -moz-animation: bounce 1s 3s 4 alternate;
+      -o-animation: bounce 1s 3s 4 alternate;
+      animation: bounce 1s 3s 4 alternate;
     }
 
     &:hover, &:focus {
       text-decoration: none;
-      padding: 0px 15px;
-      width: 50px;
-      height: 50px;
-
       svg {
-        height: 50px;
-        width: auto;
         @include transition($fast);
         color: rgba($text-color, 1);
       }
@@ -726,7 +723,7 @@ article.post {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 2rem;
-    margin-top: 8vw;
+    margin-top: 5vw;
     letter-spacing: -0.015em;
     margin-left: -1px;
     line-height: 1.45;
@@ -736,7 +733,7 @@ article.post {
   .post-manchet {
     font-size: 18px;
     line-height: 1.7;
-    margin-bottom: 5vw;
+    margin-bottom: 4vw;
     font-weight: 400;
   }
 
@@ -1259,50 +1256,6 @@ button.close:hover {
 
 
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    background-color: rgba($body-bg,0);
-  }
-
-  to {
-    background-color: rgba($body-bg,1);
-  }
-}
-@keyframes fadein {
-  from {
-    background-color: rgba($body-bg,0);
-  }
-
-  to {
-    background-color: rgba($body-bg,1);
-  }
-}
-
-
-
 // hero
 
 .fullpage-hero {
@@ -1315,7 +1268,7 @@ button.close:hover {
       padding-top: (1 / 2) * 100%;
     }
   }
-  @media only screen and (min-width: $screen-md) {
+  @media only screen and (min-width: $screen-lg) {
     height: calc(100vh - 100px);
   }
 }
@@ -1388,4 +1341,63 @@ form {
 .mycontactform {
   max-width: 500px;
   margin: 0px 0;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    background-color: rgba($body-bg,0);
+  }
+
+  to {
+    background-color: rgba($body-bg,1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    background-color: rgba($body-bg,0);
+  }
+
+  to {
+    background-color: rgba($body-bg,1);
+  }
+}
+
+
+
+
+@keyframes bounce {
+from {
+    transform: translateY(0px);
+  }
+to {
+    transform: translateY(-10px);
+  }
 }
