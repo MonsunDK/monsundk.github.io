@@ -112,9 +112,9 @@ img {
       position: relative;
       @include transition($slow);
       color: rgba($text-color, .5);
-      height: 40px;
+      height: 30px;
       width: auto;
-      top:5px;
+      top:10px;
       -webkit-animation: bounce 1s 3s 4 alternate;
       -moz-animation: bounce 1s 3s 4 alternate;
       -o-animation: bounce 1s 3s 4 alternate;
@@ -723,7 +723,7 @@ article.post {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 2rem;
-    margin-top: 5vw;
+    margin-top: 3vw;
     letter-spacing: -0.015em;
     margin-left: -1px;
     line-height: 1.45;
@@ -1257,17 +1257,22 @@ button.close:hover {
 
 
 // hero
-
-.fullpage-hero {
+.hero {
   background-color: red;
   background-position: right;
   background-size: cover;
-
+  max-height: 400px;
   .box--size-outer {
     &:before {
       padding-top: (1 / 2) * 100%;
     }
   }
+
+
+}
+
+.fullpage-hero {
+  max-height: none;
   @media only screen and (min-width: $screen-lg) {
     height: calc(100vh - 100px);
   }

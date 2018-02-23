@@ -5891,9 +5891,9 @@ img {
       -o-transition: all 1s ease;
       transition: all 1s ease;
       color: rgba(85, 85, 85, 0.5);
-      height: 40px;
+      height: 30px;
       width: auto;
-      top: 5px;
+      top: 10px;
       -webkit-animation: bounce 1s 3s 4 alternate;
       -moz-animation: bounce 1s 3s 4 alternate;
       -o-animation: bounce 1s 3s 4 alternate;
@@ -6424,7 +6424,7 @@ article.post {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 2rem;
-    margin-top: 5vw;
+    margin-top: 3vw;
     letter-spacing: -0.015em;
     margin-left: -1px;
     line-height: 1.45; }
@@ -6875,12 +6875,16 @@ button.close:hover {
   opacity: 1;
   cursor: pointer; }
 
-.fullpage-hero {
+.hero {
   background-color: red;
   background-position: right;
-  background-size: cover; }
-  .fullpage-hero .box--size-outer:before {
+  background-size: cover;
+  max-height: 400px; }
+  .hero .box--size-outer:before {
     padding-top: 50%; }
+
+.fullpage-hero {
+  max-height: none; }
   @media only screen and (min-width: 1200px) {
     .fullpage-hero {
       height: calc(100vh - 100px); } }
