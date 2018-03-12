@@ -115,14 +115,14 @@
 </span>
     </h1>
     
-    <p class="post-manchet"><span class="wrap">Vi er nemmest at træffe på telefonen i tidsrummet 10 - 16 i hverdagende, ellers er du velkommen til at indtale en besked eller sende en mail, så vender vi tilbage hurtigst muligt.
+    <p class="post-manchet"><span class="wrap">Vi er nemmest at træffe på telefonen i tidsrummet 10.00 - 16.00 i hverdagene. Du er også velkommen til at indtale en besked eller sende en mail, så vender vi hurtigt tilbage.
 </span></p>
     
   </header>
 
   <div class="post-content">
     <div class="row mt4">
-  <div class="col-md-8">
+  <div class="col-md-7">
 
   <form class="mycontactform" accept-charset="UTF-8" action="https://formspree.io/layout@monsun.dk" method="POST">
       <div class="form-group">
@@ -156,7 +156,7 @@
     <input type="hidden" name="_next" value="http://127.0.0.1:4000/tak/" />
     </form>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-5">
       <p class="small">Monsun<br />
       
       Nørrebrograde 5C, 1.sal<br />2200 København N<br />
@@ -233,29 +233,23 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
 
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
 
 
-
     <script>
 
-      $(function() {
-        $('.lazy').Lazy();
-      });
-
-      $('.lazy').Lazy({
-        // your configuration goes here
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        visibleOnly: true,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        }
+    $(function() {
+        $('.lazy').lazy({
+          effect: "fadeIn",
+          effectTime: 500,
+          threshold: 0
+        });
     });
+
+
+
 
 
       $(document).ready(function() {

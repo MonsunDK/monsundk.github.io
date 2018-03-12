@@ -173,29 +173,23 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.6/jquery.lazy.plugins.min.js"></script>
 
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
 
 
-
     <script>
 
-      $(function() {
-        $('.lazy').Lazy();
-      });
-
-      $('.lazy').Lazy({
-        // your configuration goes here
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        visibleOnly: true,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        }
+    $(function() {
+        $('.lazy').lazy({
+          effect: "fadeIn",
+          effectTime: 500,
+          threshold: 0
+        });
     });
+
+
+
 
 
       $(document).ready(function() {

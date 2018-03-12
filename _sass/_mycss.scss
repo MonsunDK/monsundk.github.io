@@ -1273,6 +1273,8 @@ button.close:hover {
 
 .fullpage-hero {
   max-height: none;
+  .box--size-outer {
+  }
   @media only screen and (min-width: $screen-lg) {
     height: calc(100vh - 100px);
   }

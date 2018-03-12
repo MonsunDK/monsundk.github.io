@@ -4,7 +4,8 @@ label: Kontakt
 title: >
   Ring, skriv eller kig forbi
 manchet: >
-  Vi er nemmest at træffe på telefonen i tidsrummet 10 - 16 i hverdagende, ellers er du velkommen til at indtale en besked eller sende en mail, så vender vi tilbage hurtigst muligt.
+  Vi er nemmest at træffe på telefonen i tidsrummet 10.00 - 16.00 i hverdagene.
+  Du er også velkommen til at indtale en besked eller sende en mail, så vender vi hurtigt tilbage.
 permalink: /kontakt/
 image:
 iframe: "https://www.google.com/maps/d/embed?mid=1SNiSN10GqAzlEqqBoWFGUHrZU_U"
@@ -12,7 +13,7 @@ iframe: "https://www.google.com/maps/d/embed?mid=1SNiSN10GqAzlEqqBoWFGUHrZU_U"
 
 
 <div class="row mt4">
-  <div class="col-md-8">
+  <div class="col-md-7">
 
   <form class="mycontactform" accept-charset="UTF-8" action="https://formspree.io/layout@monsun.dk" method="POST">
       <div class="form-group">
@@ -46,7 +47,7 @@ iframe: "https://www.google.com/maps/d/embed?mid=1SNiSN10GqAzlEqqBoWFGUHrZU_U"
     <input type="hidden" name="_next" value="http://127.0.0.1:4000/tak/">
     </form>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-5">
       <p class="small">{{ site.title | escape }}<br>
       {% if site.address %}
       {{ site.address | escape }}<br>{{ site.address2 | escape }}<br>

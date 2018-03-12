@@ -12,8 +12,8 @@
   published: true
   id: "01"
   items:
-    - title:
-      description:
+    - title: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 49 fagforeninger for faglærte og ufaglærte."
+      description: "Drupal 8 hjemmeside  for LO Hovedstaden er designet og udviklet i CMS Drupal 8 som Responsive. Dvs at den er tilgængelig på alle platforme – mobil, tablet mm."
       image: loh_web@2x_w3.jpg
 
 - title: Logoer
@@ -25,45 +25,45 @@
   published: true
   id: "02"
   items:
-    - title: Danske Gymnasieelevers Sammenslutning
-      description: Kampagne branding
+    - title: Kickstart
+      description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
       image: logo_kickstart1@2x_w3.jpg
     - title: Brønshøj Kirke
-      description:
+      description: Design af logo til Brønshøj Kirke.
       image: logo_brønshøjkirke@2x_w3.jpg
     - title: Københavns Universitet
-      description:
+      description: Logo til Biologisk Fagråd.
       image: logo_biologiskfagråd@2x_w3.jpg
-    - title:
-      description:
+    - title: Københavnerier
+      description: Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.
       image: logo_københavnerier@2x_w3.jpg
-    - title:
-      description:
+    - title: Unge Stemmer
+      description: Kasseret Logo
       image: logo_ungestemmer1@2x_w3.jpg
-    - title:
-      description:
+    - title: Unge Stemmer
+      description: Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS
       image: logo_ungestemmer3@2x_w3.jpg
-    - title:
+    - title: Frinova 1
       description:
       image: logo_frinova1@2x_w3.jpg
-    - title:
+    - title: Frinova 2
       description:
       image: logo_frinova2@2x_w3.jpg
-    - title:
+    - title: Defocus
       description:
       image: logo_defocus@2x_w3.jpg
-    - title:
+    - title: Concord
       description:
       image: logo_concord@2x_w3.jpg
-    - title:
+    - title: PROSA
       description:
       image: logo_prosa@2x_w3.jpg
-    - title:
+    - title: Danske Gymnasieelevers Sammenslutning
       description:
       image: logo_dgs1@2x_w3.jpg
 
 - title: PsykInfo
-  description: Plakat & flyer
+  description: Plakater & flyers
   tag:
   type: background
   image: plakat_breakthesilence@2x_w2.jpg
@@ -72,12 +72,12 @@
   published: true
   id: "03"
   items:
-    - title:
-      description:
+    - title: PsykInfo - Region Hovedstaden
+      description: Plakater og flyers - Break the silence.
       image: plakat_breakthesilence@2x_w2.jpg
 
 - title: Vilde Liv
-  description: Video
+  description: Videoportræt
   image: vildeliv_video@2x.jpg
   type: background
   width: three
@@ -85,12 +85,12 @@
   published: true
   id: "04"
   items:
-    - title: Vilde Liv
-      description: Pass the loader name you want to use for this element to the data-loader attribute of those who should be lazy loaded. You can mix custom loaders and images in the same Lazy instance as well.
+    - title: Vilde Liv, Københavns Kommune
+      description: Video om Vilde Liv, Københavns Kommunes Socialforvaltnings tilbud til unge mellem 12-21 år der færdes på og omkring Christiania.
       video: "https://www.youtube.com/embed/8s0_iZg9CeA"
 
-- title: SF KBH
-  description: Portrætter
+- title: SF København
+  description: Portrætter af kandidater
   tag:
   image: sf_cover@2x_w3.jpg
   type: background
@@ -102,15 +102,15 @@
     - title:
       description:
       image: sf_cover@2x_w3.jpg
-    - title: Kommunalvalg 2017
-      description: Portrætter af kandidater
+    - title: Kommunalvalget 2017
+      description: Portrætter af kandidater i København.
       image: sf_portrætter2@2x_w3.jpg
-    - title: Kommunalvalg 2013
-      description: Portrætter af kandidater
+    - title: Kommunalvalget 2013
+      description: Portrætter af kandidater i København.
       image: sf_portrætter3@2x_w3.jpg
 
-- title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
-  description: blah blah
+- title: Skal du have løst en opgave så ring på 35397331
+  description: info@monsun.dk
   tag:
   type: quote
   width: one
@@ -119,8 +119,8 @@
   published: true
   id: "06"
 
-- title: Quisque ullamcorper fringilla ante, at porttitor tortor ullamcorper
-  description: blah blah
+- title: Bestil fotograf på 35397331
+  description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
   tag:
   type: quote
   width: two
@@ -138,8 +138,8 @@
   published: true
   id: "08"
   items:
-    - title:
-      description:
+    - title: NOAH, Friends of the Earth
+      description: Drupal 8 Website
       image: noah_website@2x_w3.jpg
     - title:
       description:
@@ -150,15 +150,15 @@
     - title:
       description:
       image: noah_folder3@2x_w3.jpg
-    - title:
-      description:
+    - title: NOAH, Friends of the Earth
+      description: Folder om bæredygtige boliger.
       image: noah_folder@2x_w3.jpg
-    - title:
-      description:
+    - title: NOAH, Friends of the Earth
+      description: Program Zig-Zag folder
       image: noah_zigzag@2x_w3.jpg
 
 - title: 3F Kastrup
-  description: Avis layout
+  description: Medlemsbladet Avisen
   image: 3f_avis@2x_w3.jpg
   type: background
   width: three
@@ -166,12 +166,12 @@
   published: true
   id: "09"
   items:
-    - title:
-      description:
+    - title: 3F Kastrup
+      description: Design –og strukturudvikling for medlemsbladet Avisen
       image: 3f_avis@2x_w3.jpg
 
 - title: WeShelter
-  description: IndreBy Kirkemagasin
+  description:
   tag:
   image: weshelter@2x_w3.jpg
   type: background
@@ -189,8 +189,9 @@
     - title:
       description:
       image: weshelter_mag2@2x_w2.jpg
+
 - title: NOAH
-  description: spisornli.nu
+  description: Online undervisningsmaterialer
   image: spisornli_noah@2x_w4.jpg
   type: background
   width: two
@@ -198,12 +199,12 @@
   published: true
   id: "11"
   items:
-    - title:
-      description:
+    - title: spisornli.nu
+      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
       image: spisornli_noah@2x_w4.jpg
 
 
-- title: Studenterrådet
+- title: Studenterrådet på KU
   description: Studiebog
   tag:
   image: studenterraadet_illu1@2x_w2.jpg
@@ -225,13 +226,13 @@
     - title:
       description:
       image: studenterraadet_illu1@2x_w2.jpg
-    - title:
-      description:
+    - title: Studenterrådet på KU
+      description: Studiehåndbog. Design og illustrationer.
       image: studenterraadet_illu2@2x_w2.jpg
 
 
 - title: Vindmølleindustrien
-  description: Folder + illustraioner
+  description: Design og illustrationer
   image: vindmølleindustrien@2x_w2.jpg
   type: background
   width: one
@@ -242,11 +243,13 @@
     - title:
       description:
       image: vindmølleindustrien@2x_w2.jpg
-    - title:
-      description:
+    - title: Vindmølleindustrien folder
+      description: Design og illustrationer.
       image: vindmølleindustrien2@2x_w3.jpg
-- title: PsykInfo
-  description: IndreBy Kirkemagasin
+
+
+- title: PsykInfo & Cinemateket
+  description: Filmkatalog
   tag:
   image: psykinfo@2x_w2.jpg
   type: background
@@ -258,12 +261,12 @@
     - title:
       description:
       image: psykinfo@2x_w2.jpg
-    - title:
-      description:
+    - title: PsykInfo & Cinemateket
+      description: Filmkatalog, plakater og rollups til filmfestivalen Don’t fear The Weird.
       image: psykinfo2@2x_w3.jpg
 
-- title: Kampen om ungdomshuset
-  description: Bog layout
+- title: Kampen om Ungdomshuset
+  description: Tekst, design & foto
   image: ungdomshusbog@2x_w2.jpg
   type: background
   width: one
@@ -280,8 +283,8 @@
     - title:
       description:
       image: ungdomshusbog3@2x_w2.jpg
-    - title:
-      description:
+    - title: Bogen Kampen om Ungdomshuset
+      description: Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.
       image: ungdomshusbog4@2x_w2.jpg
 
 - title: Domkirken
@@ -300,11 +303,12 @@
     - title:
       description:
       image: indreby2@2x_w3.jpg
-    - title:
-      description:
+    - title: Domkirken Vor Frue Kirke og Sct. Andreas Kirke
+      description: Kirkemagasin til Vor Frue Sogn. Layout.
       image: indreby3@2x_w3.jpg
-- title: ViVil
-  description: ???
+
+- title: ViVil - Københavns Kommune
+  description: Psykisk syge i arbejde
   tag:
   image: vivil_brikker4@2x_w3.jpg
   type: background
@@ -322,6 +326,6 @@
     - title:
       description:
       image: vivil_brikker2@2x_w3.jpg
-    - title:
-      description:
+    - title: Psykisk syge i arbejde
+      description: Logo, foldere, visitkort, samtalespil.
       image: vivil_brikker3@2x_w3.jpg
