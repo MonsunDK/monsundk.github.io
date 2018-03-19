@@ -20,16 +20,26 @@
       image: /portraits/MG_8021_mk.jpg
     - title:
       description:
+      image: /portraits/johanne_pernille@2x_w2.jpg
+
+    - title:
+      description:
       image: /portraits/Jens_August_Willes_04.jpg
     - title:
       description:
       image: /portraits/Michael_Falch_12.jpg
     - title:
       description:
+      image: /portraits/verner_Jens_Ege@2x_w2.jpg
+    - title:
+      description:
       image: /portraits/Frederik_Vedersoe_17.jpg
     - title:
       description:
       image: /portraits/Frederik_Vedersoe_09.jpg
+    - title:
+      description:
+      image: /portraits/johan_peter_paludan@2x_w2.jpg
     - title:
       description:
       image: /portraits/christine antorini_mk.jpg
@@ -53,28 +63,21 @@
       image: /portraits/manu_sareen_2_mk.jpg
     - title:
       description:
+      image: /portraits/MalikaGraff_Blachman@2x_w2.jpg
+    - title:
+      description:
       image: /portraits/kim_simonsen_mk.jpg
+    - title:
+      description:
+      image: /portraits/Niels_Thorborg@2x_w2.jpg
     - title:
       description:
       image: /portraits/keith_thomas_lohse.jpg
     - title:
       description:
       image: /portraits/JohanBulow@2x_w2.jpg
-    - title:
-      description:
-      image: /portraits/johan_peter_paludan@2x_w2.jpg
-    - title:
-      description:
-      image: /portraits/johanne_pernille@2x_w2.jpg
-    - title:
-      description:
-      image: /portraits/Niels_Thorborg@2x_w2.jpg
-    - title:
-      description:
-      image: /portraits/MalikaGraff_Blachman@2x_w2.jpg
-    - title:
-      description:
-      image: /portraits/verner_Jens_Ege@2x_w2.jpg
+
+
 
 - title: LO Hovedstaden
   description: Drupal 8 website
