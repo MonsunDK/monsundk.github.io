@@ -3,16 +3,13 @@ layout: page
 label: >
   Om Monsun
 title: >
-  Et kreativt kooperativ
-manchet: >
-  Aliquam dolor velit, lacinia eget egestas tempus, pretium quis ex. Ut tempor sem quis ex imperdiet molestie. Sed sed sapien sapien. Proin ornare, turpis non pellentesque molestie.
+  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og IT-udviklere, der er samlet om at skabe de fedeste produkter til fair priser
+manchet:
 permalink: /om/
 image:
 hero: monsun_etagen.jpg
 ---
-Monsun er et kooperativ af journalister, grafikere, fotografer og IT-folk, der er samlet om en fælles vision om udvikling af nye kommunikationsformer.
-
-Monsun har siden starten i år 2000 udviklet egne teknikker for arbejdet fra ideudvikling til færdigt produkt. Vi yder skarpslebent håndværk, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab, og vi løser specialopgaver med journalistik, fotos, video og layout af høj kvalitet.
+Monsun har siden år 2000 udviklet egne teknikker for arbejdet fra ideudvikling til færdigt produkt. Vi yder skarpslebent håndværk, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab, og vi løser specialopgaver med journalistik, fotos, video og layout af høj kvalitet.
 
 Opgaver løses altid i tæt samarbejde med kunden. Vi er eksperter i maximalt udbytte inden for givne budgetrammer. Ingen opgave er for stor eller for lille.
 

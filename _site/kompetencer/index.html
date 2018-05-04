@@ -10,7 +10,6 @@
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="/assets/css/swiper.min.css">
 
   <link rel="canonical" href="http://localhost:4000/kompetencer/">
   <link rel="alternate" type="application/rss+xml" title="Monsun" href="/feed.xml">
@@ -96,6 +95,7 @@
 <article class="post">
 
   <header class="post-header">
+    <span class="trompet">Kompetencer</span>
     <h1 class="post-title">
           <!-- <span class="typewrite" data-period="2000" data-type='[ "", "Kompetencer" ]'> -->
         <span class="">  Kompetencer</span>
@@ -207,10 +207,6 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
 </footer>
 
 
-
-
-
-
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -222,30 +218,71 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+<!--
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js"></script>
+-->
+
+
+    <script type="text/javascript" src="/assets/js/blazy.min.js"></script>
+
     <script>
 
-    $(function() {
-        $('.lazy').lazy({
-          effect: "fadeIn",
-          effectTime: 500,
-          threshold: 0
-        });
+
+
+
+
+
+    var bLazy = new Blazy();
+
+
+
+
+
+  //  var modalLazyLoad = new LazyLoad({
+  //    container: document.getElementById('_')
+  //  });
+
+
+  //  var bgLazyLoad  = new LazyLoad({
+	//	   elements_selector: ".lazy"
+	//  });
+
+
+
+  //  var myLazyLoad  = new LazyLoad;
+  //  $('.modal-dialog').on('shown.bs.modal', function() {
+  //    $(this).find("img.lazy").unveil(0, function() {
+  //      console.log('test 1');
+  //      $(this).load(function() {
+  //        this.style.opacity = 1;
+  //      });
+  //    });
+  //  });
+
+
+
+
+  // $(function() {
+  //      $('.lazy').lazy({
+  //        effect: "fadeIn",
+  //        effectTime: 500,
+  //        threshold: 0
+  //      });
+  //  });
+
+
+  $(document).ready(function() {
+    $(".modal.permalink").each(function() {
+      if (window.location.href.indexOf($(this).attr("id")) != -1) {
+        $(this).modal('show');
+      }
     });
+  });
 
-
-
-      $(document).ready(function() {
-        $(".modal.permalink").each(function() {
-          if (window.location.href.indexOf($(this).attr("id")) != -1) {
-            $(this).modal('show');
-          }
-        });
-      });
 
 
       var $root = $('html, body');
@@ -253,9 +290,11 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
         $root.animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
           }, 500);
-
           return false;
         });
+
+
+
 
   </script>
 </body>

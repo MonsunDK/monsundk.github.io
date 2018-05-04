@@ -8,7 +8,7 @@
   image: /portraits/portraits_cover@2x_w4.jpg
   type: background
   width: four
-  text-color: "#c1cfdc"
+  text-color:
   published: true
   id: "01b"
   items:
@@ -93,7 +93,7 @@
   image: kickstart_logo@2x.jpg
   type: background
   width: one
-  text-color: crimson
+  text-color:
   published: true
   id: "02"
   items:
@@ -140,7 +140,7 @@
   type: background
   image: plakat_breakthesilence@2x_w2.jpg
   width: one
-  text-color: "#3d2b37"
+  text-color:
   published: true
   id: "03"
   items:
@@ -153,7 +153,7 @@
   image: vildeliv_video@2x.jpg
   type: background
   width: three
-  text-color: "#f0f0f0"
+  text-color:
   published: true
   id: "04"
   items:
@@ -167,7 +167,7 @@
   image: sf_cover@2x_w3.jpg
   type: background
   width: three
-  text-color: "#421112"
+  text-color:
   published: true
   id: "05"
   items:
@@ -184,10 +184,10 @@
 - title: Skal du have løst en opgave så ring på 35397331
   description: info@monsun.dk
   tag:
-  type: quote
+  type: "quote"
   width: one
-  color: "#EA3E3E"
-  text-color: AQUA
+  color: lime
+  text-color:
   published: true
   id: "06"
 
@@ -206,7 +206,7 @@
   image: noah_cover@2x_w2.jpg
   type: background
   width: two
-  text-color: DARKGREEN
+  text-color:
   published: true
   id: "08"
   items:

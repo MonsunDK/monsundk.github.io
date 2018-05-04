@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Et kreativt kooperativ
+  <title>Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og IT-udviklere, der er samlet om at skabe de fedeste produkter til fair priser
 </title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="/assets/css/swiper.min.css">
 
   <link rel="canonical" href="http://localhost:4000/om/">
   <link rel="alternate" type="application/rss+xml" title="Monsun" href="/feed.xml">
@@ -94,9 +93,10 @@
 
 
 
-<div class="hero lazy" data-src="/assets/img/hero/monsun_etagen.jpg">
+<div class="hero b-lazy" data-src="/assets/img/hero/monsun_etagen.jpg">
   <div class="box--size-outer">
     <div class="box--size-inner">
+  
     </div>
   </div>
 </div>
@@ -112,22 +112,19 @@
 <article class="post">
 
   <header class="post-header">
+    <span class="trompet">Om Monsun
+</span>
     <h1 class="post-title">
-          <!-- <span class="typewrite" data-period="2000" data-type='[ "", "Et kreativt kooperativ
+          <!-- <span class="typewrite" data-period="2000" data-type='[ "", "Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og IT-udviklere, der er samlet om at skabe de fedeste produkter til fair priser
 " ]'> -->
-        <span class="">  Et kreativt kooperativ
+        <span class="">  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og IT-udviklere, der er samlet om at skabe de fedeste produkter til fair priser
 </span>
     </h1>
-    
-    <p class="post-manchet"><span class="wrap">Aliquam dolor velit, lacinia eget egestas tempus, pretium quis ex. Ut tempor sem quis ex imperdiet molestie. Sed sed sapien sapien. Proin ornare, turpis non pellentesque molestie.
-</span></p>
     
   </header>
 
   <div class="post-content">
-    <p>Monsun er et kooperativ af journalister, grafikere, fotografer og IT-folk, der er samlet om en fælles vision om udvikling af nye kommunikationsformer.</p>
-
-<p>Monsun har siden starten i år 2000 udviklet egne teknikker for arbejdet fra ideudvikling til færdigt produkt. Vi yder skarpslebent håndværk, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab, og vi løser specialopgaver med journalistik, fotos, video og layout af høj kvalitet.</p>
+    <p>Monsun har siden år 2000 udviklet egne teknikker for arbejdet fra ideudvikling til færdigt produkt. Vi yder skarpslebent håndværk, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab, og vi løser specialopgaver med journalistik, fotos, video og layout af høj kvalitet.</p>
 
 <p>Opgaver løses altid i tæt samarbejde med kunden. Vi er eksperter i maximalt udbytte inden for givne budgetrammer. Ingen opgave er for stor eller for lille.</p>
 
@@ -204,10 +201,6 @@ Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fr
 </footer>
 
 
-
-
-
-
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -219,30 +212,71 @@ Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fr
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+<!--
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js"></script>
+-->
+
+
+    <script type="text/javascript" src="/assets/js/blazy.min.js"></script>
+
     <script>
 
-    $(function() {
-        $('.lazy').lazy({
-          effect: "fadeIn",
-          effectTime: 500,
-          threshold: 0
-        });
+
+
+
+
+
+    var bLazy = new Blazy();
+
+
+
+
+
+  //  var modalLazyLoad = new LazyLoad({
+  //    container: document.getElementById('_')
+  //  });
+
+
+  //  var bgLazyLoad  = new LazyLoad({
+	//	   elements_selector: ".lazy"
+	//  });
+
+
+
+  //  var myLazyLoad  = new LazyLoad;
+  //  $('.modal-dialog').on('shown.bs.modal', function() {
+  //    $(this).find("img.lazy").unveil(0, function() {
+  //      console.log('test 1');
+  //      $(this).load(function() {
+  //        this.style.opacity = 1;
+  //      });
+  //    });
+  //  });
+
+
+
+
+  // $(function() {
+  //      $('.lazy').lazy({
+  //        effect: "fadeIn",
+  //        effectTime: 500,
+  //        threshold: 0
+  //      });
+  //  });
+
+
+  $(document).ready(function() {
+    $(".modal.permalink").each(function() {
+      if (window.location.href.indexOf($(this).attr("id")) != -1) {
+        $(this).modal('show');
+      }
     });
+  });
 
-
-
-      $(document).ready(function() {
-        $(".modal.permalink").each(function() {
-          if (window.location.href.indexOf($(this).attr("id")) != -1) {
-            $(this).modal('show');
-          }
-        });
-      });
 
 
       var $root = $('html, body');
@@ -250,9 +284,11 @@ Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fr
         $root.animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
           }, 500);
-
           return false;
         });
+
+
+
 
   </script>
 </body>

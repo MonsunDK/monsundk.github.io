@@ -50,7 +50,7 @@ blockquote {
 }
 
 p {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
 }
 
 hr {
@@ -234,6 +234,7 @@ img {
     padding: 0 10px;
     font-weight: 400;
     color: $gray;
+    background-color: $body-bg;
 
     @media (min-width: $grid-float-breakpoint) {
       font-size: 12px;
@@ -292,7 +293,7 @@ img {
 }
 
 .navbar-default .navbar-collapse {
-  background-color: $body-bg;
+  background-color: transparent;
   box-shadow: none;
   border-top: none;
 
@@ -717,24 +718,37 @@ article.post {
     max-width: 50%;
   }
 
-  .post-header {}
+  .post-header {
+    margin-top: 4vw;
+  }
+
+  .trompet {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .065em;
+  }
 
   .post-title {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 2rem;
-    margin-top: 3vw;
-    letter-spacing: -0.015em;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    letter-spacing: -0em;
     margin-left: -1px;
-    line-height: 1.45;
+    line-height: 1.4;
+    text-shadow: none;
 
+    > span {
+      background-color: transparent;
+    }
   }
 
   .post-manchet {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 4vw;
-    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+
   }
 
   .post-content {}
@@ -1044,7 +1058,7 @@ picture {
   left: 20px;
   right: 20px;
   margin: 0;
-  color: $text-color;
+  color: white;
   text-shadow:none;
 }
 
@@ -1053,7 +1067,7 @@ picture {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -1092,11 +1106,28 @@ picture {
 }
 
 
+.b-lazy {
+  opacity:.5;
+  transition: all 500ms;
+}
+.b-loaded {
+   opacity:1;
+}
 
 // Modal
 
-.myBtn_multi {
+a.myBtn_multi {
   cursor: pointer;
+  opacity: 0;
+  background-color: rgba(black, 0);
+  border: 1px solid rgba(black, 0);
+  margin: 0px;
+
+  &:hover {
+    opacity: 1;
+    background-color: rgba(black, .3);
+    border: 1px solid rgba(black, 0);
+  }
 }
 
 // Container that the modal scrolls within
@@ -1257,8 +1288,9 @@ button.close:hover {
 
 
 // hero
+
 .hero {
-  background-color: red;
+  background-color: transparent;
   background-position: right;
   background-size: cover;
   max-height: 400px;

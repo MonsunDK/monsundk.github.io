@@ -3,7 +3,7 @@ layout: default
 ---
 {% if page.image %}
 <div class="image-wrapper">
-  <figure><img class="lazy" src="/assets/img/{{ page.image }}.jpg" alt="" style="width:100%;"/></figure>
+  <img class="lazy" src="/assets/img/{{ page.image }}.jpg" alt="" style="width:100%;"/>
 </div>
 {% endif %}
 
@@ -25,6 +25,7 @@ layout: default
 <article class="post">
 
   <header class="post-header">
+    <span class="trompet">{{ page.label | escape }}</span>
     <h1 class="post-title">
           <!-- <span class="typewrite" data-period="2000" data-type='[ "{{ page.title-intro | escape }}", "{{ page.title | escape }}" ]'> -->
         <span class="">  {{ page.title | escape }}</span>
