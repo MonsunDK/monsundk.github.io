@@ -6729,31 +6729,26 @@ picture {
 
 .box--text-container {
   position: absolute;
-  bottom: 15px;
-  left: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 25px;
+  right: 25px;
   margin: 0;
   color: white;
   text-shadow: none; }
 
 .box-title {
-  margin: 0;
+  margin: 0 0 1px 0;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 14px;
+  letter-spacing: 0.075em;
+  font-size: 12px;
   line-height: 1.45; }
 
 .tag,
 .box-description {
   margin: 0;
   font-size: 10px;
-  font-weight: 400;
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .tag,
-    .box-description {
-      display: block; } }
+  font-weight: 400; }
 
 .box--quote .box--text-container {
   top: 50%;
@@ -6772,13 +6767,6 @@ picture {
         font-size: 3vw;
         line-height: 3.7vw; } }
 
-.b-lazy {
-  opacity: .5;
-  transition: all 500ms; }
-
-.b-loaded {
-  opacity: 1; }
-
 a.myBtn_multi {
   cursor: pointer;
   opacity: 0;
@@ -6789,6 +6777,11 @@ a.myBtn_multi {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0); }
+    a.myBtn_multi:hover .box--text-container {
+      -webkit-animation-name: bounce;
+      animation-name: bounce;
+      -webkit-animation-duration: 0.4s;
+      animation-duration: 0.4s; }
 
 .modal {
   display: none;
@@ -6993,6 +6986,6 @@ form {
     background-color: #f0f0f0; } }
 @keyframes bounce {
   from {
-    transform: translateY(0px); }
+    transform: translateY(-20px); }
   to {
-    transform: translateY(-10px); } }
+    transform: translateY(0px); } }

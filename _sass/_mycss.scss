@@ -1054,20 +1054,20 @@ picture {
 
 .box--text-container {
   position: absolute;
-  bottom: 15px;
-  left: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 25px;
+  right: 25px;
   margin: 0;
   color: white;
   text-shadow:none;
 }
 
 .box-title {
-  margin: 0;
+  margin: 0 0 1px 0;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 14px;
+  letter-spacing: 0.075em;
+  font-size: 12px;
   line-height: 1.45;
 }
 
@@ -1076,10 +1076,7 @@ picture {
   margin: 0;
   font-size: 10px;
   font-weight: 400;
-  display: none;
-  @media only screen and (min-width: $screen-sm) {
-    display: block;
-  }
+
 }
 
 .box--quote {
@@ -1106,13 +1103,7 @@ picture {
 }
 
 
-.b-lazy {
-  opacity:.5;
-  transition: all 500ms;
-}
-.b-loaded {
-   opacity:1;
-}
+
 
 // Modal
 
@@ -1127,6 +1118,15 @@ a.myBtn_multi {
     opacity: 1;
     background-color: rgba(black, .3);
     border: 1px solid rgba(black, 0);
+
+    .box--text-container {
+      -webkit-animation-name: bounce;
+      animation-name: bounce;
+
+      -webkit-animation-duration: 0.4s;
+      animation-duration: 0.4s;
+
+    }
   }
 }
 
@@ -1434,9 +1434,9 @@ form {
 
 @keyframes bounce {
 from {
-    transform: translateY(0px);
+    transform: translateY(-20px);
   }
 to {
-    transform: translateY(-10px);
+    transform: translateY(0px);
   }
 }

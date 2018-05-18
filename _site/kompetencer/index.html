@@ -221,96 +221,38 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
 
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
-<!--
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js"></script>
-
-
-
-    <script type="text/javascript" src="/assets/js/blazy.min.js"></script>
--->
-
 
 
 
 <script>
 
 
-$(function() {
-     $('.lazy').lazy({
-       effect: "fadeIn",
-       effectTime: 500,
-       threshold: 0
-     });
- });
+  $(function() {
+       $('.lazy').lazy({
+         effect: "fadeIn",
+         effectTime: 1000,
+         threshold: 200
+       });
+   });
 
 
-$('.modal').on("show.bs.modal", function() {
-  $('.lazy', this).Lazy({
-    bind: 'event',
-    chainable: false
+  $('.modal').on("show.bs.modal", function() {
+    $('.lazy', this).Lazy({
+      bind: 'event',
+      chainable: false
+    });
+    
   });
-});
 
 
+  var $root = $('html, body');
+  $('a[href^="#scr-"]').click(function () {
+      $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+  });
 
-  //  var modalLazyLoad = new LazyLoad({
-  //    container: document.getElementById('_')
-  //  });
-
-
-  //  var bgLazyLoad  = new LazyLoad({
-	//	   elements_selector: ".lazy"
-	//  });
-
-
-
-  //  var myLazyLoad  = new LazyLoad;
-  //  $('.modal-dialog').on('shown.bs.modal', function() {
-  //    $(this).find("img.lazy").unveil(0, function() {
-  //      console.log('test 1');
-  //      $(this).load(function() {
-  //        this.style.opacity = 1;
-  //      });
-  //    });
-  //  });
-
-
-
-
-  // $(function() {
-  //      $('.lazy').lazy({
-  //        effect: "fadeIn",
-  //        effectTime: 500,
-  //        threshold: 0
-  //      });
-  //  });
-
-
-  // $(document).ready(function() {
-  //  $(".modal.permalink").each(function() {
-  //    if (window.location.href.indexOf($(this).attr("id")) != -1) {
-  //      $(this).modal('show');
-  //    }
-  //  });
-  // });
-
-
-
-      var $root = $('html, body');
-      $('a[href^="#scr-"]').click(function () {
-        $root.animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-          }, 500);
-          return false;
-        });
-
-
-
-
-  </script>
-
-
+</script>
 </body>
-
 </html>
