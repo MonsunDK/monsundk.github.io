@@ -218,27 +218,39 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!--
+
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
-
+<!--
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js"></script>
--->
+
 
 
     <script type="text/javascript" src="/assets/js/blazy.min.js"></script>
-
-    <script>
-
+-->
 
 
 
 
+<script>
 
-    var bLazy = new Blazy();
+
+$(function() {
+     $('.lazy').lazy({
+       effect: "fadeIn",
+       effectTime: 500,
+       threshold: 0
+     });
+ });
 
 
+$('.modal').on("show.bs.modal", function() {
+  $('.lazy', this).Lazy({
+    bind: 'event',
+    chainable: false
+  });
+});
 
 
 
@@ -275,13 +287,13 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
   //  });
 
 
-  $(document).ready(function() {
-    $(".modal.permalink").each(function() {
-      if (window.location.href.indexOf($(this).attr("id")) != -1) {
-        $(this).modal('show');
-      }
-    });
-  });
+  // $(document).ready(function() {
+  //  $(".modal.permalink").each(function() {
+  //    if (window.location.href.indexOf($(this).attr("id")) != -1) {
+  //      $(this).modal('show');
+  //    }
+  //  });
+  // });
 
 
 
@@ -297,6 +309,8 @@ Vi hjælper med at finde de mest effektive løsninger inden for bestemte budgetr
 
 
   </script>
+
+
 </body>
 
 </html>

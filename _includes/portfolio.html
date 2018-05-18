@@ -1,7 +1,7 @@
 <section class="page-content flex-grid portfolio">
 
   {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
-  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col b-lazy" src="/assets/img/Juice.jpg" data-src="/assets/img/portfolio/{{ box.image }}" style="background-color:{{ box.color }};">
+  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col lazy" src="/assets/img/Juice.jpg" data-src="/assets/img/portfolio/{{ box.image }}" style="background-color:{{ box.color }};">
     <div class="box--size-outer">
       {% if box.type == 'quote' %}
       <div class="box--size-inner myBtn_multi">
@@ -19,16 +19,11 @@
       </a>
       {% endif %}
 
-
-
-
     </div>
   </div>
 
   <!-- The Modal -->
   <div class="modal modal_multi permalink" id="{{ box.id }}_{{ box.title | slugify }}" tabindex="-1" role="dialog" aria-labelledby="{{ box.id }}_{{ box.title | slugify }}" aria-hidden="false">
-
-
     <div class="modal-dialog">
       <!-- Modal content -->
       <div class="modal-content">
@@ -44,8 +39,7 @@
           <div class="modal-item">
             <div class="media-content" >
               {% if item.image %}
-              <img class="b-lazy" alt="{{ item.title }}" data-src="/assets/img/portfolio/{{ item.image }}" src="/assets/img/Loading_icon.gif" style="width:100%;">
-              <!--<picture><img data-src="/assets/img/{{ item.image }}.jpg" alt="{{ item.title }}" style="width:100%;"></picture>-->
+                <img class="lazy" alt="{{ item.title }}" data-src="/assets/img/portfolio/{{ item.image }}" src="/assets/img/Loading_icon.gif"style="width:100%;">
               {% endif %}
               {% if item.video %}
               <div class="embed-responsive embed-responsive-16by9">
@@ -64,8 +58,10 @@
     </div>
   </div>
 
-  {% endif %} {% endfor %}
 
+
+
+  {% endif %} {% endfor %}
 
 
 

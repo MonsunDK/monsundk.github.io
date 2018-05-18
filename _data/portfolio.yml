@@ -5,7 +5,7 @@
 - title: Portrætter
   description: foto
   tag:
-  image: /portraits/portraits_cover@2x_w4.jpg
+  image: portraits/portraits_cover@2x_w4.jpg
   type: background
   width: four
   text-color:
@@ -14,64 +14,64 @@
   items:
     - title: Iain Cameron, Grafiker
       description: "Foto: Mark Knudsen"
-      image: /portraits/MG_8021_mk.jpg
+      image: portraits/MG_8021_mk.jpg
     - title: Johanne Schmidt-Nielsen og Pernille Skipper
       description: "Foto: Mark Knudsen"
-      image: /portraits/johanne_pernille@2x_w2.jpg
+      image: portraits/johanne_pernille@2x_w2.jpg
     - title: Jens August Willes
       description: "Foto: Morten Rode"
-      image: /portraits/Jens_August_Willes_04.jpg
+      image: portraits/Jens_August_Willes_04.jpg
     - title: Michael Falch
       description: "Foto: Morten Rode"
-      image: /portraits/Michael_Falch_12.jpg
+      image: portraits/Michael_Falch_12.jpg
     - title: Indsæt Navne
       description: "Foto: Morten Rode"
-      image: /portraits/morten-foto@2x_w2.jpg
+      image: portraits/morten-foto@2x_w2.jpg
     - title:
       description:
-      image: /portraits/Frederik_Vedersoe_17.jpg
+      image: portraits/Frederik_Vedersoe_17.jpg
     - title: Frederik Vedersoe, The Eclectic Moniker
       description: "Foto: Morten Rode"
-      image: /portraits/Frederik_Vedersoe_09.jpg
+      image: portraits/Frederik_Vedersoe_09.jpg
     - title: Johan Peter Paludan, fremtidsforsker
       description: "Foto: Mark Knudsen"
-      image: /portraits/johan_peter_paludan@2x_w2.jpg
+      image: portraits/johan_peter_paludan@2x_w2.jpg
     - title: Christine Antorini
       description: "Foto: Mark Knudsen"
-      image: /portraits/christine antorini_mk.jpg
+      image: portraits/christine antorini_mk.jpg
     - title: Stine Bosse
       description: "Foto: Mark Knudsen"
-      image: /portraits/stine_bosse_mk.jpg
+      image: portraits/stine_bosse_mk.jpg
     - title: Sten Lundager
       description: "Foto: Mark Knudsen"
-      image: /portraits/Sten_lundager06.jpg
+      image: portraits/Sten_lundager06.jpg
     - title:
       description:
-      image: /portraits/martin_brygmann08.jpg
+      image: portraits/martin_brygmann08.jpg
     - title: Martin Brygmann
       description: "Foto: Mark Knudsen"
-      image: /portraits/martin_brygmann_07.jpg
+      image: portraits/martin_brygmann_07.jpg
     - title:
       description:
-      image: /portraits/manu_sareen_mk.jpg
+      image: portraits/manu_sareen_mk.jpg
     - title: Manu Sareen
       description: "Foto: Mark Knudsen"
-      image: /portraits/manu_sareen_2_mk.jpg
+      image: portraits/manu_sareen_2_mk.jpg
     - title: Thomas Blachman (tv), Malika Graff (th)
       description: "Foto: Morten Rode"
-      image: /portraits/MalikaGraff_Blachman@2x_w2.jpg
+      image: portraits/MalikaGraff_Blachman@2x_w2.jpg
     - title: Kim Simonsen, formand HK
       description: "Foto: Mark Knudsen"
-      image: /portraits/kim_simonsen_mk.jpg
+      image: portraits/kim_simonsen_mk.jpg
     - title: Signe Molde (tv), Niels Thorborg (th)
       description: "Foto: Morten Rode"
-      image: /portraits/Niels_Thorborg@2x_w2.jpg
+      image: portraits/Niels_Thorborg@2x_w2.jpg
     - title: Keith Thomas Lohse
       description: "Foto: Mark Knudsen"
-      image: /portraits/keith_thomas_lohse.jpg
+      image: portraits/keith_thomas_lohse.jpg
     - title: Johan Bulow
       description: "Foto: Morten Rode"
-      image: /portraits/JohanBulow@2x_w2.jpg
+      image: portraits/JohanBulow@2x_w2.jpg
 
 
 
