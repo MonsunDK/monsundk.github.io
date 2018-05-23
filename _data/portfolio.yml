@@ -5,9 +5,11 @@
 - title: Portrætter
   description: foto
   tag:
-  image: portraits/portraits_cover@1x_w4.jpg
+  image: portraits/portraits_cover@2x_w4.jpg
   type: background
   width: four
+  mob-width:
+  order: 10
   text-color:
   published: true
   id: "01b"
@@ -80,6 +82,8 @@
   image: loh_web@2x_w3.jpg
   type: background
   width: three
+  mob-width:
+  order: 20
   text-color:
   published: true
   id: "01"
@@ -93,6 +97,8 @@
   image: kickstart_logo@2x.jpg
   type: background
   width: one
+  mob-width: two
+  order: 30
   text-color:
   published: true
   id: "02"
@@ -139,7 +145,9 @@
   tag:
   type: background
   image: plakat_breakthesilence@2x_w2.jpg
-  width: one
+  width: two
+  mob-width: two
+  order: 40
   text-color:
   published: true
   id: "03"
@@ -151,8 +159,10 @@
 - title: Vilde Liv
   description: Videoportræt
   image: vildeliv_video@2x.jpg
-  type: background
-  width: three
+  type: media
+  width: two
+  mob-width:
+  order: 50
   text-color:
   published: true
   id: "04"
@@ -167,6 +177,8 @@
   image: sf_cover@2x_w3.jpg
   type: background
   width: three
+  mob-width:
+  order: 60
   text-color:
   published: true
   id: "05"
@@ -181,31 +193,13 @@
       description: Portrætter af kandidater i København.
       image: sf_portrætter3@2x_w3.jpg
 
-- title: Skal du have løst en opgave så ring på 35397331
-  description: info@monsun.dk
-  tag:
-  type: "quote"
-  width: one
-  color: lime
-  text-color:
-  published: true
-  id: "06"
-
-- title: Bestil fotograf på 35397331
-  description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
-  tag:
-  type: quote
-  width: two
-  color: GOLD
-  text-color: black
-  published: true
-  id: "07"
-
 - title: NOAH
   description: Website + Foldere
   image: noah_cover@2x_w2.jpg
   type: background
-  width: two
+  width: one
+  mob-width:
+  order: 90
   text-color:
   published: true
   id: "08"
@@ -229,18 +223,29 @@
       description: Program Zig-Zag folder
       image: noah_zigzag@2x_w3.jpg
 
-- title: 3F Kastrup
-  description: Medlemsbladet Avisen
-  image: 3f_avis@2x_w3.jpg
-  type: background
-  width: three
-  text-color: "#002c45"
+- title: Skal du have løst en opgave så ring på 35397331
+  description: info@monsun.dk
+  tag:
+  type: "quote"
+  width: two
+  mob-width: two
+  order: 70
+  color: "#1B2631"
+  text-color: GOLD
   published: true
-  id: "09"
-  items:
-    - title: 3F Kastrup
-      description: Design –og strukturudvikling for medlemsbladet Avisen
-      image: 3f_avis@2x_w3.jpg
+  id: "06"
+
+- title: Bestil fotograf på 35397331
+  description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
+  tag:
+  type: quote
+  width: two
+  mob-width: two
+  order: 80
+  color: GOLD
+  text-color: black
+  published: true
+  id: "07"
 
 - title: WeShelter
   description:
@@ -248,7 +253,9 @@
   image: weshelter@2x_w3.jpg
   type: background
   width: one
-  text-color: "#424949"
+  mob-width:
+  order: 110
+  text-color:
   published: true
   id: "10"
   items:
@@ -262,12 +269,30 @@
       description:
       image: weshelter_mag2@2x_w2.jpg
 
+- title: 3F Kastrup
+  description: Medlemsbladet Avisen
+  image: 3f_avis@2x_w3.jpg
+  type: background
+  width: three
+  mob-width:
+  order: 100
+  text-color:
+  published: true
+  id: "09"
+  items:
+    - title: 3F Kastrup
+      description: Design –og strukturudvikling for medlemsbladet Avisen
+      image: 3f_avis@2x_w3.jpg
+
+
 - title: NOAH
   description: Online undervisningsmaterialer
   image: spisornli_noah@2x_w4.jpg
   type: background
   width: two
-  text-color: "#cd5b5b"
+  mob-width:
+  order: 120
+  text-color:
   published: true
   id: "11"
   items:
@@ -281,7 +306,9 @@
   tag:
   image: studenterraadet_illu1@2x_w2.jpg
   type: background
-  width: two
+  width: one
+  mob-width:
+  order: 130
   text-color:
   published: true
   id: "12"
@@ -308,7 +335,9 @@
   image: vindmølleindustrien@2x_w2.jpg
   type: background
   width: one
-  text-color: "#354d1a"
+  mob-width: two
+  order: 140
+  text-color:
   published: true
   id: "13"
   items:
@@ -325,8 +354,10 @@
   tag:
   image: psykinfo@2x_w2.jpg
   type: background
-  width: two
-  text-color: PEACHPUFF
+  width: one
+  mob-width: two
+  order: 150
+  text-color:
   published: true
   id: "14"
   items:
@@ -342,6 +373,8 @@
   image: ungdomshusbog@2x_w2.jpg
   type: background
   width: one
+  mob-width: two
+  order: 160
   text-color:
   published: true
   id: "15"
@@ -365,6 +398,8 @@
   image: indreby@2x_w2.jpg
   type: background
   width: two
+  mob-width: two
+  order: 170
   text-color:
   published: true
   id: "16"
@@ -384,8 +419,10 @@
   tag:
   image: vivil_brikker4@2x_w3.jpg
   type: background
-  width: two
-  text-color: "#c1cfdc"
+  width: four
+  mob-width:
+  order: 180
+  text-color:
   published: true
   id: "17"
   items:

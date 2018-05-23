@@ -1,7 +1,9 @@
 <section class="page-content flex-grid portfolio">
 
   {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
-  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col lazy" src="/assets/img/Loading_icon.gif" data-src="/assets/img/portfolio/{{ box.image }}" style="background-color:{{ box.color }};">
+
+  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col {{ box.mob-width }}-col-sm lazy" src="/assets/img/Loading_icon.gif" data-src="/assets/img/portfolio/{{ box.image }}" style="background-color:{{ box.color }}; ">
+
     <div class="box--size-outer">
       {% if box.type == 'quote' %}
       <div class="box--size-inner myBtn_multi">
@@ -9,7 +11,7 @@
       <a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">
       {% endif %}
         <p class="tag" style="color:{{ box.text-color }};">{{ box.tag }}</p>
-        <div class="box--text-container" style="">
+        <div class="box--text-container" style="color:{{ box.text-color }};">
           <p class="box-title">{{ box.title }}</p>
           <p class="box-description">{{ box.description }}</p>
         </div>

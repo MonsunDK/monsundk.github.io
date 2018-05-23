@@ -22,13 +22,3 @@ Monsun kan også udarbejde kampagner og kommunikationsstrategier på flere platf
 Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fra professionelle og demokratiske principper.
 
 Vi samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder og er aktive i Erhvervsdemokratisk tænketank.
-
-<br>
-
---
-
-{% include image.html
-  img="/assets/img/loh_web@2x.jpg"
-  title="title for image"
-  caption="caption for image"
-%}

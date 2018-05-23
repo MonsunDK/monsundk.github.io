@@ -6433,16 +6433,16 @@ article.post {
     text-transform: uppercase;
     letter-spacing: .065em; }
   article.post .post-title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 4rem;
     margin-top: 3rem;
     letter-spacing: -0em;
     margin-left: -1px;
-    line-height: 1.4;
+    line-height: 1.5;
     text-shadow: none; }
     article.post .post-title > span {
-      background-color: transparent; }
+      background-color: #e3e3e3; }
   article.post .post-manchet {
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -6687,6 +6687,16 @@ picture {
 
   .sixth-col {
     flex: 0 0 25%; } }
+@media only screen and (max-width: 768px) {
+  .one-col-sm {
+    flex: 0 0 25%; }
+    .one-col-sm .box--size-outer:before {
+      padding-top: 200%; }
+
+  .two-col-sm {
+    flex: 0 0 50%; }
+    .two-col-sm .box--size-outer:before {
+      padding-top: 100%; } }
 .box,
 .box--area,
 .box--background,
@@ -6761,11 +6771,12 @@ picture {
     line-height: 6vw;
     letter-spacing: normal;
     text-transform: none;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-weight: 900; }
     @media only screen and (min-width: 768px) {
       .box--quote .box--text-container .box-title {
-        font-size: 3vw;
-        line-height: 3.7vw; } }
+        font-size: 4vw;
+        line-height: 5vw; } }
 
 a.myBtn_multi {
   cursor: pointer;
@@ -6956,8 +6967,12 @@ form {
   color: #8c8c8c; }
 
 .mycontactform {
-  max-width: 500px;
-  margin: 0px 0; }
+  margin: 0px 0 5rem; }
+
+.address-field {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.35; }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {

@@ -730,17 +730,17 @@ article.post {
   }
 
   .post-title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 4rem;
     margin-top: 3rem;
     letter-spacing: -0em;
     margin-left: -1px;
-    line-height: 1.4;
+    line-height: 1.5;
     text-shadow: none;
 
     > span {
-      background-color: transparent;
+      background-color: darken($body-bg, 5%);
     }
   }
 
@@ -963,7 +963,6 @@ picture {
 
 .four-col {
   flex: 0 0 100%;
-
   .box--size-outer {
     &:before {
       padding-top: (3 / 8) * 100%;
@@ -1020,6 +1019,30 @@ picture {
   .sixth-col {
     flex: 0 0 25%;
   }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .one-col-sm {
+    flex: 0 0 25%;
+
+    .box--size-outer {
+      &:before {
+        padding-top: (4 / 2) * 100%;
+      }
+    }
+  }
+
+  .two-col-sm {
+    flex: 0 0 50%;
+
+    .box--size-outer {
+      &:before {
+        padding-top: (2 / 2) * 100%;
+      }
+    }
+  }
+
+
 }
 
 // Portfolio Box
@@ -1093,15 +1116,23 @@ picture {
       letter-spacing: normal;
       text-transform: none;
       margin-bottom: 20px;
+      font-weight: 900;
 
       @media only screen and (min-width: $screen-sm) {
-        font-size: 3vw;
-        line-height: 3.7vw;
+        font-size: 4vw;
+        line-height: 5vw;
       }
     }
   }
 }
 
+.box--media {
+  a.myBtn_multi {
+    &:after {
+
+    }
+  }
+}
 
 
 
@@ -1378,8 +1409,14 @@ form {
 }
 
 .mycontactform {
-  max-width: 500px;
-  margin: 0px 0;
+  margin: 0px 0 5rem;
+}
+
+.address-field {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.35;
+
 }
 
 
