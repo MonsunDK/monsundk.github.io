@@ -27,7 +27,7 @@
   width: one
   mob-width: two
   order: 30
-  text-color:
+  text-color: white
   published: true
   id: "02"
   items:
@@ -75,9 +75,9 @@
   image: portraits/portraits_cover@2x_w4.jpg
   type: background
   width: four
-  mob-width:
+  mob-width: two
   order: 10
-  text-color:
+  text-color: white
   published: true
   id: "01b"
   items:
@@ -159,9 +159,9 @@
   image: vildeliv_video@2x.jpg
   type: media
   width: two
-  mob-width:
+  mob-width: two
   order: 50
-  text-color:
+  text-color: white
   published: true
   id: "04"
   items:
@@ -177,7 +177,7 @@
   width: three
   mob-width:
   order: 60
-  text-color:
+  text-color: white
   published: true
   id: "05"
   items:
@@ -191,11 +191,42 @@
       description: Portrætter af kandidater i København.
       image: sf_portrætter3@2x_w3.jpg
 
-- title: NOAH
-  description: Website + Foldere
+- title: PsykInfo
+  description: Plakater & flyers
+  tag:
+  type: background
+  image: plakat_breakthesilence@2x_w2.jpg
+  width: one
+  mob-width: two
+  order: 40
+  text-color:
+  published: true
+  id: "03"
+  items:
+    - title: PsykInfo - Region Hovedstaden
+      description: Plakater og flyers - Break the silence.
+      image: plakat_breakthesilence@2x_w2.jpg
+
+
+
+- title: Skal du have løst en opgave så ring på 35397331
+  description: info@monsun.dk
+  tag:
+  type: "quote"
+  width: two
+  mob-width: two
+  order: 70
+  color: "#1B2631"
+  text-color: GOLD
+  published: true
+  id: "06"
+
+
+- title: NOAH Materialer
+  description: Pjece + Folder
   image: noah_cover@2x_w2.jpg
   type: background
-  width: one
+  width: two
   mob-width:
   order: 90
   text-color:
@@ -221,44 +252,13 @@
       description: Program Zig-Zag folder
       image: noah_zigzag@2x_w3.jpg
 
-- title: Skal du have løst en opgave så ring på 35397331
-  description: info@monsun.dk
-  tag:
-  type: "quote"
-  width: two
-  mob-width: two
-  order: 70
-  color: "#1B2631"
-  text-color: GOLD
-  published: true
-  id: "06"
-
-
-
-- title: PsykInfo
-  description: Plakater & flyers
-  tag:
-  type: background
-  image: plakat_breakthesilence@2x_w2.jpg
-  width: two
-  mob-width: two
-  order: 40
-  text-color:
-  published: true
-  id: "03"
-  items:
-    - title: PsykInfo - Region Hovedstaden
-      description: Plakater og flyers - Break the silence.
-      image: plakat_breakthesilence@2x_w2.jpg
-
-
 - title: WeShelter
   description:
   tag:
   image: weshelter@2x_w3.jpg
   type: background
   width: one
-  mob-width:
+  mob-width: two
   order: 110
   text-color:
   published: true
@@ -276,18 +276,33 @@
 
 - title: 3F Kastrup
   description: Medlemsbladet Avisen
-  image: 3f_avis@2x_w3.jpg
+  image: 3f_avis_forside@2x.jpg
   type: background
-  width: three
-  mob-width:
+  width: one
+  mob-width: two
   order: 100
-  text-color:
+  text-color: white
   published: true
   id: "09"
   items:
     - title: 3F Kastrup
       description: Design –og strukturudvikling for medlemsbladet Avisen
       image: 3f_avis@2x_w3.jpg
+
+- title: NOAH.dk
+  description:
+  image: noahdk@2x_w3.jpg
+  type: background
+  width: two
+  mob-width:
+  order: 120
+  text-color:
+  published: true
+  id: "11"
+  items:
+    - title: spisornli.nu
+      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
+      image: spisornli_noah@2x_w4.jpg
 
 
 - title: NOAH
@@ -312,7 +327,7 @@
   image: studenterraadet_illu1@2x_w2.jpg
   type: background
   width: one
-  mob-width:
+  mob-width: two
   order: 130
   text-color:
   published: true
@@ -362,7 +377,7 @@
   width: one
   mob-width: two
   order: 150
-  text-color:
+  text-color: white
   published: true
   id: "14"
   items:
@@ -405,7 +420,7 @@
   width: two
   mob-width: two
   order: 170
-  text-color:
+  text-color: white
   published: true
   id: "16"
   items:
@@ -425,9 +440,9 @@
   image: vivil_brikker4@2x_w3.jpg
   type: background
   width: four
-  mob-width:
+  mob-width: two
   order: 180
-  text-color:
+  text-color: white
   published: true
   id: "17"
   items:

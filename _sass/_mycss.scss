@@ -197,7 +197,7 @@ img {
     right:0;
   }
   .navbar-brand {
-    width: 100px;
+    width: 140px;
     display: inline-block;
     img {
       position: relative;
@@ -1081,8 +1081,8 @@ picture {
   left: 25px;
   right: 25px;
   margin: 0;
-  color: white;
   text-shadow:none;
+  color: $text-color;
 }
 
 .box-title {
@@ -1140,10 +1140,15 @@ picture {
 
 a.myBtn_multi {
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   background-color: rgba(black, 0);
   border: 1px solid rgba(black, 0);
   margin: 0px;
+
+  .box-description {
+    height: 0;
+    overflow: hidden;
+  }
 
   &:hover {
     opacity: 1;
@@ -1151,11 +1156,12 @@ a.myBtn_multi {
     border: 1px solid rgba(black, 0);
 
     .box--text-container {
-      -webkit-animation-name: bounce;
-      animation-name: bounce;
+      color: white !important;
 
-      -webkit-animation-duration: 0.4s;
-      animation-duration: 0.4s;
+      .box-description {
+        height: 18px;
+        @include transition($fast);
+      }
 
     }
   }

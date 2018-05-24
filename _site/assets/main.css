@@ -5955,7 +5955,7 @@ img {
     left: 0;
     right: 0; }
   .site-header .navbar-brand {
-    width: 100px;
+    width: 140px;
     display: inline-block; }
     .site-header .navbar-brand img {
       position: relative;
@@ -6743,8 +6743,8 @@ picture {
   left: 25px;
   right: 25px;
   margin: 0;
-  color: white;
-  text-shadow: none; }
+  text-shadow: none;
+  color: #333333; }
 
 .box-title {
   margin: 0 0 1px 0;
@@ -6780,19 +6780,25 @@ picture {
 
 a.myBtn_multi {
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
   margin: 0px; }
+  a.myBtn_multi .box-description {
+    height: 0;
+    overflow: hidden; }
   a.myBtn_multi:hover {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0); }
     a.myBtn_multi:hover .box--text-container {
-      -webkit-animation-name: bounce;
-      animation-name: bounce;
-      -webkit-animation-duration: 0.4s;
-      animation-duration: 0.4s; }
+      color: white !important; }
+      a.myBtn_multi:hover .box--text-container .box-description {
+        height: 18px;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        transition: all 0.1s ease; }
 
 .modal {
   display: none;

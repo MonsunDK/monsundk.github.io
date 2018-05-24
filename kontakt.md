@@ -10,10 +10,7 @@ permalink: /kontakt/
 image:
 iframe:
 ---
-
-
 <div class="address-field">
-
     <p>{{ site.title | escape }}<br>
     {% if site.address %}
     {{ site.address | escape }}<br>{{ site.address2 | escape }}<br>
@@ -25,6 +22,7 @@ iframe:
     {{ site.phone }}
     {% endif %}</p>
 </div>
+
 <div style="overflow:hidden;margin:40px 0px -60px;"><iframe class="custom-google-map lazy" style="position:relative; top:-50px; border:none;" src="https://www.google.com/maps/d/embed?mid=1SNiSN10GqAzlEqqBoWFGUHrZU_U" width="100%" height="350"></iframe></div>
 <hr>
 

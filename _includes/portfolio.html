@@ -13,7 +13,9 @@
         <p class="tag" style="color:{{ box.text-color }};">{{ box.tag }}</p>
         <div class="box--text-container" style="color:{{ box.text-color }};">
           <p class="box-title">{{ box.title }}</p>
+          {% if box.description %}
           <p class="box-description">{{ box.description }}</p>
+          {% endif %}
         </div>
       {% if box.type == 'quote' %}
       </div>
