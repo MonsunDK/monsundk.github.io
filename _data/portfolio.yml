@@ -93,7 +93,7 @@
     - title: Michael Falch
       description: "Foto: Morten Rode"
       image: portraits/Michael_Falch_12.jpg
-    - title: Indsæt Navne
+    - title: Jens Ege, formand Danske Vetaraner (tv). Jesper Langberg, skuespiller & Kristina Langberg, operasanger (th)
       description: "Foto: Morten Rode"
       image: portraits/morten-foto@2x_w2.jpg
     - title:
@@ -233,9 +233,6 @@
   published: true
   id: "08"
   items:
-    - title: NOAH, Friends of the Earth
-      description: Drupal 8 Website
-      image: noah_website@2x_w3.jpg
     - title:
       description:
       image: noah_folder1@2x_w3.jpg
@@ -289,8 +286,8 @@
       description: Design –og strukturudvikling for medlemsbladet Avisen
       image: 3f_avis@2x_w3.jpg
 
-- title: NOAH.dk
-  description:
+- title: noah.dk
+  description: Drupal 8 website
   image: noahdk@2x_w3.jpg
   type: background
   width: two
@@ -300,13 +297,13 @@
   published: true
   id: "11"
   items:
-    - title: spisornli.nu
-      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
-      image: spisornli_noah@2x_w4.jpg
+    - title: noah.dk
+      description: Drupal 8 website
+      image: noahdk@2x_w3.jpg
 
 
-- title: NOAH
-  description: Online undervisningsmaterialer
+- title: NOAH - spisornli.nu
+  description: online-undervisningsmaterialer
   image: spisornli_noah@2x_w4.jpg
   type: background
   width: two
@@ -434,7 +431,7 @@
       description: Kirkemagasin til Vor Frue Sogn. Layout.
       image: indreby3@2x_w3.jpg
 
-- title: ViVil - Københavns Kommune
+- title: ViVil - KBH Kommune
   description: Psykisk syge i arbejde
   tag:
   image: vivil_brikker4@2x_w3.jpg

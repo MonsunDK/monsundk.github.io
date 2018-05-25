@@ -1083,24 +1083,39 @@ picture {
   margin: 0;
   text-shadow:none;
   color: $text-color;
+
+  .box-title {
+    margin: 0 0 1px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .box-description {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 }
 
-.box-title {
-  margin: 0 0 1px 0;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.075em;
-  font-size: 12px;
-  line-height: 1.45;
+
+
+@media only screen and (max-width: $screen-sm) {
+  .box--text-container {
+    bottom: 8px;
+    left: 13px;
+    right: 13px;
+
+    .box-title {
+      font-size: 10px;
+    }
+  }
 }
 
-.tag,
-.box-description {
-  margin: 0;
-  font-size: 10px;
-  font-weight: 400;
 
-}
 
 .box--quote {
   .box--text-container {
@@ -1145,9 +1160,18 @@ a.myBtn_multi {
   border: 1px solid rgba(black, 0);
   margin: 0px;
 
+
+  .box--text-container {
+    @include transition($medium);
+  }
+
   .box-description {
     height: 0;
     overflow: hidden;
+    -webkit-transition: height $slow ease;
+    -moz-transition: height $slow ease;
+    -o-transition: height $slow ease;
+    transition: height $slow ease;
   }
 
   &:hover {
@@ -1157,15 +1181,20 @@ a.myBtn_multi {
 
     .box--text-container {
       color: white !important;
+      @include transition($medium);
 
       .box-description {
         height: 18px;
-        @include transition($fast);
-      }
 
+        -webkit-transition: height $medium ease;
+        -moz-transition: height $medium ease;
+        -o-transition: height $medium ease;
+        transition: height $medium ease;
+      }
     }
   }
 }
+
 
 // Container that the modal scrolls within
 .modal {
@@ -1220,7 +1249,8 @@ a.myBtn_multi {
   padding: 0 50px 15px 0;
   margin: 0 0 20px 0;
   border-bottom: 1px solid $border-color;
-
+  height: 65px;
+  
   @media only screen and (min-width: $screen-sm) {
     padding: 0 0 15px 0;
   }

@@ -35,8 +35,9 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
             <i data-feather="x"></i>
           </button>
+
           <h1 class="modal-title">{{ box.title }}</h1>
-          <p class="modal-description">/ {{ box.description }}</p>
+          <p class="modal-description">{{ box.description }}</p>
         </div>
         <div class="modal-body" id="yt-player">
           {% for item in box.items %}

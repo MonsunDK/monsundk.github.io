@@ -6745,21 +6745,26 @@ picture {
   margin: 0;
   text-shadow: none;
   color: #333333; }
+  .box--text-container .box-title {
+    margin: 0 0 1px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    line-height: 1.3; }
+  .box--text-container .box-description {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5; }
 
-.box-title {
-  margin: 0 0 1px 0;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.075em;
-  font-size: 12px;
-  line-height: 1.45; }
-
-.tag,
-.box-description {
-  margin: 0;
-  font-size: 10px;
-  font-weight: 400; }
-
+@media only screen and (max-width: 768px) {
+  .box--text-container {
+    bottom: 8px;
+    left: 13px;
+    right: 13px; }
+    .box--text-container .box-title {
+      font-size: 10px; } }
 .box--quote .box--text-container {
   top: 50%;
   bottom: auto;
@@ -6784,21 +6789,34 @@ a.myBtn_multi {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
   margin: 0px; }
+  a.myBtn_multi .box--text-container {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
   a.myBtn_multi .box-description {
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease; }
   a.myBtn_multi:hover {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0); }
     a.myBtn_multi:hover .box--text-container {
-      color: white !important; }
+      color: white !important;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
       a.myBtn_multi:hover .box--text-container .box-description {
         height: 18px;
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        transition: all 0.1s ease; }
+        -webkit-transition: height 0.5s ease;
+        -moz-transition: height 0.5s ease;
+        -o-transition: height 0.5s ease;
+        transition: height 0.5s ease; }
 
 .modal {
   display: none;
@@ -6840,7 +6858,8 @@ a.myBtn_multi {
 .modal-header {
   padding: 0 50px 15px 0;
   margin: 0 0 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  height: 65px; }
   @media only screen and (min-width: 768px) {
     .modal-header {
       padding: 0 0 15px 0; } }
