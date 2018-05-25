@@ -115,17 +115,17 @@ img {
       height: 30px;
       width: auto;
       top:10px;
-      -webkit-animation: bounce 1s 3s 4 alternate;
-      -moz-animation: bounce 1s 3s 4 alternate;
-      -o-animation: bounce 1s 3s 4 alternate;
-      animation: bounce 1s 3s 4 alternate;
+      -webkit-animation: bounce 1s 1s 4 alternate;
+      -moz-animation: bounce 1s 1s 4 alternate;
+      -o-animation: bounce 1s 1s 4 alternate;
+      animation: bounce 1s 1s 4 alternate;
     }
 
     &:hover, &:focus {
       text-decoration: none;
       svg {
         @include transition($fast);
-        color: rgba($text-color, 1);
+        color: rgba($brand-primary, 1);
       }
     }
   }
@@ -152,39 +152,14 @@ img {
 
 // Site header
 
-.site-header {
-  position: relative;
-  z-index: 99;
-  width: 100%;
-  @media only screen and (min-width: $screen-sm) {}
-
-  .header-box {
-    position: relative;
-
-    .header-box--inner {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: calc(100% - 20px);
-    }
-  }
-
-  .header-box--nav {
-    .header-box--inner {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      left: auto;
-    }
-  }
-}
-
 // Header Logo
 
 .site-header {
   padding: 0;
   position: relative;
   top:0;
+  z-index: 99;
+  width: 100%;
 
   &:after {
     content: '';
@@ -196,6 +171,8 @@ img {
     left:0;
     right:0;
   }
+
+
   .navbar-brand {
     width: 140px;
     display: inline-block;
@@ -214,6 +191,9 @@ img {
   padding: 20px;
 }
 
+.navbar-header {
+  padding: 0 20px;
+}
 
 .navbar-top {
   margin: 0;
@@ -229,18 +209,16 @@ img {
     position: relative;
     font-size: 16px;
     text-decoration: none;
-    line-height: 48px;
+    line-height: 50px;
     height: auto;
     padding: 0 10px;
     font-weight: 400;
     color: $gray;
-    background-color: $body-bg;
 
     @media (min-width: $grid-float-breakpoint) {
       font-size: 12px;
       height: 50px;
       background-color: transparent;
-
     }
 
     .feather {
@@ -293,205 +271,29 @@ img {
 }
 
 .navbar-default .navbar-collapse {
-  background-color: transparent;
   box-shadow: none;
   border-top: none;
 
   .navbar-nav {
-    padding: 25px 30px 30px;
+    padding: 0px 0px 0px;
+    background-color: white;
+
+    > li {
+      padding: 0 20px;
+      border-top: 1px solid #eee;
+    }
 
     @media (min-width: $grid-float-breakpoint) {
       padding: 0 20px;
-    }
-
-    > li > a {
-      &:hover, &:focus {
-        background-color: #eee;
+      background-color: transparent;
+      > li {
+        padding: 0;
+        border: none;
       }
     }
   }
-
-  @media (max-width: $grid-float-breakpoint) {
-    box-shadow: 0 0 10px rgba(black, 0.1);
-    border-top: 1px solid $border-color;
-  }
 }
 
-.navbar-header {
-  padding: 0 20px;
-  background-color: $body-bg;
-}
-
-/*
-
-.navbar-nav,
-.navbar-nav .dropdown-menu,
-.navbar-nav .dropdown {
-  display: flex;
-  flex-direction: row;
-  text-align: right;
-
-  > li {
-    padding: 1px 0 1px 18px;
-    flex: 0 0 auto;
-    float: none;
-  }
-
-  > li > a {
-    position: relative;
-    text-decoration: none;
-    padding: 0px 3px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    line-height: 1.15;
-    float: right;
-
-    background-color: $gray-dark  !important;
-    color: #f0f0f0  !important;
-
-    .feather {
-      height: 8px;
-      width: 8px;
-      position: absolute;
-      left: -18px;
-      top: 2px;
-      opacity: 0;
-      -webkit-transition: all 0.2s ease-out;
-      -moz-transition: all 0.2s ease-out;
-      -o-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out;
-      color: $brand-primary;
-    }
-  }
-
-  > li.active > a,
-  > li > a:focus,
-  > li > a:hover {
-    background-color: $brand-primary !important;
-    color: #f0f0f0 !important;
-    .feather {
-      opacity: 1;
-      color: crimson;
-      left: -13px;
-    }
-  }
-}
-
-.navbar .navbar-collapse  {
-  box-shadow: none;
-}
-
-.navbar-nav .dropdown {
-  flex-direction: column;
-  align-items: flex-end;
-
-  .dropdown-toggle {
-    flex: 0 0 auto;
-  }
-}
-
-.navbar-nav > li > .dropdown-menu {
-    display: flex ;
-    position: absolute ;
-    top:100%;
-    left: auto;
-    right: 0;
-    min-width: 160px;
-    padding: 0;
-    margin: 10px 0 0;
-    font-size: 10px;
-    text-align: right;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    background-clip: padding-box;
-    flex-direction: column;
-    overflow: hidden;
-    max-height: 1px;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-
-    > li > a {
-        font-weight: 500;
-        .feather {
-          top: 2px;
-        }
-    }
-}
-
-.navbar-nav .open .dropdown-menu {
-    max-height: 150px;
-    margin: 10px 0 0;
-}
-
-
-@media only screen and (min-width: $screen-sm) {}
-
-.navbar .navbar-toggle {
-    flex: 0 0 auto;
-    border-color: rgba(0,0,0, 0);
-    margin: -20px -20px 0 0;
-    border-radius: 0;
-    position: relative;
-    float: right;
-    padding: 19px 20px 19px 20px;
-    background-color: rgba($body-bg, 0);
-    background-image: none;
-    border: 1px solid transparent;
-  }
-
-.navbar .navbar-toggle .icon-bar {
-    background-color: rgba($gray-dark, 1);
-}
-
-
-
-.navbar .navbar-toggle {
-  flex-direction: column;
-  align-items: flex-end;
-    .icon-bar {
-      flex: 1 1 auto;
-        display: block;
-        height: 4px;
-        width: 4px;
-        border-radius: 2px;
-    }
-
-    .icon-bar1 {
-      -webkit-transition: all .1s ease-out;
-      -moz-transition: all .1s ease-out;
-      -o-transition: all .1s ease-out;
-      transition: all .1s ease-out;
-    }
-    .icon-bar2 {
-      -webkit-transition: all .2s ease-out;
-      -moz-transition: all .2s ease-out;
-      -o-transition: all .2s ease-out;
-      transition: all .2s ease-out;
-    }
-    .icon-bar3 {
-      -webkit-transition: all .3s ease-out;
-      -moz-transition: all .3s ease-out;
-      -o-transition: all .3s ease-out;
-      transition: all .3s ease-out;
-    }
-}
-
-.navbar .navbar-toggle:hover,
-.navbar .navbar-toggle:focus {
-    background-color: rgba($body-bg, 0);
-    .icon-bar {
-      background-color: rgba($brand-primary, 1);
-      width: 30px;
-    }
-}
-
-*/
 
 // Nav Main
 
@@ -502,12 +304,14 @@ img {
   }
 
   .navbar-nav {
+    -webkit-flex-direction: column;
     flex-direction: column;
     position: relative;
     right: 0px;
     top:-2px;
 
     .dropdown {
+      -webkit-flex-direction: column;
       flex-direction: column;
     }
 
@@ -516,188 +320,6 @@ img {
     }
   }
 }
-
-
-// Nav Sidebar
-
-/*
-.navbar-sidebar {
-  .navbar-collapse {
-    position: relative;
-  }
-  .navbar-nav {
-    position: relative;
-    right:auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    @media (min-width: $grid-float-breakpoint) {
-      position: absolute;
-      right:0;
-    }
-
-    > li {
-      flex: 0 0 auto;
-    }
-
-    > li > a {
-      text-decoration: none;
-      color: inherit;
-      position: relative;
-      padding: 0;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      line-height: 1.35;
-
-      .feather {
-        height: 8px;
-        width: 8px;
-        position: absolute;
-        left: -25px;
-        top: 3px;
-        opacity: 0;
-        -webkit-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-        transition: all 0.2s ease-out;
-      }
-    }
-
-    > li.active > a,
-    > li > a:focus,
-    > li > a:hover {
-      background-color: transparent;
-      .feather {
-        opacity: 1;
-        color: crimson;
-        left: -15px;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-.main-nav {
-  margin-top: 13px;
-  &:before {
-    content: 'main_nav';
-    position: absolute;
-    top: 0px;
-    right: 1px;
-    font-size: 6px;
-    font-weight: 400;
-    opacity: .75;
-  }
-}
-
-.main-nav,
-.main-nav .dropdown,
-.main-nav .dropdown-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  > li {
-    flex: 0 0 auto;
-  }
-
-  > li > a {
-    text-decoration: none;
-    color: inherit;
-    position: relative;
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    line-height: 1.35;
-
-
-    .feather {
-      height: 8px;
-      width: 8px;
-      position: absolute;
-      left: -25px;
-      top: 3px;
-      opacity: 0;
-      -webkit-transition: all 0.2s ease-out;
-      -moz-transition: all 0.2s ease-out;
-      -o-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out;
-    }
-  }
-
-  > li.dropdown {
-    .dropdown-toggle {
-      .feather {
-        top:3px;
-        left: -11px;
-      }
-    }
-
-    ul.dropdown-menu {
-      display: flex;
-      position: relative;
-      border-radius: 0;
-      border: none;
-      background-color: transparent;
-      box-shadow: none;
-      padding: 0;
-      margin: 0;
-      opacity: 0;
-      -webkit-transition: all .5s ease-out;
-      -moz-transition: all .5s ease-out;
-      -o-transition: all .5s ease-out;
-      transition: all .5s ease-out;
-
-      &:after,
-      &:before {
-        content: '';
-        height: 1px;
-        width: 20px;
-        background-color: rgba(0,0,0, 0.1);
-        margin: 6px 0;
-      }
-
-      > li > a {
-        font-size: 11px;
-        font-weight: 500;
-        line-height: 1.5;
-      }
-
-      > li.divider {
-        margin: 5px 0;
-        background-color: rgba(0,0,0, 0.1);
-        flex: 0 0 1px;
-        align-self: stretch;
-      }
-    }
-  }
-
-  > li.active > a,
-  > li > a:focus,
-  > li > a:hover {
-    background-color: transparent;
-    .feather {
-      opacity: 1;
-      color: crimson;
-      left: -15px;
-    }
-  }
-  > li.active > a {}
-}
-
-
-.main-nav .dropdown.open .dropdown-menu {
-  opacity: 1;
-}
-
-*/
 
 
 .iframe-wrap {
@@ -712,7 +334,6 @@ article.post {
   max-width: 100%;
   padding: 0px 20px;
   position: relative;
-  z-index: 99;
 
   @media only screen and (min-width: $screen-sm) {
     max-width: 50%;
@@ -772,20 +393,7 @@ article.post {
 
 }
 
-/*
-.post-label {
-  font-weight: 700;
-  font-size: 10px;
-  text-shadow: none;
-  color: $body-bg;
-  letter-spacing: 0.05em;
-  display: inline-block;
-  padding: 30px 9px 4px;
-  background-color: rgba($gray-dark, 1);
-  text-transform: uppercase;
-  position: relative;
 
-}*/
 
 .typewrite {
   padding-right: 1px;
@@ -832,16 +440,20 @@ article.post {
 // Site Footer
 
 .site-footer {
-  padding: 100px 0 10px;
+  padding: 100px 0 25px;
   font-size: 14px;
   .footer-col-wrapper {
+    -webkit-display: flex;
     display: flex;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 
     .footer-col {
+      -webkit-flex: 1 1 200px;
       flex: 1 1 200px;
-      margin: 0 20px;
+      margin: 0 25px;
     }
   }
 
@@ -849,17 +461,40 @@ article.post {
 
 ul.some_list {
   list-style: none;
+  -webkit-display: flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
-  padding: 0;
+  -webkit-justify-content: flex-end;
   justify-content: flex-end;
+
+  padding: 0 10px;
   width: 100%;
   overflow: hidden;
 
   li {
-    flex: 0 0 30px;
-    margin-right: 5px;
-    opacity: 0.35;
+    margin-left: 5px;
+
+    .some_icon {
+      background-color: $brand-primary;
+      height: 36px;
+      width: 36px;
+      border-radius: 100px;
+      display: inline-block;
+      text-align: center;
+      line-height: 38px;
+
+      &:hover,
+      &:focus {
+        background-color: darken($brand-primary, 10%);
+      }
+    }
+
+    .svg-inline--fa {
+      font-size: 14px;
+      color: $body-bg;
+
+    }
   }
 }
 
@@ -885,11 +520,14 @@ picture {
 
 .flex-item,
 .flex-grid {
+  -webkit-display: flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .flex-item--center {
+  -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
   align-self: center;
   text-align: center;
@@ -897,6 +535,7 @@ picture {
 }
 
 .box--area {
+  -webkit-flex: 0 0;
   flex: 0 0;
 }
 
@@ -932,6 +571,7 @@ picture {
 }
 
 .one-col {
+  -webkit-flex: 0 0 25%;
   flex: 0 0 25%;
 
   .box--size-outer {
@@ -942,6 +582,7 @@ picture {
 }
 
 .two-col {
+  -webkit-flex: 0 0 50%;
   flex: 0 0 50%;
 
   .box--size-outer {
@@ -952,6 +593,7 @@ picture {
 }
 
 .three-col {
+  -webkit-flex: 0 0 75%;
   flex: 0 0 75%;
 
   .box--size-outer {
@@ -962,6 +604,7 @@ picture {
 }
 
 .four-col {
+  -webkit-flex: 0 0 100%;
   flex: 0 0 100%;
   .box--size-outer {
     &:before {
@@ -971,6 +614,7 @@ picture {
 }
 
 .sixth-col {
+  -webkit-flex: 0 0 16.666%;
   flex: 0 0 16.666%;
   .box--size-outer {
     &:before {
@@ -1008,6 +652,7 @@ picture {
   .one-col,
   .three-col,
   .two-col {
+    -webkit-flex: 0 0 100%;
     flex: 0 0 100%;
 
     .box--size-outer {
@@ -1017,12 +662,14 @@ picture {
     }
   }
   .sixth-col {
+    -webkit-flex: 0 0 25%;
     flex: 0 0 25%;
   }
 }
 
 @media only screen and (max-width: $screen-sm) {
   .one-col-sm {
+    -webkit-flex: 0 0 25%;
     flex: 0 0 25%;
 
     .box--size-outer {
@@ -1033,6 +680,7 @@ picture {
   }
 
   .two-col-sm {
+    -webkit-flex: 0 0 50%;
     flex: 0 0 50%;
 
     .box--size-outer {
@@ -1250,7 +898,7 @@ a.myBtn_multi {
   margin: 0 0 20px 0;
   border-bottom: 1px solid $border-color;
   height: 65px;
-  
+
   @media only screen and (min-width: $screen-sm) {
     padding: 0 0 15px 0;
   }
@@ -1339,9 +987,10 @@ button.close {
     cursor: pointer;
     color: $text-color;
 
-    svg {
+    .svg-inline--fa {
       height: 50px;
       width: auto;
+      font-size: 20px;
     }
   }
 
@@ -1420,11 +1069,14 @@ form {
 
 
 .form-inline {
+  -webkit-display: flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   margin-bottom: 15px;
 
   .form-group {
+    -webkit-flex: 1;
     flex: 1;
     max-width: 49%;
 
@@ -1507,9 +1159,11 @@ form {
 
 @keyframes bounce {
 from {
-    transform: translateY(-20px);
+    transform: translateY(0px);
+
   }
 to {
-    transform: translateY(0px);
+    transform: translateY(-10px);
+    color: $brand-primary;
   }
 }

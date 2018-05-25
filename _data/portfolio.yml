@@ -6,7 +6,7 @@
 
 
 - title: LO Hovedstaden
-  description: Drupal 8 website
+  description: Drupal 8 hjemmeside
   image: loh_web@2x_w3.jpg
   type: background
   width: three
@@ -16,8 +16,8 @@
   published: true
   id: "01"
   items:
-    - title: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 49 fagforeninger for faglærte og ufaglærte."
-      description: "Drupal 8 hjemmeside  for LO Hovedstaden er designet og udviklet i CMS Drupal 8 som Responsive. Dvs at den er tilgængelig på alle platforme – mobil, tablet mm."
+    - title: "Drupal 8 hjemmeside til LO Hovedstaden"
+      description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 49 fagforeninger for faglærte og ufaglærte."
       image: loh_web@2x_w3.jpg
 
 - title: Logoer
@@ -125,7 +125,7 @@
       image: portraits/manu_sareen_mk.jpg
     - title: Manu Sareen
       description: "Foto: Mark Knudsen"
-      image: portraits/manu_sareen_2_mk.jpg
+      image: portraits/manu_sareen_2_mk@2x.jpg
     - title: Thomas Blachman (tv), Malika Graff (th)
       description: "Foto: Morten Rode"
       image: portraits/MalikaGraff_Blachman@2x_w2.jpg
@@ -287,7 +287,7 @@
       image: 3f_avis@2x_w3.jpg
 
 - title: noah.dk
-  description: Drupal 8 website
+  description: Drupal 8 hjemmeside
   image: noahdk@2x_w3.jpg
   type: background
   width: two
@@ -303,7 +303,7 @@
 
 
 - title: NOAH - spisornli.nu
-  description: online-undervisningsmaterialer
+  description: online-undervisningsmateriale til NOAH
   image: spisornli_noah@2x_w4.jpg
   type: background
   width: two
