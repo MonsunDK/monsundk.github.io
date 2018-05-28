@@ -3,7 +3,7 @@ layout: page
 label: >
   Om Monsun
 title: >
-  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere. Sammen designer vi dit budskab så det er smukt og til at forstå
+  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere, der sammen designer dit budskab så det er smukt og til at forstå
 manchet:
 permalink: /om/
 image:
