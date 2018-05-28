@@ -3,22 +3,23 @@ layout: page
 label: >
   Om Monsun
 title: >
-  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og IT-udviklere, der er samlet om at skabe de fedeste produkter til fair priser
+  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere. Sammen designer vi dit budskab så det er smukt og til at forstå
 manchet:
 permalink: /om/
 image:
 hero: monsun_etagen.jpg
 ---
-Monsun har siden år 2000 udviklet egne teknikker for arbejdet fra ideudvikling til færdigt produkt. Vi yder skarpslebent håndværk, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab, og vi løser specialopgaver med journalistik, fotos, video og layout af høj kvalitet.
+Monsun har siden år 2000 arbejdet målrettet fra kortlægning af kundens behov til ideudvikling og færdigt produkt. Fra den store kampagne eller branding til grafisk design af magasiner. Fra de illustrative fotos, reportager og til det personlige portræt. Ingen opgave er for stor eller for lille. Monsun udarbejder også kampagner og kommunikationsstrategier til organisationer og foreninger.
 
-Opgaver løses altid i tæt samarbejde med kunden. Vi er eksperter i maximalt udbytte inden for givne budgetrammer. Ingen opgave er for stor eller for lille.
+Vi yder skarpslebent håndværk på tværs af fagligheder, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab.
+Monsun løser opgaver med journalistik og tekstforfatning, fotos, video, grafisk design og hjemmesider.
 
-Vi deler adresse med et kooperativt trykkeri og har et netværk af eksterne specialister, blandt andet tegnere, filmfolk og web-eksperter. Vi kan derfor forestå opgaver fra ideudvikling til færdigt produkt - hvad enten det er på tryk, digitalt eller til sociale medier. Vi holder snor i hele processen.
+Til hjemmesider arbejder vi primært med open source platforme som Drupal og Wordpress, der sikre et stort udviklingsmiljø, højere sikkerhed, og I er ikke låst til Monsun hvis i ønsker nye leverandører. Mobilversion er en selvfølge. Vi yder også support efter aftale.
 
-Monsun kan også udarbejde kampagner og kommunikationsstrategier på flere platforme til organisationer og foreninger.
-Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fra professionelle og demokratiske principper.
+Opgaver løses altid i tæt samarbejde med kunden og vi er eksperter i maximalt udbytte inden for givne budgetramme. Vores kunder er mange og forskellige.
 
-Monsun kan også udarbejde kampagner og kommunikationsstrategier på flere platforme til organisationer og foreninger.
-Monsun er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fra professionelle og demokratiske principper.
+Monsun deler adresse med et kooperativt trykkeri og har et stort netværk af eksterne specialister, blandt andet tegnere, filmfolk og web-eksperter. Vi kan derfor forestå opgaver af enhver art og til alle medier og platforme – tryk, digitalt eller til sociale medier. Vi holder snor i hele processen.
 
-Vi samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder og er aktive i Erhvervsdemokratisk tænketank.
+Vi er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fra professionelle og demokratiske principper.
+
+Monsun samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder og er aktivt medlem i tænketanken Demokratisk Erhverv.
