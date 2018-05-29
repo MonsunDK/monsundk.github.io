@@ -87,7 +87,7 @@
     </div>
   </div>
   <a href="#scr-portfolio" class="section-header">
-    <span class="section-title"><i class="fas fa-chevron-down"></i></span>
+    <span class="section-title"><i class="fal fa-chevron-down"></i></span>
     <span class="v-lines">
       <span></span>
     </span>
@@ -1811,8 +1811,9 @@
 
     <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
-    
+
     <script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
+    <script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
     <script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
 
 
@@ -1820,21 +1821,18 @@
 <script>
 
 
-  $(function() {
-       $('.lazy').lazy({
-         effect: "fadeIn",
-         effectTime: 1000,
-         threshold: 500
-       });
-   });
+$(function() {
+     $('.lazy').lazy({
+       effect: "fadeIn",
+       effectTime: 500,
+       threshold: 0
+     });
+ });
 
 
   $('.modal').on("show.bs.modal", function() {
-    $('.lazy', this).Lazy({
-      bind: 'event',
-      chainable: false
+    $('.lazy', this).Lazy({ bind: 'event', chainable: false
     });
-
   });
 
 
