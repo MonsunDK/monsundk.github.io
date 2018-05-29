@@ -6358,8 +6358,12 @@ picture {
 .box--slide,
 .box--spot {
   overflow: hidden;
+  -webkit-background-size: cover;
   background-size: cover;
-  background-position: center center; }
+  -webkit-background-position: center center;
+  background-position: center center;
+  -webkit-background-repeat: no-repeat;
+  background-repeat: no-repeat; }
   .box .tag,
   .box--area .tag,
   .box--background .tag,

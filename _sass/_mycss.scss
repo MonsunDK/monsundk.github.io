@@ -706,8 +706,13 @@ picture {
 .box--slide,
 .box--spot {
   overflow: hidden;
+  -webkit-background-size: cover;
   background-size: cover;
+  -webkit-background-position: center center;
   background-position: center center;
+  -webkit-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+
   .tag {
     position: absolute;
     top: 20px;
@@ -715,7 +720,10 @@ picture {
     margin: 0;
   }
 
-  a.box--size-inner {}
+  a.box--size-inner {
+
+    
+  }
 
   a.box--size-inner:focus {
     outline: 0px solid rgba($text-color, 0);
