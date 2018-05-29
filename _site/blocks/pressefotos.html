@@ -171,13 +171,15 @@ $(function() {
      $('.lazy').lazy({
        effect: "fadeIn",
        effectTime: 500,
-       threshold: 0
+       threshold: 50
      });
  });
 
 
   $('.modal').on("show.bs.modal", function() {
-    $('.lazy', this).Lazy({ bind: 'event', chainable: false
+    $('.lazy', this).Lazy({
+      bind: 'event',
+      chainable: false
     });
   });
 
