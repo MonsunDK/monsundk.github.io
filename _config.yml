@@ -18,7 +18,7 @@ email: info@monsun.dk
 phone: +45 3539 7331
 address: Nørrebrograde 5C, 1.sal
 address2: 2200 København N
-description:
+description: "Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: monsun.dk
