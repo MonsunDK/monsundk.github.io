@@ -109,10 +109,6 @@ h5, h6 {
 
           @include ease-in;
         }
-
-        &:active {
-
-        }
       }
       .nav-link.active {
         color: $primary;
@@ -130,6 +126,7 @@ h5, h6 {
 }
 
 .gdpr-block {
+  display: none;
   .card {
     background-color: $secondary;
     border: none;
