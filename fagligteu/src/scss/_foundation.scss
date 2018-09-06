@@ -102,13 +102,20 @@ h5, h6 {
         line-height: 20px;
         @include ease-out;
 
-        &:active,
+
         &:focus,
         &:hover {
           color: $primary;
 
           @include ease-in;
         }
+
+        &:active {
+
+        }
+      }
+      .nav-link.active {
+        color: $primary;
       }
     }
   }
@@ -321,7 +328,6 @@ h5, h6 {
   border: 1px solid $border-color;
 }
 
-.list-group { }
 
 .list-group-title {
   margin-bottom: .35rem;
@@ -443,12 +449,15 @@ h5, h6 {
     display: block;
   }
 }
+
 .card-header + .list-group .list-group-item:first-child,
 .card-header + .card-body {
   padding-top: $card-spacer-y;
 }
 
-
+.nav-list .card-header + .list-group .list-group-item:first-child {
+    padding-top: 1rem;
+}
 
 .card-header .label,
 .card-header .label a {
