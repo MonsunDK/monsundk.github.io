@@ -74,6 +74,10 @@ hr {
 }
 
 
+.border-card {
+  border-color: $border-color !important;
+}
+
 // Main Nav
 
 .navbar-brand {
@@ -320,17 +324,11 @@ hr {
 }
 
 .block-list,
-.card-list {
-  background-color: $white;
-  border: 1px solid $border-color;
-}
-
+.card-list {}
 
 .list-group-title {
   margin-bottom: .35rem;
 }
-
-
 
 .list-group-info,
 .teaser-card-info {
@@ -352,12 +350,25 @@ hr {
 
 .list-group-body {
   flex:1;
+
+  .label {
+    margin-bottom: 1rem;
+  }
 }
 
 .card-title {
   margin-bottom: .25rem;
   a {
     color: $headings-color;
+  }
+}
+
+.list-group + .btn {
+  padding: .85rem;
+  border-top: 1px solid $border-color;
+
+  &:hover,
+  &:focus {
   }
 }
 
@@ -462,17 +473,29 @@ hr {
   padding-left: $card-spacer-x;
   padding-right: $card-spacer-x;
   padding-top: 1.5rem;
-
   padding-bottom:  1.2rem;
-
-  .label {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: 500;
-    display: block;
-  }
 }
+
+.label a,
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 500;
+  display: block;
+  color: $text-gray;
+}
+
+.label a {
+  @include ease-out;
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+      @include ease-in;
+    }
+}
+
+
 
 .card-header + .list-group .list-group-item:first-child,
 .card-header + .card-body {
@@ -481,20 +504,6 @@ hr {
 
 .nav-list .card-header + .list-group .list-group-item:first-child {
     padding-top: 1rem;
-}
-
-.card-header .label,
-.card-header .label a {
-  color: $text-gray;
-}
-
-.card-header .label a {
-@include ease-out;
-  &:hover {
-    text-decoration: none;
-    color: $primary;
-    @include ease-in;
-  }
 }
 
 .news,
@@ -524,9 +533,7 @@ hr {
   }
 }
 
-.page-card,
-.article-card,
-.teaser-card {
+.card {
   .card-title {
     margin-bottom: 1rem;
   }
@@ -557,9 +564,14 @@ hr {
 }
 
 
+.card-group + .card-group .card {
+  border-top: none !important;
+}
+
 // Button Sizes
 
 .btn {
+  color: inherit;
   display: inline-block;
   font-weight: $btn-font-weight;
   text-align: center;
@@ -625,8 +637,6 @@ hr {
   padding-left: 0;
   padding-right: 0;
 }
-
-.btn-light {}
 
 
 
