@@ -2,6 +2,26 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
+
+- title: Videoer om arbejdsmiljø for GIMK
+  description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
+  image: GIMK@1x_w4.jpg
+  type: media
+  width: four
+  mob-width:
+  order: 10
+  text-color: white
+  published: true
+  id: "01"
+  items:
+    - title: "Jesper, bogbinder"
+      description: ""
+      video: "https://www.youtube.com/watch?v=Ntwxrcl1rX4"
+    - title: "Søren, Aller Tryk"
+      description: ""
+      video: "https://www.youtube.com/watch?v=MXo7g0q_JYU"
+
+
 - title: LO Hovedstaden
   description: Drupal 8 hjemmeside
   image: loh_web@2x_w3.jpg
