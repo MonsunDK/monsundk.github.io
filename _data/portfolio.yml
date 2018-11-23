@@ -14,12 +14,28 @@
   published: true
   id: "01"
   items:
-    - title: "Jesper, bogbinder"
+    - title: "Jesper, Industribogbinder"
       description: ""
       video: "https://www.youtube.com/embed/Ntwxrcl1rX4"
-    - title: "Søren, Aller Tryk"
+    - title: "Søren, Arbejdsmiljørepræsentant (Aller Tryk)"
       description: ""
-      video: "https://www.youtube.com/embed/MXo7g0q_JYU"
+      video: "https://www.youtube.com/embed/JLcD24qvUjA"
+
+
+# - title: Fagligt.eu
+#  description:
+#  image: fagligteu@2x_w3.jpg
+#  type: media
+#  width: two
+#  mob-width:
+#  order: 10
+#  text-color: white
+#  published: true
+#  id: "01"
+#  items:
+#    - title: "Fagligt.eu"
+#      description: ""
+#      image: fagligteu@2x_w3.jpg
 
 
 - title: LO Hovedstaden
