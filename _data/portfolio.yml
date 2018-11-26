@@ -5,9 +5,9 @@
 
 - title: Videoer om arbejdsmiljø for GIMK
   description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
-  image: GIMK@1x_w4.jpg
+  image: GIMK@1x_w2.jpg
   type: media
-  width: four
+  width: two
   mob-width:
   order: 10
   text-color: white
@@ -17,25 +17,25 @@
     - title: "Jesper, Industribogbinder"
       description: ""
       video: "https://www.youtube.com/embed/QufqCm_-h54"
-    - title: "Søren, Arbejdsmiljørepræsentant (Aller Tryk)"
-      description: ""
+    - title: "Søren, Arbejdsmiljørepræsentant"
+      description: "Aller Tryk"
       video: "https://www.youtube.com/embed/JLcD24qvUjA"
 
 
-# - title: Fagligt.eu
-#  description:
-#  image: fagligteu@2x_w3.jpg
-#  type: media
-#  width: two
-#  mob-width:
-#  order: 10
-#  text-color: white
-#  published: true
-#  id: "01"
-#  items:
-#    - title: "Fagligt.eu"
-#      description: ""
-#      image: fagligteu@2x_w3.jpg
+- title: "Fagligt.eu er fagbevægelsens portal om EU"
+  description: "Hjemmeside i Wordpress"
+  image: fagligteu@2x_w3.jpg
+  type: media
+  width: two
+  mob-width:
+  order: 10
+  text-color: white
+  published: true
+  id: "01"
+  items:
+    - title: "Fagligt.eu"
+      description: ""
+      image: fagligteu@2x_w3.jpg
 
 
 - title: LO Hovedstaden
