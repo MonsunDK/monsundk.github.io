@@ -8,7 +8,7 @@
   type: media
   width: three
   mob-width:
-  order: 10
+  order: 01
   text-color: black
   published: true
   id: "20"
@@ -74,7 +74,7 @@
   type: background
   width: one
   mob-width: two
-  order: 30
+  order: 02
   text-color: white
   published: true
   id: "02"
