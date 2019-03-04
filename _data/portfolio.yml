@@ -1,6 +1,22 @@
 # Color: htmlcolorcodes.com
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
+- title: Fotos Fagblade
+  description: ""
+  image: fagblade@2x_w3.jpg
+  type: media
+  width: three
+  mob-width:
+  order: 01
+  text-color: white
+  published: true
+  id: "01"
+  items:
+    - title: "Fotos Fagblade"
+      description: ""
+      image: fagblade@2x_w3.jpg
+
+
 
 - title: Klimastemmer.dk for NOAH
   description: "Miljø EU 2019 Valgshjemmeside"
@@ -11,7 +27,7 @@
   order: 01
   text-color: black
   published: true
-  id: "20"
+  id: "02"
   items:
     - title: "Klimastemmer.dk"
       description: ""
@@ -26,7 +42,7 @@
   order: 02
   text-color: white
   published: true
-  id: "02"
+  id: "03"
   items:
     - title: Kickstart
       description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
@@ -64,7 +80,7 @@
     - title: Danske Gymnasieelevers Sammenslutning
       description:
       image: logo_dgs1@2x_w3.jpg
-      
+
 - title: Videoer om arbejdsmiljø for GIMK
   description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
   image: GIMK@1x_w2.jpg
@@ -109,7 +125,7 @@
   order: 20
   text-color:
   published: true
-  id: "01"
+  id: "21"
   items:
     - title: "Drupal 8 hjemmeside til LO Hovedstaden"
       description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte."
