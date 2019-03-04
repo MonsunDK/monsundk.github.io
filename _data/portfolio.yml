@@ -9,7 +9,7 @@
   width: three
   mob-width:
   order: 10
-  text-color: black
+  text-color: "#fa434b"
   published: true
   id: "20"
   items:
