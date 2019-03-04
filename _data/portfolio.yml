@@ -2,6 +2,21 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
+- title: Klimastemmer.dk for NOAH
+  description: "Miljø EU 2019 Valgshjemmeside"
+  image: klimastemmer_w2.jpg
+  type: media
+  width: three
+  mob-width:
+  order: 10
+  text-color: black
+  published: true
+  id: "20"
+  items:
+    - title: "Klimastemmer.dk"
+      description: ""
+      image: klimastemmer_w2.jpg
+
 
 - title: Videoer om arbejdsmiljø for GIMK
   description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
@@ -12,7 +27,7 @@
   order: 10
   text-color: white
   published: true
-  id: "01"
+  id: "19"
   items:
     - title: "Jesper, Industribogbinder"
       description: ""
@@ -31,7 +46,7 @@
   order: 10
   text-color: white
   published: true
-  id: "01"
+  id: "18"
   items:
     - title: "Fagligt.eu"
       description: ""
@@ -52,6 +67,7 @@
     - title: "Drupal 8 hjemmeside til LO Hovedstaden"
       description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte."
       image: loh_web@2x_w3.jpg
+
 - title: Logoer
   description: Blandede
   image: kickstart_logo@2x.jpg
