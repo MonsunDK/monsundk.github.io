@@ -36,8 +36,8 @@
 
 
 
-- title: Klimastemmer.dk for NOAH
-  description: "Miljø EU 2019 Valgshjemmeside"
+- title: Klimastemmer.dk
+  description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
   image: klimastemmer_grey@2x_w3.jpg
   type: media
   width: three
@@ -48,7 +48,7 @@
   id: "02"
   items:
     - title: "Klimastemmer.dk"
-      description: ""
+      description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
       image: klimastemmer_content1.jpg
 
 - title: Logoer
@@ -148,6 +148,27 @@
     - title: "Drupal 8 hjemmeside til LO Hovedstaden"
       description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte."
       image: loh_web@2x_w3.jpg
+
+
+
+- title: Vindmølleindustrien
+  description: Design og illustrationer
+  image: vindmølleindustrien@2x_w2.jpg
+  type: background
+  width: one
+  mob-width: two
+  order: 140
+  text-color:
+  published: true
+  id: "13"
+  items:
+    - title:
+      description:
+      image: vindmølleindustrien@2x_w2.jpg
+    - title: Vindmølleindustrien folder
+      description: Design og illustrationer.
+      image: vindmølleindustrien2@2x_w3.jpg
+
 
 
 - title: Portrætter
@@ -414,23 +435,6 @@
       image: studenterraadet_illu2@2x_w2.jpg
 
 
-- title: Vindmølleindustrien
-  description: Design og illustrationer
-  image: vindmølleindustrien@2x_w2.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 140
-  text-color:
-  published: true
-  id: "13"
-  items:
-    - title:
-      description:
-      image: vindmølleindustrien@2x_w2.jpg
-    - title: Vindmølleindustrien folder
-      description: Design og illustrationer.
-      image: vindmølleindustrien2@2x_w3.jpg
 
 
 - title: PsykInfo & Cinemateket
