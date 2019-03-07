@@ -30,9 +30,13 @@
   published: true
   id: "01"
   items:
-    - title: "Fotos til IMI-Bladet"
+    - title: "Fotos til IMI-Bladet af Mark Knudsen"
       description: "HK-Bladet for medlemmer af HK, IT, Medie & Industri Hovedstaden"
       image: fagblade_imi.jpg
+    - title: "Fotos til forskellige fagblade af Morten Rode"
+      description: "HK-Bladet for medlemmer af HK, IT, Medie & Industri Hovedstaden"
+      image: fagblade_morten1.jpg
+
 
 
 
