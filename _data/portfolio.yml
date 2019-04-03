@@ -2,66 +2,71 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
-
-- title: Videoer om arbejdsmiljø for GIMK
-  description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
-  image: GIMK@1x_w2.jpg
-  type: media
-  width: two
-  mob-width:
-  order: 10
-  text-color: white
-  published: true
-  id: "01"
-  items:
-    - title: "Jesper, Industribogbinder"
-      description: ""
-      video: "https://www.youtube.com/embed/QufqCm_-h54"
-    - title: "Søren, Arbejdsmiljørepræsentant"
-      description: "Aller Tryk"
-      video: "https://www.youtube.com/embed/JLcD24qvUjA"
-
-
-- title: "Fagligt.eu er fagbevægelsens portal om EU"
-  description: "Hjemmeside i Wordpress"
-  image: fagligteu@2x_w3.jpg
-  type: media
-  width: two
-  mob-width:
-  order: 10
-  text-color: white
-  published: true
-  id: "01"
-  items:
-    - title: "Fagligt.eu"
-      description: ""
-      image: fagligteu@2x_w3.jpg
-
-
-- title: LO Hovedstaden
-  description: Drupal 8 hjemmeside
-  image: loh_web@2x_w3.jpg
+- title: PsykInfo
+  description: Plakater & flyers
+  tag:
   type: background
-  width: three
-  mob-width:
-  order: 20
+  image: plakat_breakthesilence@2x_w2.jpg
+  width: one
+  mob-width: two
+  order: 40
   text-color:
   published: true
+  id: "03"
+  items:
+    - title: PsykInfo - Region Hovedstaden
+      description: Plakater og flyers - Break the silence.
+      image: plakat_breakthesilence@2x_w2.jpg
+
+
+- title: Fotos Fagblade
+  description: ""
+  image: fagblade@2x_w3.jpg
+  type: media
+  width: three
+  mob-width:
+  order: 01
+  text-color: white
+  published: true
   id: "01"
   items:
-    - title: "Drupal 8 hjemmeside til LO Hovedstaden"
-      description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte."
-      image: loh_web@2x_w3.jpg
+    - title: "Fotos til IMI-Bladet af Mark Knudsen"
+      description: "HK-Bladet for medlemmer af HK, IT, Medie & Industri Hovedstaden"
+      image: fagblade_imi_small.jpg
+    - title: "Fotos til forskellige fagblade af Morten Rode"
+      description: "Højskoler, Seniorfri, Bolig & Livsstil"
+      image: fagblade_morten1.jpg
+    - title: "Fotos til INFOA & FOA SOSU af Mark Knudsen"
+      description: ""
+      image: fagblade_sosu.jpg
+
+
+
+- title: Klimastemmer.dk
+  description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
+  image: klimastemmer_grey@2x_w3.jpg
+  type: media
+  width: three
+  mob-width:
+  order: 01
+  text-color: black
+  published: true
+  id: "02"
+  items:
+    - title: "Klimastemmer.dk"
+      description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
+      image: klimastemmer_content1.jpg
+
 - title: Logoer
   description: Blandede
   image: kickstart_logo@2x.jpg
   type: background
   width: one
   mob-width: two
-  order: 30
+  order: 02
   text-color: white
   published: true
-  id: "02"
+  id: "03"
   items:
     - title: Kickstart
       description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
@@ -99,6 +104,79 @@
     - title: Danske Gymnasieelevers Sammenslutning
       description:
       image: logo_dgs1@2x_w3.jpg
+
+- title: Videoer om arbejdsmiljø for GIMK
+  description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
+  image: GIMK@1x_w2.jpg
+  type: media
+  width: two
+  mob-width:
+  order: 10
+  text-color: white
+  published: true
+  id: "19"
+  items:
+    - title: "Jesper, Industribogbinder"
+      description: ""
+      video: "https://www.youtube.com/embed/QufqCm_-h54"
+    - title: "Søren, Arbejdsmiljørepræsentant"
+      description: "Aller Tryk"
+      video: "https://www.youtube.com/embed/JLcD24qvUjA"
+
+
+- title: "Fagligt.eu er fagbevægelsens portal om EU"
+  description: "Hjemmeside i Wordpress"
+  image: fagligteu@2x_w3.jpg
+  type: media
+  width: two
+  mob-width:
+  order: 10
+  text-color: white
+  published: true
+  id: "18"
+  items:
+    - title: "Fagligt.eu"
+      description: ""
+      image: fagligteu@2x_w3.jpg
+
+
+- title: LO Hovedstaden
+  description: Drupal 8 hjemmeside
+  image: loh_web@2x_w3.jpg
+  type: background
+  width: three
+  mob-width:
+  order: 20
+  text-color:
+  published: true
+  id: "21"
+  items:
+    - title: "Drupal 8 hjemmeside til LO Hovedstaden"
+      description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte."
+      image: loh_web@2x_w3.jpg
+
+
+
+- title: Vindmølleindustrien
+  description: Design og illustrationer
+  image: vindmølleindustrien@2x_w2.jpg
+  type: background
+  width: one
+  mob-width: two
+  order: 140
+  text-color:
+  published: true
+  id: "13"
+  items:
+    - title:
+      description:
+      image: vindmølleindustrien@2x_w2.jpg
+    - title: Vindmølleindustrien folder
+      description: Design og illustrationer.
+      image: vindmølleindustrien2@2x_w3.jpg
+
+
+
 - title: Portrætter
   description:
   tag:
@@ -221,21 +299,7 @@
       description: Portrætter af kandidater i København.
       image: sf_portrætter3@2x_w3.jpg
 
-- title: PsykInfo
-  description: Plakater & flyers
-  tag:
-  type: background
-  image: plakat_breakthesilence@2x_w2.jpg
-  width: one
-  mob-width: two
-  order: 40
-  text-color:
-  published: true
-  id: "03"
-  items:
-    - title: PsykInfo - Region Hovedstaden
-      description: Plakater og flyers - Break the silence.
-      image: plakat_breakthesilence@2x_w2.jpg
+
 
 
 
@@ -377,23 +441,6 @@
       image: studenterraadet_illu2@2x_w2.jpg
 
 
-- title: Vindmølleindustrien
-  description: Design og illustrationer
-  image: vindmølleindustrien@2x_w2.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 140
-  text-color:
-  published: true
-  id: "13"
-  items:
-    - title:
-      description:
-      image: vindmølleindustrien@2x_w2.jpg
-    - title: Vindmølleindustrien folder
-      description: Design og illustrationer.
-      image: vindmølleindustrien2@2x_w3.jpg
 
 
 - title: PsykInfo & Cinemateket
