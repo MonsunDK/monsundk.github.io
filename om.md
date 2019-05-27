@@ -22,4 +22,4 @@ Monsun deler adresse med et kooperativt trykkeri og har et stort netværk af eks
 
 Vi er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fra professionelle og demokratiske principper.
 
-Monsun samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder og er aktivt medlem i tænketanken Demokratisk Erhverv.
+Monsun samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder.
