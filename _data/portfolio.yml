@@ -501,14 +501,14 @@
       image: indreby3@2x_w3.jpg
 
 
-- title: 'Opdag Havet' undervisnings folder
+- title: Opdag Havet - Undervisnings folder
   description: WWF
   tag:
   image: WWF@2x_w2.jpg
   type: background
   width: two
   mob-width: two
-  order: 170
+  order: 175
   text-color: white
   published: true
   id: "20"
