@@ -299,8 +299,29 @@
       description: Portrætter af kandidater i København.
       image: sf_portrætter3@2x_w3.jpg
 
-
-
+- title: Kampen om Ungdomshuset
+  description: Tekst, design & foto
+  image: ungdomshusbog@2x_w2.jpg
+  type: background
+  width: one
+  mob-width: two
+  order: 160
+  text-color:
+  published: true
+  id: "15"
+  items:
+    - title:
+      description:
+      image: ungdomshusbog@2x_w2.jpg
+    - title:
+      description:
+      image: ungdomshusbog2@2x_w3.jpg
+    - title:
+      description:
+      image: ungdomshusbog3@2x_w2.jpg
+    - title: Bogen Kampen om Ungdomshuset
+      description: Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.
+      image: ungdomshusbog4@2x_w2.jpg
 
 
 - title: Skal du have løst en opgave så ring på 35397331
@@ -314,7 +335,6 @@
   text-color: GOLD
   published: true
   id: "06"
-
 
 - title: NOAH Materialer
   description: Pjece + Folder
@@ -395,7 +415,6 @@
       description: Drupal 8 website
       image: noahdk@2x_w3.jpg
 
-
 - title: NOAH - spisornli.nu
   description: online-undervisningsmateriale til NOAH
   image: spisornli_noah@2x_w4.jpg
@@ -410,7 +429,6 @@
     - title: spisornli.nu
       description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
       image: spisornli_noah@2x_w4.jpg
-
 
 - title: Studenterrådet på KU
   description: Studiebog
@@ -440,9 +458,6 @@
       description: Studiehåndbog. Design og illustrationer.
       image: studenterraadet_illu2@2x_w2.jpg
 
-
-
-
 - title: PsykInfo & Cinemateket
   description: Filmkatalog
   tag:
@@ -462,29 +477,6 @@
       description: Filmkatalog, plakater og rollups til filmfestivalen Don’t fear The Weird.
       image: psykinfo2@2x_w3.jpg
 
-- title: Kampen om Ungdomshuset
-  description: Tekst, design & foto
-  image: ungdomshusbog@2x_w2.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 160
-  text-color:
-  published: true
-  id: "15"
-  items:
-    - title:
-      description:
-      image: ungdomshusbog@2x_w2.jpg
-    - title:
-      description:
-      image: ungdomshusbog2@2x_w3.jpg
-    - title:
-      description:
-      image: ungdomshusbog3@2x_w2.jpg
-    - title: Bogen Kampen om Ungdomshuset
-      description: Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.
-      image: ungdomshusbog4@2x_w2.jpg
 
 - title: Domkirken
   description: IndreBy Kirkemagasin
