@@ -20,7 +20,7 @@
 
 
 - title: Redaktionelle fotos
-  description: ""
+  description: Fagblade
   image: fagblade@2x_w3.jpg
   type: media
   width: three
@@ -501,8 +501,8 @@
       image: indreby3@2x_w3.jpg
 
 
-- title: Opdag Havet - Undervisnings folder
-  description: WWF
+- title: WWF - Verdensnaturfonden
+  description: Opdag Havet - Undervisningsmaterialer
   tag:
   image: WWF@2x_w2.jpg
   type: background
