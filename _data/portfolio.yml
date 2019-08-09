@@ -539,7 +539,7 @@
   tag:
   image: vivil_brikker4@2x_w3.jpg
   type: background
-  width: four
+  width: one
   mob-width: two
   order: 180
   text-color: white
