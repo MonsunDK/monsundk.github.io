@@ -59,7 +59,7 @@
   image: fagblade@2x_w3.jpg
   type: media
   width: three
-  mob-width:
+  mob-width: two
   order: 01
   text-color: white
   published: true
@@ -171,7 +171,7 @@
   image: noah-plakater@2x_w3.jpg
   type: background
   width: three
-  mob-width: two
+  mob-width: four
   order: 180
   text-color: white
   published: true
