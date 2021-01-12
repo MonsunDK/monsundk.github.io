@@ -3,7 +3,7 @@
 # Type: quote, embed, media, spot, footer, employee, background, area
 
 - title: DEO
-  description: Hjemmeside
+  description: deo.dk
   tag:
   type: background
   image: deo_rejser.jpg
@@ -21,7 +21,7 @@
 
 
 - title: Malernes Fagforening Storkøbenhavn
-  description: Hjemmeside
+  description: malerneshus.dk
   tag:
   type: background
   image: malerneshus.jpg
