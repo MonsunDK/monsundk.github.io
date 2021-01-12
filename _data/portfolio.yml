@@ -8,7 +8,7 @@
   type: background
   image: deo_rejser.jpg
   width: two
-  mob-width: one
+  mob-width: four
   order: 40
   text-color:
   published: true
@@ -26,7 +26,7 @@
   type: background
   image: malerneshus.jpg
   width: two
-  mob-width: one
+  mob-width: four
   order: 40
   text-color:
   published: true
