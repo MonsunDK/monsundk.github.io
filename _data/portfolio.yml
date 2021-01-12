@@ -8,15 +8,15 @@
   type: background
   image: deo_rejser.jpg
   width: two
-  mob-width: two
+  mob-width: one
   order: 40
   text-color:
   published: true
   id: "21"
   items:
-    - title: PsykInfo - Region Hovedstaden
-      description: Plakater og flyers - Break the silence.
-      image: plakat_breakthesilence@2x_w2.jpg
+    - title: DEO 
+      description: Wordpress hjemmeside
+      image: deo_rejser.jpg
 
 
 
@@ -26,15 +26,15 @@
   type: background
   image: malerneshus.jpg
   width: two
-  mob-width: two
+  mob-width: one
   order: 40
   text-color:
   published: true
   id: "22"
   items:
-    - title: PsykInfo - Region Hovedstaden
-      description: Plakater og flyers - Break the silence.
-      image: plakat_breakthesilence@2x_w2.jpg
+    - title: Malernes Fagforening Storkøbenhavn
+      description: Wordpress hjemmeside
+      image: malerneshus.jpg
 
 
 - title: PsykInfo
