@@ -14,7 +14,7 @@
   published: true
   id: "21"
   items:
-    - title: DEO 
+    - title: DEO
       description: Wordpress hjemmeside
       image: deo_rejser.jpg
 
@@ -337,8 +337,6 @@
   id: "07"
 
 
-
-
 - title: Fagbevægelsens Interne Uddannelser, FIU
   description: Brætspil, Makarenko - Styrk fællesskabet
   image: vildeliv_video@2x.jpg
@@ -353,8 +351,6 @@
     - title: Vilde Liv, Københavns Kommune
       description: Video om Vilde Liv, Københavns Kommunes Socialforvaltnings tilbud til unge mellem 12-21 år der færdes på og omkring Christiania.
       video: "https://www.youtube.com/embed/8s0_iZg9CeA"
-
-
 
 
 - title: SF København
