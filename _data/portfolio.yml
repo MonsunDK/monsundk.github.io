@@ -146,10 +146,6 @@
       description:
       image: noah-plakater@2x_w3.jpg
 
-
-
-
-
 - title: Videoer om arbejdsmiljø for GIMK
   description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
   image: GIMK@1x_w2.jpg
@@ -219,8 +215,6 @@
     - title: Vindmølleindustrien folder
       description: Design og illustrationer.
       image: vindmølleindustrien2@2x_w3.jpg
-
-
 
 - title: Portrætter
   description:
@@ -307,8 +301,11 @@
   published: true
   id: "07"
 
-- title: Vilde Liv
-  description: Videoportræt
+
+
+
+- title: Fagbevægelsens Interne Uddannelser, FIU
+  description: Brætspil, Makarenko - Styrk fællesskabet
   image: vildeliv_video@2x.jpg
   type: media
   width: two
@@ -321,6 +318,9 @@
     - title: Vilde Liv, Københavns Kommune
       description: Video om Vilde Liv, Københavns Kommunes Socialforvaltnings tilbud til unge mellem 12-21 år der færdes på og omkring Christiania.
       video: "https://www.youtube.com/embed/8s0_iZg9CeA"
+
+
+
 
 - title: SF København
   description: Portrætter af kandidater
