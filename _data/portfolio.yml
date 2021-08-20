@@ -338,8 +338,8 @@
 
 
 - title: Fagbevægelsens Interne Uddannelser, FIU
-  description: Brætspil, Makarenko - Styrk fællesskabet
-  image: vildeliv_video@2x.jpg
+  description: Brætspil, Makarenko - Styrk fællesskabet.
+  image: makarenko_facebook_2021.jpg
   type: media
   width: two
   mob-width: two
@@ -348,9 +348,9 @@
   published: true
   id: "04"
   items:
-    - title: Vilde Liv, Københavns Kommune
-      description: Video om Vilde Liv, Københavns Kommunes Socialforvaltnings tilbud til unge mellem 12-21 år der færdes på og omkring Christiania.
-      video: "https://www.youtube.com/embed/8s0_iZg9CeA"
+    - title: Fagbevægelsens Interne Uddannelser, FIU
+      description: Brætspil, Makarenko - Styrk fællesskabet.
+      image: makarenko_facebook_2021.jpg
 
 
 - title: SF København
