@@ -2,6 +2,41 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
+- title: DEO
+  description: deo.dk
+  tag:
+  type: background
+  image: deo_rejser.jpg
+  width: two
+  mob-width: four
+  order: 40
+  text-color:
+  published: true
+  id: "21"
+  items:
+    - title: DEO 
+      description: Wordpress hjemmeside
+      image: deo_rejser.jpg
+
+
+
+- title: Malernes Fagforening Storkøbenhavn
+  description: malerneshus.dk
+  tag:
+  type: background
+  image: malerneshus.jpg
+  width: two
+  mob-width: four
+  order: 40
+  text-color:
+  published: true
+  id: "22"
+  items:
+    - title: Malernes Fagforening Storkøbenhavn
+      description: Wordpress hjemmeside
+      image: malerneshus.jpg
+
+
 - title: PsykInfo
   description: Plakater & flyers
   tag:
@@ -24,7 +59,7 @@
   image: fagblade@2x_w3.jpg
   type: media
   width: three
-  mob-width:
+  mob-width: two
   order: 01
   text-color: white
   published: true
@@ -136,7 +171,7 @@
   image: noah-plakater@2x_w3.jpg
   type: background
   width: three
-  mob-width: two
+  mob-width: four
   order: 180
   text-color: white
   published: true
