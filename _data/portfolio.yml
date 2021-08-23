@@ -7,7 +7,7 @@
   tag:
   type: background
   image: deo_rejser.jpg
-  width: one
+  width: two
   mob-width: four
   order: 40
   text-color:
@@ -25,7 +25,7 @@
   tag:
   type: background
   image: malerneshus.jpg
-  width: three
+  width: two
   mob-width: four
   order: 40
   text-color:
