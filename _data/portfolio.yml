@@ -37,6 +37,69 @@
       image: malerneshus.jpg
 
 
+- title: Klimastemmer.dk
+  description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
+  image: klimastemmer_grey@2x_w3.jpg
+  type: media
+  width: three
+  mob-width:
+  order: 01
+  text-color: black
+  published: true
+  id: "02"
+  items:
+    - title: "Klimastemmer.dk"
+      description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
+      image: klimastemmer_content1.jpg
+
+- title: Logoer
+  description: Blandede
+  image: kickstart_logo@2x.jpg
+  type: background
+  width: one
+  mob-width: two
+  order: 02
+  text-color: white
+  published: true
+  id: "03"
+  items:
+    - title: Kickstart
+      description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
+      image: logo_kickstart1@2x_w3.jpg
+    - title: Brønshøj Kirke
+      description: Design af logo til Brønshøj Kirke.
+      image: logo_brønshøjkirke@2x_w3.jpg
+    - title: Københavns Universitet
+      description: Logo til Biologisk Fagråd.
+      image: logo_biologiskfagråd@2x_w3.jpg
+    - title: Københavnerier
+      description: Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.
+      image: logo_københavnerier@2x_w3.jpg
+    - title: Unge Stemmer
+      description: Kasseret Logo
+      image: logo_ungestemmer1@2x_w3.jpg
+    - title: Unge Stemmer
+      description: Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS
+      image: logo_ungestemmer3@2x_w3.jpg
+    - title: Frinova 1
+      description:
+      image: logo_frinova1@2x_w3.jpg
+    - title: Frinova 2
+      description:
+      image: logo_frinova2@2x_w3.jpg
+    - title: Defocus
+      description:
+      image: logo_defocus@2x_w3.jpg
+    - title: Concord
+      description:
+      image: logo_concord@2x_w3.jpg
+    - title: PROSA
+      description:
+      image: logo_prosa@2x_w3.jpg
+    - title: Danske Gymnasieelevers Sammenslutning
+      description:
+      image: logo_dgs1@2x_w3.jpg
+
 
 - title: Bestil fotograf på 35397331
   description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
@@ -151,69 +214,6 @@
       image: fagblade_sosu.jpg
 
 
-
-- title: Klimastemmer.dk
-  description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
-  image: klimastemmer_grey@2x_w3.jpg
-  type: media
-  width: three
-  mob-width:
-  order: 01
-  text-color: black
-  published: true
-  id: "02"
-  items:
-    - title: "Klimastemmer.dk"
-      description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
-      image: klimastemmer_content1.jpg
-
-- title: Logoer
-  description: Blandede
-  image: kickstart_logo@2x.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 02
-  text-color: white
-  published: true
-  id: "03"
-  items:
-    - title: Kickstart
-      description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
-      image: logo_kickstart1@2x_w3.jpg
-    - title: Brønshøj Kirke
-      description: Design af logo til Brønshøj Kirke.
-      image: logo_brønshøjkirke@2x_w3.jpg
-    - title: Københavns Universitet
-      description: Logo til Biologisk Fagråd.
-      image: logo_biologiskfagråd@2x_w3.jpg
-    - title: Københavnerier
-      description: Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.
-      image: logo_københavnerier@2x_w3.jpg
-    - title: Unge Stemmer
-      description: Kasseret Logo
-      image: logo_ungestemmer1@2x_w3.jpg
-    - title: Unge Stemmer
-      description: Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS
-      image: logo_ungestemmer3@2x_w3.jpg
-    - title: Frinova 1
-      description:
-      image: logo_frinova1@2x_w3.jpg
-    - title: Frinova 2
-      description:
-      image: logo_frinova2@2x_w3.jpg
-    - title: Defocus
-      description:
-      image: logo_defocus@2x_w3.jpg
-    - title: Concord
-      description:
-      image: logo_concord@2x_w3.jpg
-    - title: PROSA
-      description:
-      image: logo_prosa@2x_w3.jpg
-    - title: Danske Gymnasieelevers Sammenslutning
-      description:
-      image: logo_dgs1@2x_w3.jpg
 
 - title: ViVil - KBH Kommune
   description: Psykisk syge i arbejde
