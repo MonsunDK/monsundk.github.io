@@ -7,7 +7,7 @@
   tag:
   type: background
   image: deo_rejser.jpg
-  width: two
+  width: three
   mob-width: four
   order: 40
   text-color:
@@ -25,7 +25,7 @@
   tag:
   type: background
   image: malerneshus.jpg
-  width: two
+  width: one
   mob-width: four
   order: 40
   text-color:
@@ -35,6 +35,81 @@
     - title: Malernes Fagforening Storkøbenhavn
       description: Wordpress hjemmeside
       image: malerneshus.jpg
+
+
+
+- title: Bestil fotograf på 35397331
+  description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
+  tag:
+  type: quote
+  width: two
+  mob-width: two
+  order: 80
+  color: GOLD
+  text-color: black
+  published: true
+  id: "07"
+
+
+
+- title: Fagbevægelsens Interne Uddannelser, FIU
+  description: Brætspil, Makarenko - Styrk fællesskabet.
+  image: makarenko_facebook_2021.jpg
+  type: media
+  width: two
+  mob-width: two
+  order: 50
+  text-color: white
+  published: true
+  id: "04"
+  items:
+    - title: Fagbevægelsens Interne Uddannelser, FIU
+      description: Brætspil, Makarenko - Styrk fællesskabet.
+      image: makarenko_facebook_2021.jpg
+
+
+- title: NOAH Materialer
+  description: Pjece + Folder
+  image: noah_cover@2x_w2.jpg
+  type: background
+  width: two
+  mob-width:
+  order: 90
+  text-color:
+  published: true
+  id: "08"
+  items:
+    - title:
+      description:
+      image: noah_folder1@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder2@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder3@2x_w3.jpg
+    - title: NOAH, Friends of the Earth
+      description: Folder om bæredygtige boliger.
+      image: noah_folder@2x_w3.jpg
+    - title: NOAH, Friends of the Earth
+      description: Program Zig-Zag folder
+      image: noah_zigzag@2x_w3.jpg
+
+
+- title: Skal du have løst en opgave så ring på 35397331
+  description: info@monsun.dk
+  tag:
+  type: "quote"
+  width: two
+  mob-width: two
+  order: 70
+  color: "#1B2631"
+  text-color: GOLD
+  published: true
+  id: "06"
+
+
+
 
 
 - title: PsykInfo
@@ -323,76 +398,6 @@
     - title: Johan Bulow, erhvervsmand
       description: "Foto: Morten Rode"
       image: portraits/JohanBulow@2x_w2.jpg
-
-- title: Bestil fotograf på 35397331
-  description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
-  tag:
-  type: quote
-  width: two
-  mob-width: two
-  order: 80
-  color: GOLD
-  text-color: black
-  published: true
-  id: "07"
-
-
-- title: Fagbevægelsens Interne Uddannelser, FIU
-  description: Brætspil, Makarenko - Styrk fællesskabet.
-  image: makarenko_facebook_2021.jpg
-  type: media
-  width: two
-  mob-width: two
-  order: 50
-  text-color: white
-  published: true
-  id: "04"
-  items:
-    - title: Fagbevægelsens Interne Uddannelser, FIU
-      description: Brætspil, Makarenko - Styrk fællesskabet.
-      image: makarenko_facebook_2021.jpg
-
-
-- title: NOAH Materialer
-  description: Pjece + Folder
-  image: noah_cover@2x_w2.jpg
-  type: background
-  width: two
-  mob-width:
-  order: 90
-  text-color:
-  published: true
-  id: "08"
-  items:
-    - title:
-      description:
-      image: noah_folder1@2x_w3.jpg
-    - title:
-      description:
-      image: noah_folder2@2x_w3.jpg
-    - title:
-      description:
-      image: noah_folder3@2x_w3.jpg
-    - title: NOAH, Friends of the Earth
-      description: Folder om bæredygtige boliger.
-      image: noah_folder@2x_w3.jpg
-    - title: NOAH, Friends of the Earth
-      description: Program Zig-Zag folder
-      image: noah_zigzag@2x_w3.jpg
-
-
-
-- title: Skal du have løst en opgave så ring på 35397331
-  description: info@monsun.dk
-  tag:
-  type: "quote"
-  width: two
-  mob-width: two
-  order: 70
-  color: "#1B2631"
-  text-color: GOLD
-  published: true
-  id: "06"
 
 
 
