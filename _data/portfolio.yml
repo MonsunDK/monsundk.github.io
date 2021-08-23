@@ -353,6 +353,49 @@
       image: makarenko_facebook_2021.jpg
 
 
+- title: NOAH Materialer
+  description: Pjece + Folder
+  image: noah_cover@2x_w2.jpg
+  type: background
+  width: two
+  mob-width:
+  order: 90
+  text-color:
+  published: true
+  id: "08"
+  items:
+    - title:
+      description:
+      image: noah_folder1@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder2@2x_w3.jpg
+    - title:
+      description:
+      image: noah_folder3@2x_w3.jpg
+    - title: NOAH, Friends of the Earth
+      description: Folder om bæredygtige boliger.
+      image: noah_folder@2x_w3.jpg
+    - title: NOAH, Friends of the Earth
+      description: Program Zig-Zag folder
+      image: noah_zigzag@2x_w3.jpg
+
+
+
+- title: Skal du have løst en opgave så ring på 35397331
+  description: info@monsun.dk
+  tag:
+  type: "quote"
+  width: two
+  mob-width: two
+  order: 70
+  color: "#1B2631"
+  text-color: GOLD
+  published: true
+  id: "06"
+
+
+
 - title: SF København
   description: Portrætter af kandidater
   tag:
@@ -398,46 +441,6 @@
     - title: Bogen Kampen om Ungdomshuset
       description: Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.
       image: ungdomshusbog4@2x_w2.jpg
-
-
-- title: Skal du have løst en opgave så ring på 35397331
-  description: info@monsun.dk
-  tag:
-  type: "quote"
-  width: two
-  mob-width: two
-  order: 70
-  color: "#1B2631"
-  text-color: GOLD
-  published: true
-  id: "06"
-
-- title: NOAH Materialer
-  description: Pjece + Folder
-  image: noah_cover@2x_w2.jpg
-  type: background
-  width: two
-  mob-width:
-  order: 90
-  text-color:
-  published: true
-  id: "08"
-  items:
-    - title:
-      description:
-      image: noah_folder1@2x_w3.jpg
-    - title:
-      description:
-      image: noah_folder2@2x_w3.jpg
-    - title:
-      description:
-      image: noah_folder3@2x_w3.jpg
-    - title: NOAH, Friends of the Earth
-      description: Folder om bæredygtige boliger.
-      image: noah_folder@2x_w3.jpg
-    - title: NOAH, Friends of the Earth
-      description: Program Zig-Zag folder
-      image: noah_zigzag@2x_w3.jpg
 
 
 
