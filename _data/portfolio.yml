@@ -180,7 +180,7 @@
   type: background
   image: plakat_breakthesilence@2x_w2.jpg
   width: one
-  mob-width: two
+  mob-width:
   order: 40
   text-color:
   published: true
@@ -196,7 +196,7 @@
   image: fagblade@2x_w3.jpg
   type: media
   width: three
-  mob-width: two
+  mob-width:
   order: 01
   text-color: white
   published: true
@@ -220,7 +220,7 @@
   image: vivil_brikker4@2x_w3.jpg
   type: background
   width: one
-  mob-width: two
+  mob-width: 
   order: 180
   text-color: white
   published: true
