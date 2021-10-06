@@ -2,6 +2,23 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
+- title: Arkitekter Uden Grænser
+  description: aug.ngo
+  tag:
+  type: background
+  image: aug_web@2x_w4.png
+  width: four
+  mob-width:
+  order: 40
+  text-color:
+  published: true
+  id: "20"
+  items:
+    - title: Arkitekter Uden Grænser
+      description: aug.ngo - Wordpress hjemmeside
+      image: aug_web@2x_w4.png
+
+
 - title: DEO
   description: deo.dk
   tag:
@@ -220,7 +237,7 @@
   image: vivil_brikker4@2x_w3.jpg
   type: background
   width: one
-  mob-width: 
+  mob-width:
   order: 180
   text-color: white
   published: true
