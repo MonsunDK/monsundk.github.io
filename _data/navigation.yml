@@ -1,8 +1,5 @@
-- title: "Hjem"
-  url: /
-
 - title: "Kontakt"
   url: /kontakt/
 
-- title: "Om Monsun"
+- title: "Om"
   url: /om/

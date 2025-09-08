@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  	<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere, der sammen designer dit budskab så det er smukt og til at forstå
+  <title>Siden 2000 har Monsun forvandlet idéer og behov til gennemførte løsninger
 </title>
-  <meta name="description" content="Monsun er et kreativt kooperativ, der leverer løsninger til alle slags kommunikationsopgaver. Vi laver alt fra fotos, grafisk design, web-udvikling eller smu...">
+  <meta name="description" content="Vi skaber løsninger til alle former for visuel kommunikation – fra webudvikling, grafisk design og fotografi til alverdens unikke tryksager.">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/fa-svg-with-js.css">
@@ -23,7 +23,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
-
+  <script src="/assets/js/lazy-bg.js" defer></script>
 
   
 
@@ -31,67 +31,81 @@
 </head>
 
 
-  <body>
+  	<body>
 
-    <header class="site-header" role="banner">
-
+    	<header class="site-header" role="banner">
    
-  <nav class="navbar navbar-top navbar-default">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/"><img width="140" height="19" src="/assets/img/monsun_logo_full.svg"></a>
+  <nav class="main-navigation" role="navigation" aria-label="Main navigation">
+	<div class="nav-header">
+		<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">+</button>
+		<a class="site-logo" href="/">MONSUN</a>
+	</div>
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-             
-        <li class="">
-          <a href="/" style="color:;">Hjem</a>
-        </li>
-             
-        <li class="">
-          <a href="/kontakt/" style="color:;">Kontakt</a>
-        </li>
-             
-        <li class="active">
-          <a href="/om/" style="color:;">Om Monsun</a>
-        </li>
-         
+	<div class="nav-items" id="nav-items" style="--total: 2">
+		
+			   
+			<a href="/kontakt/" class="nav-item nav-item-0 " style="--i: 0;" role="button" aria-haspopup="true" aria-expanded="false">Kontakt</a>
 
-      </ul>
-    </div>
+			   
+			<a href="/om/" class="nav-item nav-item-1 active" style="--i: 1;" role="button" aria-haspopup="true" aria-expanded="false">Om</a>
+
+			
+	
+	</div>
 </nav>
+
+
+
+<script>
+	const menu = document.getElementById('nav-items');
+	const btn  = document.getElementById('nav-toggle');
+	let isOpen = false;
+
+	btn.addEventListener('click', () => {
+		btn.classList.toggle('active');
+		isOpen = !isOpen;
+
+		if (isOpen) {                    // =====  OPEN  =====
+			menu.classList.remove('closing');
+			requestAnimationFrame(() => {  // wait 1 frame
+				menu.classList.add('opening');
+			});
+			return;
+		}
+
+		/* =====  CLOSE  ===== */
+		menu.classList.remove('opening');
+		menu.classList.add('closing');
+
+		const total = menu.children.length * 100 + 350;
+		setTimeout(() => {
+			menu.classList.remove('closing');
+		}, total);
+	});
+</script>
+
+
+     
 
 </header>
 
 
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        
+		<main class="page-content" aria-label="Content">
+			
 
 
 
-<div class="hero lazy" data-src="/assets/img/hero/monsun_etagen.jpg">
-  <img src="/assets/img/hero/monsun_etagen.jpg" style="display:none;">
-  <div class="box--size-outer">
-    <div class="box--size-inner">
-
-    </div>
-  </div>
+<div class="hero" 
+    data-bg="/assets/img/hero/monsun_etagen.jpg"
+	role="img"
+	aria-label="Hero image: Om Monsun
+"
+>
+	
+	<div class="box--size-outer">
+		<div class="box--size-inner"></div>
+	</div>
 </div>
-<a href="#scr-portfolio" class="section-header">
-  <span class="section-title"><i class="fal fa-chevron-down"></i></span>
-  <span class="v-lines">
-    <span></span>
-  </span>
-</a>
-<a id="scr-portfolio"></a>
-
 
 <article class="post">
 
@@ -99,37 +113,36 @@
     <span class="trompet">Om Monsun
 </span>
     <h1 class="post-title">
-          <!-- <span class="typewrite" data-period="2000" data-type='[ "", "Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere, der sammen designer dit budskab så det er smukt og til at forstå
-" ]'> -->
-        <span class="">  Monsun er et kreativt kooperativ af journalister, grafikere, fotografer og web-udviklere, der sammen designer dit budskab så det er smukt og til at forstå
+        <span class="">  Siden 2000 har Monsun forvandlet idéer og behov til gennemførte løsninger
 </span>
     </h1>
+    
+    <p class="post-manchet"><span class="wrap">Fra den store valgkampagne til enkelte visitkort eller folder, grafisk design af magasin og udvikling af hjemmesider. Hos Monsun er ingen opgave for omfattende eller for lille, og vi bistår også organisationer og foreninger med at udvikle kampagner, kommunikationsstrategier og visuelle identiteter, der gør deres budskaber skarpe og nærværende.</span></p>
     
   </header>
 
   <div class="post-content">
-    <p>Monsun har siden år 2000 arbejdet målrettet fra kortlægning af kundens behov til ideudvikling og færdigt produkt. Fra den store kampagne eller branding til grafisk design af magasiner. Fra de illustrative fotos, reportager og til det personlige portræt. Ingen opgave er for stor eller for lille. Monsun udarbejder også kampagner og kommunikationsstrategier til organisationer og foreninger.</p>
+    <p>Vi leverer solidt håndværk på tværs af fagligheder, hvor ord og billeder spiller sammen og skaber en tydelig sammenhæng mellem design, identitet og budskab.
+Hos Monsun arbejder vi med alt fra webudvikling og grafisk design til foto- og videoproduktion – altid med fokus på kvalitet og helhed.</p>
 
-<p>Vi yder skarpslebent håndværk på tværs af fagligheder, der får ord og billeder til at spille sammen og skaber sammenhæng mellem design og budskab.
-Monsun løser opgaver med journalistik og tekstforfatning, fotos, video, grafisk design og hjemmesider.</p>
+<p>Når det gælder hjemmesider, bygger vi løsninger i WordPress, Next.js og Ghost, alt efter hvad der bedst matcher kundens behov og ambitioner. Vi udvikler både fleksible virksomhedssites, kampagnesider og blogs, og vi lægger vægt på funktionalitet, brugervenlighed og et visuelt udtryk, der understøtter kundens brand.</p>
 
-<p>Til hjemmesider arbejder vi primært med open source platforme som Drupal og Wordpress, der sikre et stort udviklingsmiljø, højere sikkerhed, og I er ikke låst til Monsun hvis i ønsker nye leverandører. Mobilversion er en selvfølge. Vi yder også support efter aftale.</p>
+<p>Derudover tilbyder vi vedligeholdelse, sikkerhedsopdateringer og løbende support, så vores kunder altid kan være trygge ved, at deres hjemmeside er stabil, sikker og opdateret.</p>
 
 <p>Opgaver løses altid i tæt samarbejde med kunden og vi er eksperter i maximalt udbytte inden for givne budgetramme. Vores kunder er mange og forskellige.</p>
 
-<p>Monsun deler adresse med et kooperativt trykkeri og har et stort netværk af eksterne specialister, blandt andet tegnere, filmfolk og web-eksperter. Vi kan derfor forestå opgaver af enhver art og til alle medier og platforme – tryk, digitalt eller til sociale medier. Vi holder snor i hele processen.</p>
+<p>Monsun deler adresse med et kooperativt trykkeri og har et stort netværk af eksterne specialister, blandt andet tegnere, filmfolk og fotografer. Vi kan derfor forestå opgaver af enhver art og til alle medier og platforme – tryk, digitalt eller til sociale medier. Vi holder snor i hele processen.</p>
 
 <p>Vi er et overenskomstdækket og medarbejderejet kooperativ, som styres ud fra professionelle og demokratiske principper.</p>
 
-<p>Monsun samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder og er aktivt medlem i tænketanken Demokratisk Erhverv.</p>
+<p>Monsun samarbejder med andre kooperativer om at udbrede og styrke demokratiske virksomheder.</p>
 
   </div>
 </article>
 
-      </div>
-    </main>
+		</main>
 
-    <footer class="site-footer">
+    	<footer class="site-footer">
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
@@ -138,7 +151,9 @@ Monsun løser opgaver med journalistik og tekstforfatning, fotos, video, grafisk
         <ul class="contact-list">
             <li class="footer-heading">Monsun</li>
             
-            <li>Nørrebrograde 5C, 1.sal<br>2200 København N</li>
+            <li>Nørrebrogade 5C, 
+Stuen og 1. sal
+<br>2200 København N</li>
             
             
             <li><a href="mailto:info@monsun.dk">info@monsun.dk</a></li>
@@ -168,56 +183,35 @@ Monsun løser opgaver med journalistik og tekstforfatning, fotos, video, grafisk
 </footer>
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		
+		<script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
 
-    <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
+		<script>
 
-    <script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
-
-
-
-<script>
-
-// Don't force https when serving the website locally
-if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+		// Don't force https when serving the website locally
+		if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
 
 
-$(function() {
-     $('.lazy').lazy({
-       effect: "fadeIn",
-       effectTime: 2000,
-       threshold: 0
-     });
- });
+		var $root = $('html, body');
+		$('a[href^="#scr-"]').click(function () {
+			$root.animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+		});
 
-
-  $('.modal').on("show.bs.modal", function() {
-    $('.lazy', this).Lazy({
-      bind: 'event',
-      chainable: false
-    });
-  });
-
-
-  var $root = $('html, body');
-  $('a[href^="#scr-"]').click(function () {
-      $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
-  });
-
-</script>
-</body>
+		</script>
+	</body>
 </html>

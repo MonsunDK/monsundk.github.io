@@ -2,74 +2,43 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
-- title: Arkitekter Uden Grænser
-  description: aug.ngo
-  tag:
+- title: EP-Valgtest 2024
+  client: DEO
+  tag: Webapplikation
   type: background
-  image: aug_web@2x_w4.png
+  image: DEO-EP-valgtest.jpg
   width: four
   mob-width:
   order: 40
-  text-color:
+  text-color: "#0A0A12"
   published: true
-  id: "20"
+  id: "30"
   items:
-    - title: Arkitekter Uden Grænser
-      description: aug.ngo - Wordpress hjemmeside
-      image: aug_web@2x_w4.png
+    - title: 
+      description: www.ep-valgtest2024.dk
+      image: DEO-EP-valgtest.jpg
 
 
-- title: DEO
-  description: deo.dk
-  tag:
-  type: background
-  image: deo_rejser.jpg
-  width: two
-  mob-width: four
-  order: 40
-  text-color:
-  published: true
-  id: "21"
-  items:
-    - title: DEO
-      description: Wordpress hjemmeside
-      image: deo_rejser.jpg
-
-
-- title: Malernes Fagforening Storkøbenhavn
-  description: malerneshus.dk
-  tag:
-  type: background
-  image: malerneshus.jpg
-  width: two
-  mob-width: four
-  order: 40
-  text-color:
-  published: true
-  id: "22"
-  items:
-    - title: Malernes Fagforening Storkøbenhavn
-      description: Wordpress hjemmeside
-      image: malerneshus.jpg
-
-
-- title: Klimastemmer.dk
-  description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
-  image: klimastemmer_grey@2x_w3.jpg
+- title: Makarenko - Styrk fællesskabet
+  client: FIU
+  tag: Brætspil
+  image: makarenko_facebook_2021.jpg
   type: media
   width: three
-  mob-width:
-  order: 01
-  text-color: black
+  mob-width: two
+  order: 50
+  text-color: white
   published: true
-  id: "02"
+  id: "04"
   items:
-    - title: "Klimastemmer.dk"
-      description: "EU-Valghjemmeside for Miljøorganisationen NOAH"
-      image: klimastemmer_content1.jpg
+    - title: Fagbevægelsens Interne Uddannelser, FIU
+      description: Brætspil, Makarenko - Styrk fællesskabet.
+      image: makarenko_facebook_2021.jpg
 
-- title: Logoer
-  description: Blandede
+
+- title: 
+  client: blandet
+  tag: Logoer
   image: kickstart_logo@2x.jpg
   type: background
   width: one
@@ -116,45 +85,75 @@
       description:
       image: logo_dgs1@2x_w3.jpg
 
-
-- title: Bestil fotograf på 35397331
-  description: eller skriv direkte til mark@monsun.dk eller morten@monsun.dk
-  tag:
-  type: quote
-  width: two
+- title: 
+  client: Studenterrådet på KU
+  tag: Studiebog
+  image: studenterraadet_illu1@2x_w2.jpg
+  type: background
+  width: one
   mob-width: two
-  order: 80
-  color: GOLD
-  text-color: black
+  order: 130
+  text-color: "#0A0A12"
   published: true
-  id: "07"
-
-
-
-- title: Fagbevægelsens Interne Uddannelser, FIU
-  description: Brætspil, Makarenko - Styrk fællesskabet.
-  image: makarenko_facebook_2021.jpg
-  type: media
-  width: two
-  mob-width: two
-  order: 50
-  text-color: white
-  published: true
-  id: "04"
+  id: "12"
   items:
-    - title: Fagbevægelsens Interne Uddannelser, FIU
-      description: Brætspil, Makarenko - Styrk fællesskabet.
-      image: makarenko_facebook_2021.jpg
+    - title:
+      description:
+      image: studenterraadet-bog1@2x_w2.jpg
+    - title:
+      description:
+      image: studenterraadet@2x_w3.jpg
+    - title:
+      description:
+      image: studenterraadet2@2x_w3.jpg
+    - title:
+      description:
+      image: studenterraadet_illu1@2x_w2.jpg
+    - title: Studenterrådet på KU
+      description: Studiehåndbog. Design og illustrationer.
+      image: studenterraadet_illu2@2x_w2.jpg
 
+- title: 
+  client: NOAH
+  tag: Plakatserie
+  image: noah-plakater@2x_w3.jpg
+  type: background
+  width: three
+  mob-width: four
+  order: 180
+  text-color: "#0A0A12"
+  published: true
+  id: "21"
+  items:
+    - title:
+      description:
+      image: noah-plakater@2x_w3.jpg
 
-- title: NOAH Materialer
-  description: Pjece + Folder
+- title: aug.ngo
+  client: Arkitekter Uden Grænser
+  tag: Website
+  type: background
+  image: aug_web@2x_w4.png
+  width: four
+  mob-width:
+  order: 40
+  text-color: 
+  published: true
+  id: "20"
+  items:
+    - title: Arkitekter Uden Grænser
+      description: aug.ngo - Wordpress hjemmeside
+      image: aug_web@2x_w4.png
+
+- title: 
+  client: NOAH
+  tag: Pjece & Folder
   image: noah_cover@2x_w2.jpg
   type: background
-  width: two
+  width: three
   mob-width: two
   order: 90
-  text-color:
+  text-color: "#0A0A12"
   published: true
   id: "08"
   items:
@@ -174,164 +173,15 @@
       description: Program Zig-Zag folder
       image: noah_zigzag@2x_w3.jpg
 
-
-- title: Skal du have løst en opgave så ring på 35397331
-  description: info@monsun.dk
-  tag:
-  type: "quote"
-  width: two
-  mob-width: two
-  order: 70
-  color: "#1B2631"
-  text-color: GOLD
-  published: true
-  id: "06"
-
-
-
-
-
-- title: PsykInfo
-  description: Plakater & flyers
-  tag:
-  type: background
-  image: plakat_breakthesilence@2x_w2.jpg
-  width: one
-  mob-width:
-  order: 40
-  text-color:
-  published: true
-  id: "03"
-  items:
-    - title: PsykInfo - Region Hovedstaden
-      description: Plakater og flyers - Break the silence.
-      image: plakat_breakthesilence@2x_w2.jpg
-
-
-- title: Redaktionelle fotos
-  description: Fagblade
-  image: fagblade@2x_w3.jpg
-  type: media
-  width: three
-  mob-width:
-  order: 01
-  text-color: white
-  published: true
-  id: "01"
-  items:
-    - title: "Fotos til IMI-Bladet af Mark Knudsen"
-      description: "HK-Bladet for medlemmer af HK, IT, Medie & Industri Hovedstaden"
-      image: fagblade_imi_small.jpg
-    - title: "Fotos til forskellige fagblade af Morten Rode"
-      description: "Højskoler, Seniorfri, Bolig & Livsstil"
-      image: fagblade_morten1.jpg
-    - title: "Fotos til INFOA & FOA SOSU af Mark Knudsen"
-      description: ""
-      image: fagblade_sosu.jpg
-
-
-
-- title: ViVil - KBH Kommune
-  description: Psykisk syge i arbejde
-  tag:
-  image: vivil_brikker4@2x_w3.jpg
-  type: background
-  width: one
-  mob-width:
-  order: 180
-  text-color: white
-  published: true
-  id: "17"
-  items:
-    - title:
-      description:
-      image: vivil_brikker4@2x_w3.jpg
-    - title:
-      description:
-      image: vivil_cover@2x_w3.jpg
-    - title:
-      description:
-      image: vivil_brikker2@2x_w3.jpg
-    - title: Psykisk syge i arbejde
-      description: Logo, foldere, visitkort, samtalespil.
-      image: vivil_brikker3@2x_w3.jpg
-
-- title: NOAH
-  description: Plakatserie
-  tag:
-  image: noah-plakater@2x_w3.jpg
-  type: background
-  width: three
-  mob-width: four
-  order: 180
-  text-color: white
-  published: true
-  id: "21"
-  items:
-    - title:
-      description:
-      image: noah-plakater@2x_w3.jpg
-
-- title: Videoer om arbejdsmiljø for GIMK
-  description: "Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund"
-  image: GIMK@1x_w2.jpg
-  type: media
-  width: two
-  mob-width:
-  order: 10
-  text-color: white
-  published: true
-  id: "19"
-  items:
-    - title: "Jesper, Industribogbinder"
-      description: ""
-      video: "https://www.youtube.com/embed/QufqCm_-h54"
-    - title: "Søren, Arbejdsmiljørepræsentant"
-      description: "Aller Tryk"
-      video: "https://www.youtube.com/embed/JLcD24qvUjA"
-
-
-- title: "Fagligt.eu er fagbevægelsens portal om EU"
-  description: "Hjemmeside i Wordpress"
-  image: fagligteu@2x_w3.jpg
-  type: media
-  width: two
-  mob-width:
-  order: 10
-  text-color: white
-  published: true
-  id: "18"
-  items:
-    - title: "Fagligt.eu"
-      description: ""
-      image: fagligteu@2x_w3.jpg
-
-
-- title: LO Hovedstaden
-  description: Drupal 8 hjemmeside
-  image: loh_web@2x_w3.jpg
-  type: background
-  width: three
-  mob-width:
-  order: 20
-  text-color:
-  published: true
-  id: "21"
-  items:
-    - title: "Drupal 8 hjemmeside til LO Hovedstaden"
-      description: "LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte."
-      image: loh_web@2x_w3.jpg
-
-
-
-- title: Vindmølleindustrien
-  description: Design og illustrationer
+- title: 
+  client: Vindmølleindustrien
+  tag: Pjece
   image: vindmølleindustrien@2x_w2.jpg
   type: background
   width: one
   mob-width: two
   order: 140
-  text-color:
+  text-color: "#0A0A12"
   published: true
   id: "13"
   items:
@@ -342,9 +192,54 @@
       description: Design og illustrationer.
       image: vindmølleindustrien2@2x_w3.jpg
 
-- title: Portrætter
-  description:
+- title: Skal du have løst en opgave så ring på 35397331
+  description: info@monsun.dk
   tag:
+  type: "quote"
+  width: two
+  mob-width: two
+  order: 70
+  color: "#0A0A12"
+  text-color: GOLD
+  published: true
+  id: "06"
+
+- title: deo.dk
+  client: DEO
+  tag: Website
+  type: background
+  image: deo_rejser.jpg
+  width: one
+  mob-width: four
+  order: 40
+  text-color: "#0A0A12"
+  published: true
+  id: "21"
+  items:
+    - title: DEO
+      description: Wordpress hjemmeside
+      image: deo_rejser.jpg
+
+- title: 
+  client: PsykInfo
+  tag: Plakater & flyers
+  type: background
+  image: plakat_breakthesilence@2x_w2.jpg
+  width: one
+  mob-width:
+  order: 40
+  text-color: "#0A0A12"
+  published: true
+  id: "03"
+  items:
+    - title: PsykInfo - Region Hovedstaden
+      description: Plakater og flyers - Break the silence.
+      image: plakat_breakthesilence@2x_w2.jpg
+
+
+- title: 
+  client: Blandet
+  tag: Portrætter
   image: portraits/portraits_cover@1x_w3.jpg
   type: background
   width: four
@@ -415,12 +310,10 @@
       description: "Foto: Morten Rode"
       image: portraits/JohanBulow@2x_w2.jpg
 
-
-
-- title: SF København
-  description: Portrætter af kandidater
-  tag:
-  image: sf_cover@2x_w3.jpg
+- title: 
+  client: SF København
+  tag: Valgmaterialer & portrætter
+  image: sf_portrætter3@2x_w3.jpg
   type: background
   width: three
   mob-width:
@@ -439,14 +332,15 @@
       description: Portrætter af kandidater i København.
       image: sf_portrætter3@2x_w3.jpg
 
-- title: Kampen om Ungdomshuset
-  description: Tekst, design & foto
+- title: 
+  client: Monsun
+  tag: Bog
   image: ungdomshusbog@2x_w2.jpg
   type: background
   width: one
   mob-width: two
   order: 160
-  text-color:
+  text-color: "#0A0A12"
   published: true
   id: "15"
   items:
@@ -463,17 +357,15 @@
       description: Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.
       image: ungdomshusbog4@2x_w2.jpg
 
-
-
-- title: WeShelter
-  description:
-  tag:
+- title: 
+  client: WeShelter
+  tag: Magasin
   image: weshelter@2x_w3.jpg
   type: background
   width: one
   mob-width: two
   order: 110
-  text-color:
+  text-color: "#0A0A12"
   published: true
   id: "10"
   items:
@@ -487,105 +379,13 @@
       description:
       image: weshelter_mag2@2x_w2.jpg
 
-- title: 3F Kastrup
-  description: Medlemsbladet Avisen
-  image: 3f_avis_forside@2x.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 100
-  text-color: white
-  published: true
-  id: "09"
-  items:
-    - title: 3F Kastrup
-      description: Design –og strukturudvikling for medlemsbladet Avisen
-      image: 3f_avis@2x_w3.jpg
 
-- title: noah.dk
-  description: Drupal 8 hjemmeside
-  image: noahdk@2x_w3.jpg
-  type: background
-  width: two
-  mob-width:
-  order: 120
-  text-color:
-  published: true
-  id: "11"
-  items:
-    - title: noah.dk
-      description: Drupal 8 website
-      image: noahdk@2x_w3.jpg
-
-- title: NOAH - spisornli.nu
-  description: online-undervisningsmateriale til NOAH
-  image: spisornli_noah@2x_w4.jpg
-  type: background
-  width: two
-  mob-width:
-  order: 120
-  text-color:
-  published: true
-  id: "11"
-  items:
-    - title: spisornli.nu
-      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
-      image: spisornli_noah@2x_w4.jpg
-
-- title: Studenterrådet på KU
-  description: Studiebog
-  tag:
-  image: studenterraadet_illu1@2x_w2.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 130
-  text-color:
-  published: true
-  id: "12"
-  items:
-    - title:
-      description:
-      image: studenterraadet-bog1@2x_w2.jpg
-    - title:
-      description:
-      image: studenterraadet@2x_w3.jpg
-    - title:
-      description:
-      image: studenterraadet2@2x_w3.jpg
-    - title:
-      description:
-      image: studenterraadet_illu1@2x_w2.jpg
-    - title: Studenterrådet på KU
-      description: Studiehåndbog. Design og illustrationer.
-      image: studenterraadet_illu2@2x_w2.jpg
-
-- title: PsykInfo & Cinemateket
-  description: Filmkatalog
-  tag:
-  image: psykinfo@2x_w2.jpg
-  type: background
-  width: one
-  mob-width: two
-  order: 150
-  text-color: white
-  published: true
-  id: "14"
-  items:
-    - title:
-      description:
-      image: psykinfo@2x_w2.jpg
-    - title: PsykInfo & Cinemateket
-      description: Filmkatalog, plakater og rollups til filmfestivalen Don’t fear The Weird.
-      image: psykinfo2@2x_w3.jpg
-
-
-- title: Domkirken
-  description: IndreBy Kirkemagasin
-  tag:
+- title: IndreBy Kirkemagasin
+  client:  Domkirken
+  tag: Magasin
   image: indreby@2x_w2.jpg
   type: background
-  width: two
+  width: one
   mob-width: two
   order: 170
   text-color: white
@@ -603,18 +403,51 @@
       image: indreby3@2x_w3.jpg
 
 
-- title: WWF - Verdensnaturfonden
-  description: Opdag Havet - Undervisningsmaterialer
-  tag:
-  image: WWF@2x_w2.jpg
+- title: 
+  client: 3F Kastrup
+  tag: Avis
+  image: 3f_avis_forside@2x.jpg
   type: background
   width: two
   mob-width: two
-  order: 175
+  order: 100
   text-color: white
   published: true
-  id: "20"
+  id: "09"
   items:
-    - title:
-      description:
-      image: WWF.jpg
+    - title: 3F Kastrup
+      description: Design –og strukturudvikling for medlemsbladet Avisen
+      image: 3f_avis@2x_w3.jpg
+
+- title: 
+  client: NOAH
+  tag: Website
+  image: noahdk@2x_w3.jpg
+  type: background
+  width: two
+  mob-width:
+  order: 120
+  text-color: "#0A0A12"
+  published: true
+  id: "11"
+  items:
+    - title: noah.dk
+      description: Drupal 8 website
+      image: noahdk@2x_w3.jpg
+
+- title: Undervisningsmateriale
+  client: NOAH
+  tag: Webapplikation
+  image: spisornli_noah@2x_w4.jpg
+  type: background
+  width: two
+  mob-width:
+  order: 120
+  text-color: "#0A0A12"
+  published: true
+  id: "11"
+  items:
+    - title: spisornli.nu
+      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
+      image: spisornli_noah@2x_w4.jpg
+

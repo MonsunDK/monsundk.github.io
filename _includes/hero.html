@@ -1,15 +1,10 @@
-<div class="hero lazy" data-src="/assets/img/hero/{{ page.hero }}">
-  <img src="/assets/img/hero/{{ page.hero }}" style="display:none;">
-  <div class="box--size-outer">
-    <div class="box--size-inner">
-
-    </div>
-  </div>
+<div class="hero" 
+    data-bg="{{ '/assets/img/hero/' | relative_url }}{{ page.hero }}"
+	role="img"
+	aria-label="Hero image: {{ page.label | default: site.title }}"
+>
+	
+	<div class="box--size-outer">
+		<div class="box--size-inner"></div>
+	</div>
 </div>
-<a href="#scr-portfolio" class="section-header">
-  <span class="section-title"><i class="fal fa-chevron-down"></i></span>
-  <span class="v-lines">
-    <span></span>
-  </span>
-</a>
-<a id="scr-portfolio"></a>

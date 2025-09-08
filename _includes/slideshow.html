@@ -9,7 +9,7 @@
         <div class="box--size-outer">
           <div class="box--size-inner">
             <picture>
-              <img src="/assets/img/{{ slide.image }}.jpg" srcset="/assets/img/{{ slide.image }}.jpg 1x, /assets/img/{{ slide.image }}@2x.jpg 2x" alt="{{ slide.title }}" style="width:100%;">
+              <img src="/assets/img/{{ slide.image }}.jpg" srcset="/assets/img/{{ slide.image }}.jpg 1x, /assets/img/{{ slide.image }}@2x.jpg 2x" alt="{{ slide.title }}" style="width:100%;" loading="lazy" decoding="async">
             </picture>
             <div class="box--bottom-container" style="color:{{ slide.text-color }};">
               <p class="box-title">{{ slide.title }}</p>
