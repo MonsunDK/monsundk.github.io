@@ -1,8 +1,12 @@
-<section class="page-content flex-grid portfolio">
+<section class="flex-grid portfolio">
 
   {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
 
-  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col {{ box.mob-width }}-col-sm lazy" data-src="/assets/img/portfolio/{{ box.image }}" style="background-color:{{ box.color }}; ">
+  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col {{ box.mob-width }}-col-sm" 
+    data-bg="{{ '/assets/img/portfolio/' | relative_url }}{{ box.image }}"
+    style="background-color:{{ box.color }}; "
+    role="img"
+    aria-label="{{ box.alt | default: box.title }}">
 
     <div class="box--size-outer">
       {% if box.type == 'quote' %}
@@ -10,12 +14,10 @@
       {% else %}
       <a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">
       {% endif %}
-        <p class="tag" style="color:{{ box.text-color }};">{{ box.tag }}</p>
-        <div class="box--text-container" style="color:{{ box.text-color }};">
-          <p class="box-title">{{ box.title }}</p>
-          {% if box.description %}
-          <p class="box-description">{{ box.description }}</p>
-          {% endif %}
+        
+        <div class="box--text-container" style="color: {{ box.text-color }};">
+			<span class="box-tag" style="color: {{ box.text-color }};">{{ box.tag }}</span>
+			<span class="box-title">{{ box.title }} / {{ box.client }}</span>
         </div>
       {% if box.type == 'quote' %}
       </div>
@@ -28,39 +30,43 @@
 
   <!-- The Modal -->
   <div class="modal modal_multi permalink" id="{{ box.id }}_{{ box.title | slugify }}" tabindex="-1" role="dialog" aria-labelledby="{{ box.id }}_{{ box.title | slugify }}" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">{{ box.title }}</h1>
-          <p class="modal-description">{{ box.description }}</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          {% for item in box.items %}
-          <div class="modal-item">
-            <div class="media-content" >
-              {% if item.image %}
-                <img class="lazy" alt="{{ item.title }}" data-src="/assets/img/portfolio/{{ item.image }}" style="width:100%;">
-              {% endif %}
-              {% if item.video %}
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="{{ item.video }}?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              {% endif %}
-            </div>
-            {% if item.title or item.description %}
-              <p class="modal-item--description">/ <span class="modal-item--title">{{ item.title }}</span> {% if item.description %}/ {{ item.description }}</p>{% endif %}
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">{{ box.tag }}</span>
+						<h1 class="modal-title">{{ box.title }} / {{ box.client }}</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				{% for item in box.items %}
+				<div class="modal-item">
+					<div class="media-content" >
+					{% if item.image %}
+						<img alt="{{ item.title }}" src="/assets/img/portfolio/{{ item.image }}" style="width:100%;" loading="lazy" decoding="async">
+					{% endif %}
+					{% if item.video %}
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="{{ item.video }}?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+					{% endif %}
+					</div>
+					{% if item.title or item.description %}
+					<p class="modal-item--description"><span class="modal-item--title">{{ item.title }}</span> {% if item.description %}/ {{ item.description }}</p>{% endif %}
+					{% endif %}
+				</div>
+				{% endfor %}
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 

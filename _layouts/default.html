@@ -1,71 +1,48 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-  {% include head.html %}
+  	{% include head.html %}
 
-  <body>
+  	<body>
 
-    {% include header.html %}
-
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
+    	{% include header.html %}
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<main class="page-content" aria-label="Content">
+			{{ content }}
+		</main>
 
-    <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
+    	{% include footer.html %}
 
-    <script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
-
-
-
-<script>
-
-// Don't force https when serving the website locally
-if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
 
 
-$(function() {
-     $('.lazy').lazy({
-       effect: "fadeIn",
-       effectTime: 2000,
-       threshold: 0
-     });
- });
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		
+		<script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
+
+		<script>
+
+		// Don't force https when serving the website locally
+		if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
 
 
-  $('.modal').on("show.bs.modal", function() {
-    $('.lazy', this).Lazy({
-      bind: 'event',
-      chainable: false
-    });
-  });
+		var $root = $('html, body');
+		$('a[href^="#scr-"]').click(function () {
+			$root.animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+		});
 
-
-  var $root = $('html, body');
-  $('a[href^="#scr-"]').click(function () {
-      $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
-  });
-
-</script>
-</body>
+		</script>
+	</body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  	<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
-
+  <script src="/assets/js/lazy-bg.js" defer></script>
 
   
 
@@ -30,48 +30,67 @@
 </head>
 
 
-  <body>
+  	<body>
 
-    <header class="site-header" role="banner">
-
+    	<header class="site-header" role="banner">
    
-  <nav class="navbar navbar-top navbar-default">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/"><img width="140" height="19" src="/assets/img/monsun_logo_full.svg"></a>
+  <nav class="main-navigation" role="navigation" aria-label="Main navigation">
+	<div class="nav-header">
+		<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">+</button>
+		<a class="site-logo" href="/">MONSUN</a>
+	</div>
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-             
-        <li class="">
-          <a href="/" style="color:;">Hjem</a>
-        </li>
-             
-        <li class="">
-          <a href="/kontakt/" style="color:;">Kontakt</a>
-        </li>
-             
-        <li class="">
-          <a href="/om/" style="color:;">Om Monsun</a>
-        </li>
-         
+	<div class="nav-items" id="nav-items" style="--total: 2">
+		
+			   
+			<a href="/kontakt/" class="nav-item nav-item-0 " style="--i: 0;" role="button" aria-haspopup="true" aria-expanded="false">Kontakt</a>
 
-      </ul>
-    </div>
+			   
+			<a href="/om/" class="nav-item nav-item-1 " style="--i: 1;" role="button" aria-haspopup="true" aria-expanded="false">Om</a>
+
+			
+	
+	</div>
 </nav>
+
+
+
+<script>
+	const menu = document.getElementById('nav-items');
+	const btn  = document.getElementById('nav-toggle');
+	let isOpen = false;
+
+	btn.addEventListener('click', () => {
+		btn.classList.toggle('active');
+		isOpen = !isOpen;
+
+		if (isOpen) {                    // =====  OPEN  =====
+			menu.classList.remove('closing');
+			requestAnimationFrame(() => {  // wait 1 frame
+				menu.classList.add('opening');
+			});
+			return;
+		}
+
+		/* =====  CLOSE  ===== */
+		menu.classList.remove('opening');
+		menu.classList.add('closing');
+
+		const total = menu.children.length * 100 + 350;
+		setTimeout(() => {
+			menu.classList.remove('closing');
+		}, total);
+	});
+</script>
+
+
+     
 
 </header>
 
 
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        
+		<main class="page-content" aria-label="Content">
+			
 <div class="image-wrapper">
   <img class="lazy" src="/assets/img/pernille.jpg" alt="" style="width:100%;"/>
 </div>
@@ -84,7 +103,6 @@
   <header class="post-header">
     <span class="trompet"></span>
     <h1 class="post-title">
-          <!-- <span class="typewrite" data-period="2000" data-type='[ "", "Pressefotografi" ]'> -->
         <span class="">  Pressefotografi</span>
     </h1>
     
@@ -96,10 +114,9 @@
   </div>
 </article>
 
-      </div>
-    </main>
+		</main>
 
-    <footer class="site-footer">
+    	<footer class="site-footer">
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
@@ -108,7 +125,9 @@
         <ul class="contact-list">
             <li class="footer-heading">Monsun</li>
             
-            <li>Nørrebrograde 5C, 1.sal<br>2200 København N</li>
+            <li>Nørrebrogade 5C, 
+Stuen og 1. sal
+<br>2200 København N</li>
             
             
             <li><a href="mailto:info@monsun.dk">info@monsun.dk</a></li>
@@ -138,56 +157,35 @@
 </footer>
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		
+		<script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
 
-    <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
+		<script>
 
-    <script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
-
-
-
-<script>
-
-// Don't force https when serving the website locally
-if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+		// Don't force https when serving the website locally
+		if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
 
 
-$(function() {
-     $('.lazy').lazy({
-       effect: "fadeIn",
-       effectTime: 2000,
-       threshold: 0
-     });
- });
+		var $root = $('html, body');
+		$('a[href^="#scr-"]').click(function () {
+			$root.animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+		});
 
-
-  $('.modal').on("show.bs.modal", function() {
-    $('.lazy', this).Lazy({
-      bind: 'event',
-      chainable: false
-    });
-  });
-
-
-  var $root = $('html, body');
-  $('a[href^="#scr-"]').click(function () {
-      $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
-  });
-
-</script>
-</body>
+		</script>
+	</body>
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  	<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Monsun</title>
-  <meta name="description" content="Monsun er et kreativt kooperativ, der leverer løsninger til alle slags kommunikationsopgaver. Vi laver alt fra fotos, grafisk design, web-udvikling eller smu...">
+  <title>Home</title>
+  <meta name="description" content="Vi skaber løsninger til alle former for visuel kommunikation – fra webudvikling, grafisk design og fotografi til alverdens unikke tryksager.">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/assets/css/fa-svg-with-js.css">
@@ -22,7 +22,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
-
+  <script src="/assets/js/lazy-bg.js" defer></script>
 
   
 
@@ -30,79 +30,127 @@
 </head>
 
 
-  <body>
+  	<body>
 
-    <header class="site-header" role="banner">
-
+    	<header class="site-header" role="banner">
    
-  <nav class="navbar navbar-top navbar-default">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/"><img width="140" height="19" src="/assets/img/monsun_logo_full.svg"></a>
+  <nav class="main-navigation" role="navigation" aria-label="Main navigation">
+	<div class="nav-header">
+		<button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">+</button>
+		<a class="site-logo" href="/">MONSUN</a>
+	</div>
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-             
-        <li class="active">
-          <a href="/" style="color:;">Hjem</a>
-        </li>
-             
-        <li class="">
-          <a href="/kontakt/" style="color:;">Kontakt</a>
-        </li>
-             
-        <li class="">
-          <a href="/om/" style="color:;">Om Monsun</a>
-        </li>
-         
+	<div class="nav-items" id="nav-items" style="--total: 2">
+		
+			   
+			<a href="/kontakt/" class="nav-item nav-item-0 " style="--i: 0;" role="button" aria-haspopup="true" aria-expanded="false">Kontakt</a>
 
-      </ul>
-    </div>
+			   
+			<a href="/om/" class="nav-item nav-item-1 " style="--i: 1;" role="button" aria-haspopup="true" aria-expanded="false">Om</a>
+
+			
+	
+	</div>
 </nav>
+
+
+
+<script>
+	const menu = document.getElementById('nav-items');
+	const btn  = document.getElementById('nav-toggle');
+	let isOpen = false;
+
+	btn.addEventListener('click', () => {
+		btn.classList.toggle('active');
+		isOpen = !isOpen;
+
+		if (isOpen) {                    // =====  OPEN  =====
+			menu.classList.remove('closing');
+			requestAnimationFrame(() => {  // wait 1 frame
+				menu.classList.add('opening');
+			});
+			return;
+		}
+
+		/* =====  CLOSE  ===== */
+		menu.classList.remove('opening');
+		menu.classList.add('closing');
+
+		const total = menu.children.length * 100 + 350;
+		setTimeout(() => {
+			menu.classList.remove('closing');
+		}, total);
+	});
+</script>
+
+
+     
 
 </header>
 
 
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-  <div class="hero fullpage-hero lazy" data-src="/assets/img/hero/KreativtKooperativ@1x.jpg">
-    <img src="/assets/img/hero/KreativtKooperativ@1x.jpg" style="display:none;">
-    <div class="box--size-outer">
-      <div class="box--size-inner">
-      </div>
+		<main class="page-content" aria-label="Content">
+			<section class="frontpage-hero">
+	<video width="640" height="360" autoplay muted loop playsinline>
+		<source src="/assets/video/experimentsinmotiongraphics-monsun6.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+    <div class="frontpage-hero-inner">
+      	<ul class="frontpage-hero--slideshow">
+			<li><span>MONSUN</span></li>
+			<li><span>Website</span></li>
+			<li><span>Design</span></li>
+			<li><span>Visuel Identitet</span></li>
+			<li><span>Magasin</span></li>
+			<li><span>Plakat</span></li>
+			<li><span>Avis</span></li>
+			<li><span>Folder</span></li>
+			<li><span>Foto</span></li>
+			<li><span>Brætspil</span></li>
+			<li><span>WebApp</span></li>
+			<li><span>Bog</span></li>
+			<li><span>Logo</span></li>
+			<li><span>Free Palestine</span></li>
+			<li><span>Grafik</span></li>
+		</ul>
     </div>
-  </div>
-  <a href="#scr-portfolio" class="section-header">
-    <span class="section-title"><i class="fal fa-chevron-down"></i></span>
-    <span class="v-lines">
-      <span></span>
-    </span>
-  </a>
-  <a id="scr-portfolio"></a>
+</section>
 
-  <section class="page-content flex-grid portfolio">
+<div class="section-separator">
+	<a href="#scr-portfolio">
+		<span class="separator-arrow"><i class="fal fa-chevron-down"></i></span>
+		<span class="v-lines">
+			<span></span>
+		</span>
+	</a>
+	<a id="scr-portfolio"></a>
+</div>
+
+<section class="section bg-xlines mb3">
+	<div class="content-wrapper">
+		<h1 class="font-size-xlarge ">Monsun har i over 25 år udviklet unikke løsninger inden for visuel kommunikation fra hjertet af Nørrebro. <a href="/om" class="arrow-link">Mere<i class="fal fa-arrow-right"></i></a></h1>
+	</div>
+</section>
+
+
+<section class="flex-grid portfolio">
 
     
 
-  <div class="box--media box--id01 two-col -col-sm lazy" data-src="/assets/img/portfolio/GIMK@1x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id30 four-col -col-sm" 
+    data-bg="/assets/img/portfolio/DEO-EP-valgtest.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="EP-Valgtest 2024">
 
     <div class="box--size-outer">
       
-      <a href="#01_videoer-om-arbejdsmiljø-for-gimk" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#01_videoer-om-arbejdsmiljø-for-gimk">
+      <a href="#30_ep-valgtest-2024" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#30_ep-valgtest-2024">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">Videoer om arbejdsmiljø for GIMK</p>
-          
-          <p class="box-description">Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Webapplikation</span>
+			<span class="box-title">EP-Valgtest 2024 / DEO</span>
         </div>
       
       </a>
@@ -112,52 +160,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="01_videoer-om-arbejdsmiljø-for-gimk" tabindex="-1" role="dialog" aria-labelledby="01_videoer-om-arbejdsmiljø-for-gimk" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="30_ep-valgtest-2024" tabindex="-1" role="dialog" aria-labelledby="30_ep-valgtest-2024" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Videoer om arbejdsmiljø for GIMK</h1>
-          <p class="modal-description">Grafisk Industri- & Medie Kartel - HK/Privat, 3F Industri, 3F transport, Dansk Metal, Dansk EL-Forbund</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-              
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QufqCm_-h54?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Jesper, Industribogbinder</span> / </p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-              
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JLcD24qvUjA?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Søren, Arbejdsmiljørepræsentant</span> / Aller Tryk</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Webapplikation</span>
+						<h1 class="modal-title">EP-Valgtest 2024 / DEO</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/DEO-EP-valgtest.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title"></span> / www.ep-valgtest2024.dk</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -165,18 +201,20 @@
 
     
 
-  <div class="box--media box--id01 two-col -col-sm lazy" data-src="/assets/img/portfolio/fagligteu@2x_w3.jpg" style="background-color:; ">
+  <div class="box--media box--id04 three-col two-col-sm" 
+    data-bg="/assets/img/portfolio/makarenko_facebook_2021.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="Makarenko - Styrk fællesskabet">
 
     <div class="box--size-outer">
       
-      <a href="#01_fagligt-eu-er-fagbevægelsens-portal-om-eu" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#01_fagligt-eu-er-fagbevægelsens-portal-om-eu">
+      <a href="#04_makarenko-styrk-fællesskabet" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#04_makarenko-styrk-fællesskabet">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">Fagligt.eu er fagbevægelsens portal om EU</p>
-          
-          <p class="box-description">Hjemmeside i Wordpress</p>
-          
+        
+        <div class="box--text-container" style="color: white;">
+			<span class="box-tag" style="color: white;">Brætspil</span>
+			<span class="box-title">Makarenko - Styrk fællesskabet / FIU</span>
         </div>
       
       </a>
@@ -186,36 +224,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="01_fagligt-eu-er-fagbevægelsens-portal-om-eu" tabindex="-1" role="dialog" aria-labelledby="01_fagligt-eu-er-fagbevægelsens-portal-om-eu" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="04_makarenko-styrk-fællesskabet" tabindex="-1" role="dialog" aria-labelledby="04_makarenko-styrk-fællesskabet" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Fagligt.eu er fagbevægelsens portal om EU</h1>
-          <p class="modal-description">Hjemmeside i Wordpress</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Fagligt.eu" data-src="/assets/img/portfolio/fagligteu@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Fagligt.eu</span> / </p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Brætspil</span>
+						<h1 class="modal-title">Makarenko - Styrk fællesskabet / FIU</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Fagbevægelsens Interne Uddannelser, FIU" src="/assets/img/portfolio/makarenko_facebook_2021.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Fagbevægelsens Interne Uddannelser, FIU</span> / Brætspil, Makarenko - Styrk fællesskabet.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -223,18 +265,20 @@
 
     
 
-  <div class="box--background box--id01 three-col -col-sm lazy" data-src="/assets/img/portfolio/loh_web@2x_w3.jpg" style="background-color:; ">
+  <div class="box--background box--id03 one-col four-col-sm" 
+    data-bg="/assets/img/portfolio/kickstart_logo@2x.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#01_lo-hovedstaden" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#01_lo-hovedstaden">
+      <a href="#03_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#03_">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">LO Hovedstaden</p>
-          
-          <p class="box-description">Drupal 8 hjemmeside</p>
-          
+        
+        <div class="box--text-container" style="color: white;">
+			<span class="box-tag" style="color: white;">Logoer</span>
+			<span class="box-title"> / blandet</span>
         </div>
       
       </a>
@@ -244,36 +288,172 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="01_lo-hovedstaden" tabindex="-1" role="dialog" aria-labelledby="01_lo-hovedstaden" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="03_" tabindex="-1" role="dialog" aria-labelledby="03_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">LO Hovedstaden</h1>
-          <p class="modal-description">Drupal 8 hjemmeside</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Drupal 8 hjemmeside til LO Hovedstaden" data-src="/assets/img/portfolio/loh_web@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Drupal 8 hjemmeside til LO Hovedstaden</span> / LO Hovedstaden er en sektion under Landsorganisationen i Danmark og paraplyorganisation for 51 fagforeninger for faglærte og ufaglærte.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Logoer</span>
+						<h1 class="modal-title"> / blandet</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Kickstart" src="/assets/img/portfolio/logo_kickstart1@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Kickstart</span> / Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Brønshøj Kirke" src="/assets/img/portfolio/logo_brønshøjkirke@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Brønshøj Kirke</span> / Design af logo til Brønshøj Kirke.</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Københavns Universitet" src="/assets/img/portfolio/logo_biologiskfagråd@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Københavns Universitet</span> / Logo til Biologisk Fagråd.</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Københavnerier" src="/assets/img/portfolio/logo_københavnerier@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Københavnerier</span> / Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Unge Stemmer" src="/assets/img/portfolio/logo_ungestemmer1@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Unge Stemmer</span> / Kasseret Logo</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Unge Stemmer" src="/assets/img/portfolio/logo_ungestemmer3@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Unge Stemmer</span> / Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Frinova 1" src="/assets/img/portfolio/logo_frinova1@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Frinova 1</span> 
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Frinova 2" src="/assets/img/portfolio/logo_frinova2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Frinova 2</span> 
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Defocus" src="/assets/img/portfolio/logo_defocus@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Defocus</span> 
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Concord" src="/assets/img/portfolio/logo_concord@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Concord</span> 
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="PROSA" src="/assets/img/portfolio/logo_prosa@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">PROSA</span> 
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Danske Gymnasieelevers Sammenslutning" src="/assets/img/portfolio/logo_dgs1@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Danske Gymnasieelevers Sammenslutning</span> 
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -281,18 +461,20 @@
 
     
 
-  <div class="box--background box--id02 one-col two-col-sm lazy" data-src="/assets/img/portfolio/kickstart_logo@2x.jpg" style="background-color:; ">
+  <div class="box--background box--id12 one-col two-col-sm" 
+    data-bg="/assets/img/portfolio/studenterraadet_illu1@2x_w2.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#02_logoer" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#02_logoer">
+      <a href="#12_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#12_">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">Logoer</p>
-          
-          <p class="box-description">Blandede</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Studiebog</span>
+			<span class="box-title"> / Studenterrådet på KU</span>
         </div>
       
       </a>
@@ -302,168 +484,80 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="02_logoer" tabindex="-1" role="dialog" aria-labelledby="02_logoer" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="12_" tabindex="-1" role="dialog" aria-labelledby="12_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Logoer</h1>
-          <p class="modal-description">Blandede</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Kickstart" data-src="/assets/img/portfolio/logo_kickstart1@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Kickstart</span> / Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Brønshøj Kirke" data-src="/assets/img/portfolio/logo_brønshøjkirke@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Brønshøj Kirke</span> / Design af logo til Brønshøj Kirke.</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Københavns Universitet" data-src="/assets/img/portfolio/logo_biologiskfagråd@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Københavns Universitet</span> / Logo til Biologisk Fagråd.</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Københavnerier" data-src="/assets/img/portfolio/logo_københavnerier@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Københavnerier</span> / Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Unge Stemmer" data-src="/assets/img/portfolio/logo_ungestemmer1@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Unge Stemmer</span> / Kasseret Logo</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Unge Stemmer" data-src="/assets/img/portfolio/logo_ungestemmer3@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Unge Stemmer</span> / Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Frinova 1" data-src="/assets/img/portfolio/logo_frinova1@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Frinova 1</span> 
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Frinova 2" data-src="/assets/img/portfolio/logo_frinova2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Frinova 2</span> 
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Defocus" data-src="/assets/img/portfolio/logo_defocus@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Defocus</span> 
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Concord" data-src="/assets/img/portfolio/logo_concord@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Concord</span> 
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="PROSA" data-src="/assets/img/portfolio/logo_prosa@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">PROSA</span> 
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Danske Gymnasieelevers Sammenslutning" data-src="/assets/img/portfolio/logo_dgs1@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Danske Gymnasieelevers Sammenslutning</span> 
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Studiebog</span>
+						<h1 class="modal-title"> / Studenterrådet på KU</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/studenterraadet-bog1@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/studenterraadet@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/studenterraadet2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/studenterraadet_illu1@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Studenterrådet på KU" src="/assets/img/portfolio/studenterraadet_illu2@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Studenterrådet på KU</span> / Studiehåndbog. Design og illustrationer.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -471,16 +565,20 @@
 
     
 
-  <div class="box--background box--id01b four-col two-col-sm lazy" data-src="/assets/img/portfolio/portraits/portraits_cover@2x_w4.jpg" style="background-color:; ">
+  <div class="box--background box--id21 three-col four-col-sm" 
+    data-bg="/assets/img/portfolio/noah-plakater@2x_w3.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#01b_portrætter" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#01b_portrætter">
+      <a href="#21_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#21_">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">Portrætter</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Plakatserie</span>
+			<span class="box-title"> / NOAH</span>
         </div>
       
       </a>
@@ -490,258 +588,38 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="01b_portrætter" tabindex="-1" role="dialog" aria-labelledby="01b_portrætter" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="21_" tabindex="-1" role="dialog" aria-labelledby="21_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Portrætter</h1>
-          <p class="modal-description"></p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Iain Cameron, Grafiker" data-src="/assets/img/portfolio/portraits/MG_8021_mk.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Iain Cameron, Grafiker</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Johanne Schmidt-Nielsen, politiker og Pernille Skipper, politiker" data-src="/assets/img/portfolio/portraits/johanne_pernille@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Johanne Schmidt-Nielsen, politiker og Pernille Skipper, politiker</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Jens August Willes, teaterdirektør" data-src="/assets/img/portfolio/portraits/Jens_August_Willes_04.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Jens August Willes, teaterdirektør</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Michael Falch, musiker" data-src="/assets/img/portfolio/portraits/Michael_Falch_12.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Michael Falch, musiker</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Jens Ege, formand Danske Vetaraner (tv). Jesper Langberg, skuespiller & Kristina Langberg, operasanger (th)" data-src="/assets/img/portfolio/portraits/morten-foto@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Jens Ege, formand Danske Vetaraner (tv). Jesper Langberg, skuespiller & Kristina Langberg, operasanger (th)</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/portraits/Frederik_Vedersoe_17.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Frederik Vedersoe, musiker" data-src="/assets/img/portfolio/portraits/Frederik_Vedersoe_09.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Frederik Vedersoe, musiker</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Johan Peter Paludan, fremtidsforsker" data-src="/assets/img/portfolio/portraits/johan_peter_paludan@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Johan Peter Paludan, fremtidsforsker</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Christine Antorini, politiker" data-src="/assets/img/portfolio/portraits/christine antorini_mk.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Christine Antorini, politiker</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Stine Bosse, tidligere koncernchef i Tryg" data-src="/assets/img/portfolio/portraits/stine_bosse_mk.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Stine Bosse, tidligere koncernchef i Tryg</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Sten Lundager, forfatter" data-src="/assets/img/portfolio/portraits/Sten_lundager06.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Sten Lundager, forfatter</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/portraits/martin_brygmann08.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Martin Brygmann, skuespiller" data-src="/assets/img/portfolio/portraits/martin_brygmann_07.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Martin Brygmann, skuespiller</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/portraits/manu_sareen_mk.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Manu Sareen, politiker" data-src="/assets/img/portfolio/portraits/manu_sareen_2_mk@2x.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Manu Sareen, politiker</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Thomas Blachman, tv-vært (tv) & Malika Graff, musiker (th)" data-src="/assets/img/portfolio/portraits/MalikaGraff_Blachman@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Thomas Blachman, tv-vært (tv) & Malika Graff, musiker (th)</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Kim Simonsen, formand HK" data-src="/assets/img/portfolio/portraits/kim_simonsen_mk.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Kim Simonsen, formand HK</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Signe Molde, tv-vært (tv) &  Niels Thorborg, ervhversleder (th)" data-src="/assets/img/portfolio/portraits/Niels_Thorborg@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Signe Molde, tv-vært (tv) &  Niels Thorborg, ervhversleder (th)</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Keith Thomas Lohse, radiovært" data-src="/assets/img/portfolio/portraits/keith_thomas_lohse.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Keith Thomas Lohse, radiovært</span> / Foto: Mark Knudsen</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Johan Bulow, erhvervsmand" data-src="/assets/img/portfolio/portraits/JohanBulow@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Johan Bulow, erhvervsmand</span> / Foto: Morten Rode</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Plakatserie</span>
+						<h1 class="modal-title"> / NOAH</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/noah-plakater@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -749,262 +627,264 @@
 
     
 
-  <div class="box--quote box--id07 two-col two-col-sm lazy" data-src="/assets/img/portfolio/" style="background-color:GOLD; ">
+  <div class="box--background box--id20 four-col -col-sm" 
+    data-bg="/assets/img/portfolio/aug_web@2x_w4.png"
+    style="background-color:; "
+    role="img"
+    aria-label="aug.ngo">
+
+    <div class="box--size-outer">
+      
+      <a href="#20_aug-ngo" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#20_aug-ngo">
+      
+        
+        <div class="box--text-container" style="color: ;">
+			<span class="box-tag" style="color: ;">Website</span>
+			<span class="box-title">aug.ngo / Arkitekter Uden Grænser</span>
+        </div>
+      
+      </a>
+      
+
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal modal_multi permalink" id="20_aug-ngo" tabindex="-1" role="dialog" aria-labelledby="20_aug-ngo" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Website</span>
+						<h1 class="modal-title">aug.ngo / Arkitekter Uden Grænser</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Arkitekter Uden Grænser" src="/assets/img/portfolio/aug_web@2x_w4.png" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Arkitekter Uden Grænser</span> / aug.ngo - Wordpress hjemmeside</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+  </div>
+
+
+
+
+    
+
+  <div class="box--background box--id08 three-col two-col-sm" 
+    data-bg="/assets/img/portfolio/noah_cover@2x_w2.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
+
+    <div class="box--size-outer">
+      
+      <a href="#08_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#08_">
+      
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Pjece & Folder</span>
+			<span class="box-title"> / NOAH</span>
+        </div>
+      
+      </a>
+      
+
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal modal_multi permalink" id="08_" tabindex="-1" role="dialog" aria-labelledby="08_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Pjece & Folder</span>
+						<h1 class="modal-title"> / NOAH</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/noah_folder1@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/noah_folder2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/noah_folder3@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="NOAH, Friends of the Earth" src="/assets/img/portfolio/noah_folder@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">NOAH, Friends of the Earth</span> / Folder om bæredygtige boliger.</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="NOAH, Friends of the Earth" src="/assets/img/portfolio/noah_zigzag@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">NOAH, Friends of the Earth</span> / Program Zig-Zag folder</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+  </div>
+
+
+
+
+    
+
+  <div class="box--background box--id13 one-col two-col-sm" 
+    data-bg="/assets/img/portfolio/vindmølleindustrien@2x_w2.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
+
+    <div class="box--size-outer">
+      
+      <a href="#13_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#13_">
+      
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Pjece</span>
+			<span class="box-title"> / Vindmølleindustrien</span>
+        </div>
+      
+      </a>
+      
+
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal modal_multi permalink" id="13_" tabindex="-1" role="dialog" aria-labelledby="13_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Pjece</span>
+						<h1 class="modal-title"> / Vindmølleindustrien</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/vindmølleindustrien@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Vindmølleindustrien folder" src="/assets/img/portfolio/vindmølleindustrien2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Vindmølleindustrien folder</span> / Design og illustrationer.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+  </div>
+
+
+
+
+    
+
+  <div class="box--quote box--id06 two-col two-col-sm" 
+    data-bg="/assets/img/portfolio/"
+    style="background-color:#0A0A12; "
+    role="img"
+    aria-label="Skal du have løst en opgave så ring på 35397331">
 
     <div class="box--size-outer">
       
       <div class="box--size-inner myBtn_multi">
       
-        <p class="tag" style="color:black;"></p>
-        <div class="box--text-container" style="color:black;">
-          <p class="box-title">Bestil fotograf på 35397331</p>
-          
-          <p class="box-description">eller skriv direkte til mark@monsun.dk eller morten@monsun.dk</p>
-          
-        </div>
-      
-      </div>
-      
-
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="07_bestil-fotograf-på-35397331" tabindex="-1" role="dialog" aria-labelledby="07_bestil-fotograf-på-35397331" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
-
-          <h1 class="modal-title">Bestil fotograf på 35397331</h1>
-          <p class="modal-description">eller skriv direkte til mark@monsun.dk eller morten@monsun.dk</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-    
-
-  <div class="box--media box--id04 two-col two-col-sm lazy" data-src="/assets/img/portfolio/vildeliv_video@2x.jpg" style="background-color:; ">
-
-    <div class="box--size-outer">
-      
-      <a href="#04_vilde-liv" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#04_vilde-liv">
-      
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">Vilde Liv</p>
-          
-          <p class="box-description">Videoportræt</p>
-          
-        </div>
-      
-      </a>
-      
-
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="04_vilde-liv" tabindex="-1" role="dialog" aria-labelledby="04_vilde-liv" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
-
-          <h1 class="modal-title">Vilde Liv</h1>
-          <p class="modal-description">Videoportræt</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-              
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8s0_iZg9CeA?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Vilde Liv, Københavns Kommune</span> / Video om Vilde Liv, Københavns Kommunes Socialforvaltnings tilbud til unge mellem 12-21 år der færdes på og omkring Christiania.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-    
-
-  <div class="box--background box--id05 three-col -col-sm lazy" data-src="/assets/img/portfolio/sf_cover@2x_w3.jpg" style="background-color:; ">
-
-    <div class="box--size-outer">
-      
-      <a href="#05_sf-københavn" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#05_sf-københavn">
-      
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">SF København</p>
-          
-          <p class="box-description">Portrætter af kandidater</p>
-          
-        </div>
-      
-      </a>
-      
-
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="05_sf-københavn" tabindex="-1" role="dialog" aria-labelledby="05_sf-københavn" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
-
-          <h1 class="modal-title">SF København</h1>
-          <p class="modal-description">Portrætter af kandidater</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/sf_cover@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Kommunalvalget 2017" data-src="/assets/img/portfolio/sf_portrætter2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Kommunalvalget 2017</span> / Portrætter af kandidater i København.</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Kommunalvalget 2013" data-src="/assets/img/portfolio/sf_portrætter3@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Kommunalvalget 2013</span> / Portrætter af kandidater i København.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-    
-
-  <div class="box--background box--id03 one-col two-col-sm lazy" data-src="/assets/img/portfolio/plakat_breakthesilence@2x_w2.jpg" style="background-color:; ">
-
-    <div class="box--size-outer">
-      
-      <a href="#03_psykinfo" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#03_psykinfo">
-      
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">PsykInfo</p>
-          
-          <p class="box-description">Plakater & flyers</p>
-          
-        </div>
-      
-      </a>
-      
-
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="03_psykinfo" tabindex="-1" role="dialog" aria-labelledby="03_psykinfo" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
-
-          <h1 class="modal-title">PsykInfo</h1>
-          <p class="modal-description">Plakater & flyers</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="PsykInfo - Region Hovedstaden" data-src="/assets/img/portfolio/plakat_breakthesilence@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">PsykInfo - Region Hovedstaden</span> / Plakater og flyers - Break the silence.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-    
-
-  <div class="box--quote box--id06 two-col two-col-sm lazy" data-src="/assets/img/portfolio/" style="background-color:#1B2631; ">
-
-    <div class="box--size-outer">
-      
-      <div class="box--size-inner myBtn_multi">
-      
-        <p class="tag" style="color:GOLD;"></p>
-        <div class="box--text-container" style="color:GOLD;">
-          <p class="box-title">Skal du have løst en opgave så ring på 35397331</p>
-          
-          <p class="box-description">info@monsun.dk</p>
-          
+        
+        <div class="box--text-container" style="color: GOLD;">
+			<span class="box-tag" style="color: GOLD;"></span>
+			<span class="box-title">Skal du have løst en opgave så ring på 35397331 / </span>
         </div>
       
       </div>
@@ -1015,23 +895,27 @@
 
   <!-- The Modal -->
   <div class="modal modal_multi permalink" id="06_skal-du-have-løst-en-opgave-så-ring-på-35397331" tabindex="-1" role="dialog" aria-labelledby="06_skal-du-have-løst-en-opgave-så-ring-på-35397331" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Skal du have løst en opgave så ring på 35397331</h1>
-          <p class="modal-description">info@monsun.dk</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag"></span>
+						<h1 class="modal-title">Skal du have løst en opgave så ring på 35397331 / </h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1039,18 +923,20 @@
 
     
 
-  <div class="box--background box--id08 two-col -col-sm lazy" data-src="/assets/img/portfolio/noah_cover@2x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id21 one-col four-col-sm" 
+    data-bg="/assets/img/portfolio/deo_rejser.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="deo.dk">
 
     <div class="box--size-outer">
       
-      <a href="#08_noah-materialer" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#08_noah-materialer">
+      <a href="#21_deo-dk" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#21_deo-dk">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">NOAH Materialer</p>
-          
-          <p class="box-description">Pjece + Folder</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Website</span>
+			<span class="box-title">deo.dk / DEO</span>
         </div>
       
       </a>
@@ -1060,78 +946,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="08_noah-materialer" tabindex="-1" role="dialog" aria-labelledby="08_noah-materialer" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="21_deo-dk" tabindex="-1" role="dialog" aria-labelledby="21_deo-dk" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">NOAH Materialer</h1>
-          <p class="modal-description">Pjece + Folder</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/noah_folder1@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/noah_folder2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/noah_folder3@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="NOAH, Friends of the Earth" data-src="/assets/img/portfolio/noah_folder@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">NOAH, Friends of the Earth</span> / Folder om bæredygtige boliger.</p>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="NOAH, Friends of the Earth" data-src="/assets/img/portfolio/noah_zigzag@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">NOAH, Friends of the Earth</span> / Program Zig-Zag folder</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Website</span>
+						<h1 class="modal-title">deo.dk / DEO</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="DEO" src="/assets/img/portfolio/deo_rejser.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">DEO</span> / Wordpress hjemmeside</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1139,16 +987,20 @@
 
     
 
-  <div class="box--background box--id10 one-col two-col-sm lazy" data-src="/assets/img/portfolio/weshelter@2x_w3.jpg" style="background-color:; ">
+  <div class="box--background box--id03 one-col -col-sm" 
+    data-bg="/assets/img/portfolio/plakat_breakthesilence@2x_w2.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#10_weshelter" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#10_weshelter">
+      <a href="#03_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#03_">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">WeShelter</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Plakater & flyers</span>
+			<span class="box-title"> / PsykInfo</span>
         </div>
       
       </a>
@@ -1158,54 +1010,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="10_weshelter" tabindex="-1" role="dialog" aria-labelledby="10_weshelter" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="03_" tabindex="-1" role="dialog" aria-labelledby="03_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">WeShelter</h1>
-          <p class="modal-description"></p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/weshelter@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/weshelter_mag1@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/weshelter_mag2@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Plakater & flyers</span>
+						<h1 class="modal-title"> / PsykInfo</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="PsykInfo - Region Hovedstaden" src="/assets/img/portfolio/plakat_breakthesilence@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">PsykInfo - Region Hovedstaden</span> / Plakater og flyers - Break the silence.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1213,18 +1051,20 @@
 
     
 
-  <div class="box--background box--id09 one-col two-col-sm lazy" data-src="/assets/img/portfolio/3f_avis_forside@2x.jpg" style="background-color:; ">
+  <div class="box--background box--id01b four-col two-col-sm" 
+    data-bg="/assets/img/portfolio/portraits/portraits_cover@1x_w3.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#09_3f-kastrup" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#09_3f-kastrup">
+      <a href="#01b_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#01b_">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">3F Kastrup</p>
-          
-          <p class="box-description">Medlemsbladet Avisen</p>
-          
+        
+        <div class="box--text-container" style="color: white;">
+			<span class="box-tag" style="color: white;">Portrætter</span>
+			<span class="box-title"> / Blandet</span>
         </div>
       
       </a>
@@ -1234,36 +1074,262 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="09_3f-kastrup" tabindex="-1" role="dialog" aria-labelledby="09_3f-kastrup" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="01b_" tabindex="-1" role="dialog" aria-labelledby="01b_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">3F Kastrup</h1>
-          <p class="modal-description">Medlemsbladet Avisen</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="3F Kastrup" data-src="/assets/img/portfolio/3f_avis@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">3F Kastrup</span> / Design –og strukturudvikling for medlemsbladet Avisen</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Portrætter</span>
+						<h1 class="modal-title"> / Blandet</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Iain Cameron, Grafiker" src="/assets/img/portfolio/portraits/MG_8021_mk.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Iain Cameron, Grafiker</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Johanne Schmidt-Nielsen, politiker og Pernille Skipper, politiker" src="/assets/img/portfolio/portraits/johanne_pernille@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Johanne Schmidt-Nielsen, politiker og Pernille Skipper, politiker</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Jens August Willes, teaterdirektør" src="/assets/img/portfolio/portraits/Jens_August_Willes_04.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Jens August Willes, teaterdirektør</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Michael Falch, musiker" src="/assets/img/portfolio/portraits/Michael_Falch_12.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Michael Falch, musiker</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Jens Ege, formand Danske Vetaraner (tv). Jesper Langberg, skuespiller & Kristina Langberg, operasanger (th)" src="/assets/img/portfolio/portraits/morten-foto@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Jens Ege, formand Danske Vetaraner (tv). Jesper Langberg, skuespiller & Kristina Langberg, operasanger (th)</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/portraits/Frederik_Vedersoe_17.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Frederik Vedersoe, musiker" src="/assets/img/portfolio/portraits/Frederik_Vedersoe_09.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Frederik Vedersoe, musiker</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Johan Peter Paludan, fremtidsforsker" src="/assets/img/portfolio/portraits/johan_peter_paludan@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Johan Peter Paludan, fremtidsforsker</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Christine Antorini, politiker" src="/assets/img/portfolio/portraits/christine antorini_mk.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Christine Antorini, politiker</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Stine Bosse, tidligere koncernchef i Tryg" src="/assets/img/portfolio/portraits/stine_bosse_mk.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Stine Bosse, tidligere koncernchef i Tryg</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Sten Lundager, forfatter" src="/assets/img/portfolio/portraits/Sten_lundager06.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Sten Lundager, forfatter</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/portraits/martin_brygmann08.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Martin Brygmann, skuespiller" src="/assets/img/portfolio/portraits/martin_brygmann_07.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Martin Brygmann, skuespiller</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/portraits/manu_sareen_mk.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Manu Sareen, politiker" src="/assets/img/portfolio/portraits/manu_sareen_2_mk@2x.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Manu Sareen, politiker</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Thomas Blachman, tv-vært (tv) & Malika Graff, musiker (th)" src="/assets/img/portfolio/portraits/MalikaGraff_Blachman@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Thomas Blachman, tv-vært (tv) & Malika Graff, musiker (th)</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Kim Simonsen, formand HK" src="/assets/img/portfolio/portraits/kim_simonsen_mk.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Kim Simonsen, formand HK</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Signe Molde, tv-vært (tv) &  Niels Thorborg, ervhversleder (th)" src="/assets/img/portfolio/portraits/Niels_Thorborg@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Signe Molde, tv-vært (tv) &  Niels Thorborg, ervhversleder (th)</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Keith Thomas Lohse, radiovært" src="/assets/img/portfolio/portraits/keith_thomas_lohse.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Keith Thomas Lohse, radiovært</span> / Foto: Mark Knudsen</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Johan Bulow, erhvervsmand" src="/assets/img/portfolio/portraits/JohanBulow@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Johan Bulow, erhvervsmand</span> / Foto: Morten Rode</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1271,18 +1337,20 @@
 
     
 
-  <div class="box--background box--id11 two-col -col-sm lazy" data-src="/assets/img/portfolio/noahdk@2x_w3.jpg" style="background-color:; ">
+  <div class="box--background box--id05 three-col -col-sm" 
+    data-bg="/assets/img/portfolio/sf_portrætter3@2x_w3.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#11_noah-dk" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#11_noah-dk">
+      <a href="#05_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#05_">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">noah.dk</p>
-          
-          <p class="box-description">Drupal 8 hjemmeside</p>
-          
+        
+        <div class="box--text-container" style="color: white;">
+			<span class="box-tag" style="color: white;">Valgmaterialer & portrætter</span>
+			<span class="box-title"> / SF København</span>
         </div>
       
       </a>
@@ -1292,36 +1360,62 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="11_noah-dk" tabindex="-1" role="dialog" aria-labelledby="11_noah-dk" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="05_" tabindex="-1" role="dialog" aria-labelledby="05_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">noah.dk</h1>
-          <p class="modal-description">Drupal 8 hjemmeside</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="noah.dk" data-src="/assets/img/portfolio/noahdk@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">noah.dk</span> / Drupal 8 website</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Valgmaterialer & portrætter</span>
+						<h1 class="modal-title"> / SF København</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/sf_cover@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Kommunalvalget 2017" src="/assets/img/portfolio/sf_portrætter2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Kommunalvalget 2017</span> / Portrætter af kandidater i København.</p>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Kommunalvalget 2013" src="/assets/img/portfolio/sf_portrætter3@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Kommunalvalget 2013</span> / Portrætter af kandidater i København.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1329,18 +1423,20 @@
 
     
 
-  <div class="box--background box--id11 two-col -col-sm lazy" data-src="/assets/img/portfolio/spisornli_noah@2x_w4.jpg" style="background-color:; ">
+  <div class="box--background box--id15 one-col two-col-sm" 
+    data-bg="/assets/img/portfolio/ungdomshusbog@2x_w2.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#11_noah-spisornli-nu" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#11_noah-spisornli-nu">
+      <a href="#15_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#15_">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">NOAH - spisornli.nu</p>
-          
-          <p class="box-description">online-undervisningsmateriale til NOAH</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Bog</span>
+			<span class="box-title"> / Monsun</span>
         </div>
       
       </a>
@@ -1350,36 +1446,70 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="11_noah-spisornli-nu" tabindex="-1" role="dialog" aria-labelledby="11_noah-spisornli-nu" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="15_" tabindex="-1" role="dialog" aria-labelledby="15_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">NOAH - spisornli.nu</h1>
-          <p class="modal-description">online-undervisningsmateriale til NOAH</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="spisornli.nu" data-src="/assets/img/portfolio/spisornli_noah@2x_w4.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">spisornli.nu</span> / Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Bog</span>
+						<h1 class="modal-title"> / Monsun</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/ungdomshusbog@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/ungdomshusbog2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/ungdomshusbog3@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Bogen Kampen om Ungdomshuset" src="/assets/img/portfolio/ungdomshusbog4@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Bogen Kampen om Ungdomshuset</span> / Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1387,18 +1517,20 @@
 
     
 
-  <div class="box--background box--id12 one-col two-col-sm lazy" data-src="/assets/img/portfolio/studenterraadet_illu1@2x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id10 one-col two-col-sm" 
+    data-bg="/assets/img/portfolio/weshelter@2x_w3.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#12_studenterrådet-på-ku" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#12_studenterrådet-på-ku">
+      <a href="#10_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#10_">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">Studenterrådet på KU</p>
-          
-          <p class="box-description">Studiebog</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Magasin</span>
+			<span class="box-title"> / WeShelter</span>
         </div>
       
       </a>
@@ -1408,76 +1540,58 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="12_studenterrådet-på-ku" tabindex="-1" role="dialog" aria-labelledby="12_studenterrådet-på-ku" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="10_" tabindex="-1" role="dialog" aria-labelledby="10_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Studenterrådet på KU</h1>
-          <p class="modal-description">Studiebog</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/studenterraadet-bog1@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/studenterraadet@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/studenterraadet2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/studenterraadet_illu1@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Studenterrådet på KU" data-src="/assets/img/portfolio/studenterraadet_illu2@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Studenterrådet på KU</span> / Studiehåndbog. Design og illustrationer.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Magasin</span>
+						<h1 class="modal-title"> / WeShelter</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/weshelter@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/weshelter_mag1@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/weshelter_mag2@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1485,18 +1599,20 @@
 
     
 
-  <div class="box--background box--id13 one-col two-col-sm lazy" data-src="/assets/img/portfolio/vindmølleindustrien@2x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id16 one-col two-col-sm" 
+    data-bg="/assets/img/portfolio/indreby@2x_w2.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="IndreBy Kirkemagasin">
 
     <div class="box--size-outer">
       
-      <a href="#13_vindmølleindustrien" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#13_vindmølleindustrien">
+      <a href="#16_indreby-kirkemagasin" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#16_indreby-kirkemagasin">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">Vindmølleindustrien</p>
-          
-          <p class="box-description">Design og illustrationer</p>
-          
+        
+        <div class="box--text-container" style="color: white;">
+			<span class="box-tag" style="color: white;">Magasin</span>
+			<span class="box-title">IndreBy Kirkemagasin / Domkirken</span>
         </div>
       
       </a>
@@ -1506,46 +1622,60 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="13_vindmølleindustrien" tabindex="-1" role="dialog" aria-labelledby="13_vindmølleindustrien" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="16_indreby-kirkemagasin" tabindex="-1" role="dialog" aria-labelledby="16_indreby-kirkemagasin" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Vindmølleindustrien</h1>
-          <p class="modal-description">Design og illustrationer</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/vindmølleindustrien@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Vindmølleindustrien folder" data-src="/assets/img/portfolio/vindmølleindustrien2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Vindmølleindustrien folder</span> / Design og illustrationer.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Magasin</span>
+						<h1 class="modal-title">IndreBy Kirkemagasin / Domkirken</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/indreby@2x_w2.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="" src="/assets/img/portfolio/indreby2@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+				</div>
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="Domkirken Vor Frue Kirke og Sct. Andreas Kirke" src="/assets/img/portfolio/indreby3@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">Domkirken Vor Frue Kirke og Sct. Andreas Kirke</span> / Kirkemagasin til Vor Frue Sogn. Layout.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1553,18 +1683,20 @@
 
     
 
-  <div class="box--background box--id14 one-col two-col-sm lazy" data-src="/assets/img/portfolio/psykinfo@2x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id09 two-col two-col-sm" 
+    data-bg="/assets/img/portfolio/3f_avis_forside@2x.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#14_psykinfo-cinemateket" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#14_psykinfo-cinemateket">
+      <a href="#09_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#09_">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">PsykInfo & Cinemateket</p>
-          
-          <p class="box-description">Filmkatalog</p>
-          
+        
+        <div class="box--text-container" style="color: white;">
+			<span class="box-tag" style="color: white;">Avis</span>
+			<span class="box-title"> / 3F Kastrup</span>
         </div>
       
       </a>
@@ -1574,46 +1706,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="14_psykinfo-cinemateket" tabindex="-1" role="dialog" aria-labelledby="14_psykinfo-cinemateket" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="09_" tabindex="-1" role="dialog" aria-labelledby="09_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">PsykInfo & Cinemateket</h1>
-          <p class="modal-description">Filmkatalog</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/psykinfo@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="PsykInfo & Cinemateket" data-src="/assets/img/portfolio/psykinfo2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">PsykInfo & Cinemateket</span> / Filmkatalog, plakater og rollups til filmfestivalen Don’t fear The Weird.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Avis</span>
+						<h1 class="modal-title"> / 3F Kastrup</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="3F Kastrup" src="/assets/img/portfolio/3f_avis@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">3F Kastrup</span> / Design –og strukturudvikling for medlemsbladet Avisen</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1621,18 +1747,20 @@
 
     
 
-  <div class="box--background box--id15 one-col two-col-sm lazy" data-src="/assets/img/portfolio/ungdomshusbog@2x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id11 two-col -col-sm" 
+    data-bg="/assets/img/portfolio/noahdk@2x_w3.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="">
 
     <div class="box--size-outer">
       
-      <a href="#15_kampen-om-ungdomshuset" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#15_kampen-om-ungdomshuset">
+      <a href="#11_" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#11_">
       
-        <p class="tag" style="color:;"></p>
-        <div class="box--text-container" style="color:;">
-          <p class="box-title">Kampen om Ungdomshuset</p>
-          
-          <p class="box-description">Tekst, design & foto</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Website</span>
+			<span class="box-title"> / NOAH</span>
         </div>
       
       </a>
@@ -1642,66 +1770,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="15_kampen-om-ungdomshuset" tabindex="-1" role="dialog" aria-labelledby="15_kampen-om-ungdomshuset" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="11_" tabindex="-1" role="dialog" aria-labelledby="11_" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Kampen om Ungdomshuset</h1>
-          <p class="modal-description">Tekst, design & foto</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/ungdomshusbog@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/ungdomshusbog2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/ungdomshusbog3@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Bogen Kampen om Ungdomshuset" data-src="/assets/img/portfolio/ungdomshusbog4@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Bogen Kampen om Ungdomshuset</span> / Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Website</span>
+						<h1 class="modal-title"> / NOAH</h1>
+					</div>
+					
+				</div>
+
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="noah.dk" src="/assets/img/portfolio/noahdk@2x_w3.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">noah.dk</span> / Drupal 8 website</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1709,18 +1811,20 @@
 
     
 
-  <div class="box--background box--id16 two-col two-col-sm lazy" data-src="/assets/img/portfolio/indreby@2x_w2.jpg" style="background-color:; ">
+  <div class="box--background box--id11 two-col -col-sm" 
+    data-bg="/assets/img/portfolio/spisornli_noah@2x_w4.jpg"
+    style="background-color:; "
+    role="img"
+    aria-label="Undervisningsmateriale">
 
     <div class="box--size-outer">
       
-      <a href="#16_domkirken" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#16_domkirken">
+      <a href="#11_undervisningsmateriale" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#11_undervisningsmateriale">
       
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">Domkirken</p>
-          
-          <p class="box-description">IndreBy Kirkemagasin</p>
-          
+        
+        <div class="box--text-container" style="color: #0A0A12;">
+			<span class="box-tag" style="color: #0A0A12;">Webapplikation</span>
+			<span class="box-title">Undervisningsmateriale / NOAH</span>
         </div>
       
       </a>
@@ -1730,144 +1834,40 @@
   </div>
 
   <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="16_domkirken" tabindex="-1" role="dialog" aria-labelledby="16_domkirken" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
+  <div class="modal modal_multi permalink" id="11_undervisningsmateriale" tabindex="-1" role="dialog" aria-labelledby="11_undervisningsmateriale" aria-hidden="false">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						<i class="fal fa-times"></i>
+					</button>
+		<div class="modal-dialog">
+			<!-- Modal content -->
+			<div class="modal-content">
 
-          <h1 class="modal-title">Domkirken</h1>
-          <p class="modal-description">IndreBy Kirkemagasin</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/indreby@2x_w2.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/indreby2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Domkirken Vor Frue Kirke og Sct. Andreas Kirke" data-src="/assets/img/portfolio/indreby3@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Domkirken Vor Frue Kirke og Sct. Andreas Kirke</span> / Kirkemagasin til Vor Frue Sogn. Layout.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
-  </div>
+				<div class="modal-header">
+					<div class="modal-header-text">
+						<span class="modal-tag">Webapplikation</span>
+						<h1 class="modal-title">Undervisningsmateriale / NOAH</h1>
+					</div>
+					
+				</div>
 
-
-
-
-    
-
-  <div class="box--background box--id17 four-col two-col-sm lazy" data-src="/assets/img/portfolio/vivil_brikker4@2x_w3.jpg" style="background-color:; ">
-
-    <div class="box--size-outer">
-      
-      <a href="#17_vivil-kbh-kommune" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#17_vivil-kbh-kommune">
-      
-        <p class="tag" style="color:white;"></p>
-        <div class="box--text-container" style="color:white;">
-          <p class="box-title">ViVil - KBH Kommune</p>
-          
-          <p class="box-description">Psykisk syge i arbejde</p>
-          
-        </div>
-      
-      </a>
-      
-
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal modal_multi permalink" id="17_vivil-kbh-kommune" tabindex="-1" role="dialog" aria-labelledby="17_vivil-kbh-kommune" aria-hidden="false">
-    <div class="modal-dialog">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-            <i class="fal fa-times"></i>
-          </button>
-
-          <h1 class="modal-title">ViVil - KBH Kommune</h1>
-          <p class="modal-description">Psykisk syge i arbejde</p>
-        </div>
-        <div class="modal-body" id="yt-player">
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/vivil_brikker4@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/vivil_cover@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="" data-src="/assets/img/portfolio/vivil_brikker2@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-          </div>
-          
-          <div class="modal-item">
-            <div class="media-content" >
-              
-                <img class="lazy" alt="Psykisk syge i arbejde" data-src="/assets/img/portfolio/vivil_brikker3@2x_w3.jpg" style="width:100%;">
-              
-              
-            </div>
-            
-              <p class="modal-item--description">/ <span class="modal-item--title">Psykisk syge i arbejde</span> / Logo, foldere, visitkort, samtalespil.</p>
-            
-          </div>
-          
-        </div>
-        <div class="modal-footer"></div>
-      </div>
-    </div>
+				<div class="modal-body" id="yt-player">
+				
+				<div class="modal-item">
+					<div class="media-content" >
+					
+						<img alt="spisornli.nu" src="/assets/img/portfolio/spisornli_noah@2x_w4.jpg" style="width:100%;" loading="lazy" decoding="async">
+					
+					
+					</div>
+					
+					<p class="modal-item--description"><span class="modal-item--title">spisornli.nu</span> / Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.</p>
+					
+				</div>
+				
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
   </div>
 
 
@@ -1881,12 +1881,24 @@
 </section>
 
 
-</div>
 
-      </div>
-    </main>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const items = document.querySelectorAll('.frontpage-hero--slideshow li');
+		let index = 0;
+		items[index].classList.add('active');
 
-    <footer class="site-footer">
+		setInterval(function() {
+			items[index].classList.remove('active');
+			index = (index + 1) % items.length;
+			items[index].classList.add('active');
+		}, 2000);
+	});
+</script>
+
+		</main>
+
+    	<footer class="site-footer">
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
@@ -1895,7 +1907,9 @@
         <ul class="contact-list">
             <li class="footer-heading">Monsun</li>
             
-            <li>Nørrebrograde 5C, 1.sal<br>2200 København N</li>
+            <li>Nørrebrogade 5C, 
+Stuen og 1. sal
+<br>2200 København N</li>
             
             
             <li><a href="mailto:info@monsun.dk">info@monsun.dk</a></li>
@@ -1925,56 +1939,35 @@
 </footer>
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
 
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		
+		<script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
+		<script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
 
-    <script type="text/javascript" src="/assets/js/jquery.lazy.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.lazy.plugins.min.js"></script>
+		<script>
 
-    <script type="text/javascript" src="/assets/js/fa-brands.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fa-light.min.js"></script>
-    <script type="text/javascript" src="/assets/js/fontawesome.min.js"></script>
-
-
-
-<script>
-
-// Don't force https when serving the website locally
-if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+		// Don't force https when serving the website locally
+		if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+			window.location.protocol = "https";
 
 
-$(function() {
-     $('.lazy').lazy({
-       effect: "fadeIn",
-       effectTime: 2000,
-       threshold: 0
-     });
- });
+		var $root = $('html, body');
+		$('a[href^="#scr-"]').click(function () {
+			$root.animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+		});
 
-
-  $('.modal').on("show.bs.modal", function() {
-    $('.lazy', this).Lazy({
-      bind: 'event',
-      chainable: false
-    });
-  });
-
-
-  var $root = $('html, body');
-  $('a[href^="#scr-"]').click(function () {
-      $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
-  });
-
-</script>
-</body>
+		</script>
+	</body>
 </html>

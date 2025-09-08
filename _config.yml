@@ -17,10 +17,10 @@ title: Monsun
 email: info@monsun.dk
 phone: +45 3539 7331
 address: |
-  Nørrebrograde 5C, 
+  Nørrebrogade 5C, 
   Stuen og 1. sal
 address2: 2200 København N
-description: "Monsun er et kreativt kooperativ, der leverer løsninger til alle slags kommunikationsopgaver. Vi laver alt fra fotos, grafisk design, web-udvikling eller smukke, vilde og vidunderlige tryksager."
+description: "Vi skaber løsninger til alle former for visuel kommunikation – fra webudvikling, grafisk design og fotografi til alverdens unikke tryksager."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: monsun.dk
@@ -28,21 +28,17 @@ instagram_username: Mediebureauet_Monsun
 linkedin_username: layout@monsun.dk
 github_username: MonsunDK
 
-
 # Build settings
 markdown: kramdown
 
 plugins:
   - jekyll-feed
 
-collections:
-- blocks
 
 collections:
   blocks:
     output: true
     permalink: /:collection/:name
-
 
 defaults:
   -
