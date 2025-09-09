@@ -173,18 +173,18 @@ Stuen og 1. sal
 
 		<script>
 
-		// Don't force https when serving the website locally
-		if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
-			window.location.protocol = "https";
+			// Don't force https when serving the website locally
+			if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+				window.location.protocol = "https";
 
 
-		var $root = $('html, body');
-		$('a[href^="#scr-"]').click(function () {
-			$root.animate({
-				scrollTop: $( $.attr(this, 'href') ).offset().top
-				}, 500);
-				return false;
-		});
+			var $root = $('html, body');
+			$('a[href^="#scr-"]').click(function () {
+				$root.animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+					}, 500);
+					return false;
+			});
 
 		</script>
 	</body>

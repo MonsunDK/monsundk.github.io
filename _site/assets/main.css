@@ -2354,7 +2354,7 @@ picture { width: 100%; }
 
 .swiper-container { width: 100%; height: 100%; }
 
-.box--size-outer { position: relative; }
+.box--size-outer { position: relative; z-index: 10; }
 .box--size-outer:before { display: block; content: ""; width: 100%; padding-top: 200%; }
 
 .one-col { -webkit-flex: 0 0 25%; flex: 0 0 25%; }
@@ -2379,14 +2379,14 @@ picture { width: 100%; }
 
 .client-logo { width: 50%; }
 
-@media only screen and (max-width: 768px) { .four-col, .one-col, .three-col, .two-col { -webkit-flex: 0 0 100%; flex: 0 0 100%; }
+@media only screen and (max-width: 768px) { .four-col, .one-col, .three-col, .two-col { flex: 0 0 100%; }
   .four-col .box--size-outer:before, .one-col .box--size-outer:before, .three-col .box--size-outer:before, .two-col .box--size-outer:before { padding-top: 50%; }
-  .sixth-col { -webkit-flex: 0 0 25%; flex: 0 0 25%; } }
-@media only screen and (max-width: 768px) { .one-col-sm { -webkit-flex: 0 0 25%; flex: 0 0 25%; }
+  .sixth-col { flex: 0 0 25%; } }
+@media only screen and (max-width: 768px) { .one-col-sm { flex: 0 0 25%; }
   .one-col-sm .box--size-outer:before { padding-top: 200%; }
-  .two-col-sm { -webkit-flex: 0 0 50%; flex: 0 0 50%; }
+  .two-col-sm { flex: 0 0 50%; }
   .two-col-sm .box--size-outer:before { padding-top: 100%; } }
-.box, .box--area, .box--background, .box--embed, .box--employee, .box--footer, .box--media, .box--quote, .box--slide, .box--spot { overflow: hidden; -webkit-background-size: cover; background-size: cover; -webkit-background-position: center center; background-position: center center; -webkit-background-repeat: no-repeat; background-repeat: no-repeat; }
+.box, .box--area, .box--background, .box--embed, .box--employee, .box--footer, .box--media, .box--quote, .box--slide, .box--spot { overflow: hidden; background-size: cover; background-position: center center; background-repeat: no-repeat; position: relative; }
 .box .tag, .box--area .tag, .box--background .tag, .box--embed .tag, .box--employee .tag, .box--footer .tag, .box--media .tag, .box--quote .tag, .box--slide .tag, .box--spot .tag { margin: 0; }
 .box a.box--size-inner:focus, .box--area a.box--size-inner:focus, .box--background a.box--size-inner:focus, .box--embed a.box--size-inner:focus, .box--employee a.box--size-inner:focus, .box--footer a.box--size-inner:focus, .box--media a.box--size-inner:focus, .box--quote a.box--size-inner:focus, .box--slide a.box--size-inner:focus, .box--spot a.box--size-inner:focus { outline: 0px solid rgba(249, 249, 249, 0); outline-offset: 0; }
 
@@ -2457,14 +2457,30 @@ form textarea { min-width: 100%; max-width: 100%; height: 230px; min-height: 230
 
 .address-field .address-title { font-weight: 800; font-size: 24px; text-transform: uppercase; }
 
+.loader-wrapper { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 1; backdrop-filter: blur(10px); }
+.loader-wrapper.fade-out { opacity: 0; transition: opacity 2s ease-in-out; }
+.loader-wrapper.fade-out .loader { transition: opacity .1s ease-in-out; opacity: 0; }
+.loader-wrapper .loader { width: 200px; height: 3px; position: relative; border-radius: 50px; filter: brightness(0.9); }
+.loader-wrapper .loader:after { border-radius: 50px; content: ""; position: absolute; background-color: inherit; filter: brightness(0.9); left: 0px; top: 0px; bottom: 0px; right: 360px; animation: slide 3s linear infinite; }
+
+@keyframes slide { 0% { right: 180px; left: 0px; }
+  5% { left: 0px; }
+  50% { right: 0px; left: 180px; }
+  55% { right: 0px; }
+  100% { right: 180px; left: 0px; } }
+[data-bg] { opacity: 0; transition: opacity 0.7s; }
+
+.box-fade-in { opacity: 1; }
+
+.box--bgimage { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 0.7s; pointer-events: none; z-index: 0; /* Or adjust if needed for content layering */ }
+
+@media (scripting: enabled) { [loading="lazy"] { opacity: 0; transition: opacity 0.7s; } }
 /* Add Animation */
-@-webkit-keyframes animatetop { from { top: -300px; opacity: 0; }
-  to { top: 0; opacity: 1; } }
 @keyframes animatetop { from { top: -300px; opacity: 0; }
   to { top: 0; opacity: 1; } }
-@-webkit-keyframes fadein { from { background-color: rgba(10, 10, 18, 0); }
-  to { background-color: #0a0a12; } }
-@keyframes fadein { from { background-color: rgba(10, 10, 18, 0); }
-  to { background-color: #0a0a12; } }
+@keyframes fadein { from { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadeout { from { opacity: 1; }
+  to { opacity: 0; } }
 @keyframes bounce { from { transform: translateY(0px); }
   to { transform: translateY(-10px); color: #FF4D62; } }
