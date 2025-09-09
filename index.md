@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 hero: KreativtKooperativ@1x.jpg
-label: Home
-title: "Home"
+label: 
+title: 
+description: "Monsun har i over 25 år udviklet unikke løsninger inden for visuel kommunikation fra hjertet af Nørrebro."
 ---
