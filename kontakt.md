@@ -1,8 +1,9 @@
 ---
 layout: page
-label: Kontakt
 title: >
-  Ring, skriv eller kig forbi
+    Kontakt
+description: >
+    Ring, skriv eller kig forbi
 manchet: >
   Vi er nemmest at træffe på telefonen i tidsrummet 10.00 - 16.00 i hverdagene.
   Du er også velkommen til at indtale en besked eller sende en mail, så vender vi hurtigt tilbage.

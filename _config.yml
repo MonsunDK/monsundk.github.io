@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Monsun
+title: MONSUN
 email: info@monsun.dk
 phone: +45 3539 7331
 address: |
@@ -22,7 +22,7 @@ address: |
 address2: 2200 København N
 description: "Vi skaber løsninger til alle former for visuel kommunikation – fra webudvikling, grafisk design og fotografi til alverdens unikke tryksager."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://monsun.dk" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: monsun.dk
 instagram_username: Mediebureauet_Monsun
 linkedin_username: layout@monsun.dk
@@ -32,8 +32,9 @@ github_username: MonsunDK
 markdown: kramdown
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-feed
-
 
 collections:
   blocks:

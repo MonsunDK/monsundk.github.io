@@ -1,8 +1,8 @@
 ---
 layout: page
-label: >
-  Om Monsun
 title: >
+  Om Monsun
+description: >
   Siden 2000 har Monsun forvandlet idéer og behov til gennemførte løsninger
 manchet: Fra den store valgkampagne til enkelte visitkort eller folder, grafisk design af magasin og udvikling af hjemmesider. Hos Monsun er ingen opgave for omfattende eller for lille, og vi bistår også organisationer og foreninger med at udvikle kampagner, kommunikationsstrategier og visuelle identiteter, der gør deres budskaber skarpe og nærværende.
 permalink: /om/

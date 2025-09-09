@@ -19,9 +19,9 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <span class="trompet">{{ page.label | escape }}</span>
+    <span class="trompet">{{ page.title | escape }}</span>
     <h1 class="post-title">
-        <span class="">  {{ page.title | escape }}</span>
+        <span class="">  {{ page.description | escape }}</span>
     </h1>
     {% if page.manchet %}
     <p class="post-manchet"><span class="wrap">{{ page.manchet | escape }}</span></p>
