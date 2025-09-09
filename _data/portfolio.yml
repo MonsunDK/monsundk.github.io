@@ -11,6 +11,7 @@
   mob-width:
   order: 40
   text-color: "#0A0A12"
+  color: "#f1f2f4"
   published: true
   id: "30"
   items:
@@ -23,11 +24,12 @@
   client: FIU
   tag: Brætspil
   image: makarenko_facebook_2021.jpg
-  type: media
+  type: background
   width: three
   mob-width: two
   order: 50
-  text-color: white
+  text-color: "#f9f9f9"
+  color: "#2f333e"
   published: true
   id: "04"
   items:
@@ -44,7 +46,8 @@
   width: one
   mob-width: four
   order: 02
-  text-color: white
+  text-color: "#f9f9f9"
+  color: "#1b0416"
   published: true
   id: "03"
   items:
@@ -94,6 +97,7 @@
   mob-width: two
   order: 130
   text-color: "#0A0A12"
+  color: "#f9f9f9"
   published: true
   id: "12"
   items:
@@ -122,6 +126,7 @@
   mob-width: four
   order: 180
   text-color: "#0A0A12"
+  color: "#f9f9f9"
   published: true
   id: "21"
   items:
@@ -137,7 +142,8 @@
   width: four
   mob-width:
   order: 40
-  text-color: 
+  text-color: "#f9f9f9"
+  color: "#cf4c52"
   published: true
   id: "20"
   items:
@@ -154,6 +160,7 @@
   mob-width: two
   order: 90
   text-color: "#0A0A12"
+  color: "#f9f9f9"
   published: true
   id: "08"
   items:
@@ -182,6 +189,7 @@
   mob-width: two
   order: 140
   text-color: "#0A0A12"
+  color: "#bdcd51"
   published: true
   id: "13"
   items:
@@ -213,6 +221,7 @@
   mob-width: four
   order: 40
   text-color: "#0A0A12"
+  color: "#d2dde3"
   published: true
   id: "21"
   items:
@@ -229,6 +238,7 @@
   mob-width:
   order: 40
   text-color: "#0A0A12"
+  color: "#ffc605"
   published: true
   id: "03"
   items:
@@ -240,12 +250,13 @@
 - title: 
   client: Blandet
   tag: Portrætter
-  image: portraits/portraits_cover@1x_w3.jpg
+  image: portraits/portraits_cover@1x_w4.jpg
   type: background
   width: four
   mob-width: two
   order: 10
-  text-color: white
+  text-color: "#f9f9f9"
+  color: "#242c43"
   published: true
   id: "01b"
   items:
@@ -318,7 +329,8 @@
   width: three
   mob-width:
   order: 60
-  text-color: white
+  text-color: "#f9f9f9"
+  color: "#cd384b"
   published: true
   id: "05"
   items:
@@ -341,6 +353,7 @@
   mob-width: two
   order: 160
   text-color: "#0A0A12"
+  color: "#dad1ca"
   published: true
   id: "15"
   items:
@@ -366,6 +379,7 @@
   mob-width: two
   order: 110
   text-color: "#0A0A12"
+  color: "#dad1ca"
   published: true
   id: "10"
   items:
@@ -388,7 +402,8 @@
   width: one
   mob-width: two
   order: 170
-  text-color: white
+  text-color: "#f9f9f9"
+  color: "#00b4c3"
   published: true
   id: "16"
   items:
@@ -411,7 +426,8 @@
   width: two
   mob-width: two
   order: 100
-  text-color: white
+  text-color: "#f9f9f9"
+  color: "#f84040"
   published: true
   id: "09"
   items:
@@ -428,6 +444,7 @@
   mob-width:
   order: 120
   text-color: "#0A0A12"
+  color: "#dbd2cb"
   published: true
   id: "11"
   items:
@@ -444,6 +461,7 @@
   mob-width:
   order: 120
   text-color: "#0A0A12"
+  color: "#f8f4e8"
   published: true
   id: "11"
   items:

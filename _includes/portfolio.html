@@ -2,30 +2,32 @@
 
   {% assign boxes = site.data.portfolio %} {% for box in boxes %} {% if box.published == true %}
 
-  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col {{ box.mob-width }}-col-sm" 
-    data-bg="{{ '/assets/img/portfolio/' | relative_url }}{{ box.image }}"
-    style="background-color:{{ box.color }}; "
-    role="img"
-    aria-label="{{ box.alt | default: box.title }}">
+  <div class="box--{{ box.type }} box--id{{ box.id }} {{ box.width }}-col {{ box.mob-width }}-col-sm" style="background-color: {{ box.color }};">
 
-    <div class="box--size-outer">
-      {% if box.type == 'quote' %}
-      <div class="box--size-inner myBtn_multi">
-      {% else %}
-      <a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">
-      {% endif %}
-        
-        <div class="box--text-container" style="color: {{ box.text-color }};">
-			<span class="box-tag" style="color: {{ box.text-color }};">{{ box.tag }}</span>
-			<span class="box-title">{{ box.title }} / {{ box.client }}</span>
-        </div>
-      {% if box.type == 'quote' %}
-      </div>
-      {% else %}
-      </a>
-      {% endif %}
+		<div class="box--size-outer">
+			{% if box.type == 'quote' %}
+			<div class="box--size-inner myBtn_multi">
+			{% else %}
+			<a href="#{{ box.id }}_{{ box.title | slugify }}" class="box--size-inner myBtn_multi" data-toggle="modal" data-target="#{{ box.id }}_{{ box.title | slugify }}">
+			{% endif %}
+				<div class="box--text-container" style="color: {{ box.text-color }};">
+					<span class="box-tag" style="color: {{ box.text-color }};">{{ box.tag }}</span>
+					<span class="box-title">{{ box.title }} / {{ box.client }}</span>
+				</div>
+			{% if box.type == 'quote' %}
+			</div>
+			{% else %}
+			</a>
+			{% endif %}
+		</div>
 
-    </div>
+		{% if box.image %}
+		 	<!-- hide loader on image load -->
+			<div class="loader-wrapper" style="background-color: {{ box.color }};">
+				<div class="loader" style="background-color: {{ box.color }};"></div>
+			</div>
+			<img class="box--bgimage" src="/assets/img/portfolio/{{ box.image }}" alt="" loading="lazy" decoding="async">
+		{% endif %}	
   </div>
 
   <!-- The Modal -->

@@ -578,6 +578,7 @@ picture {
 
 .box--size-outer {
   position: relative;
+  z-index: 10;
 
   &:before {
     display: block;
@@ -669,7 +670,6 @@ picture {
   .one-col,
   .three-col,
   .two-col {
-    -webkit-flex: 0 0 100%;
     flex: 0 0 100%;
 
     .box--size-outer {
@@ -679,14 +679,12 @@ picture {
     }
   }
   .sixth-col {
-    -webkit-flex: 0 0 25%;
     flex: 0 0 25%;
   }
 }
 
 @media only screen and (max-width: $screen-sm) {
   .one-col-sm {
-    -webkit-flex: 0 0 25%;
     flex: 0 0 25%;
 
     .box--size-outer {
@@ -697,7 +695,6 @@ picture {
   }
 
   .two-col-sm {
-    -webkit-flex: 0 0 50%;
     flex: 0 0 50%;
 
     .box--size-outer {
@@ -722,16 +719,13 @@ picture {
 .box--quote,
 .box--slide,
 .box--spot {
-  overflow: hidden;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-background-position: center center;
-  background-position: center center;
-  -webkit-background-repeat: no-repeat;
-  background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
 
   .tag {
-
     margin: 0;
   }
 
@@ -1119,20 +1113,109 @@ form {
 	}
 }
 
+.loader-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	backdrop-filter: blur(10px);
+
+	&.fade-out {
+		opacity: 0;
+		transition: opacity 2s ease-in-out;
+
+		.loader {
+			transition: opacity .1s ease-in-out;
+			opacity: 0;
+		}
+
+	}
+
+  .loader {
+	width: 200px;
+	height: 3px;
+	position: relative;
+	border-radius: 50px;
+	filter: brightness(.9);
+	
+
+		&:after {
+			border-radius: 50px;
+			content: "";
+			position: absolute;
+			background-color: inherit;
+			filter: brightness(.9);
+			left: 0px;
+			top: 0px;
+			bottom: 0px;
+			right: 360px;
+			animation: slide 3s linear infinite;
+		}
+	}
+}
+
+
+
+
+
+@keyframes slide {
+  0% {
+    right: 180px;
+    left: 0px;
+  }
+  5% {
+    left: 0px;
+  }
+  50% {
+    right: 0px;
+    left: 180px;
+  }
+  55% {
+    right: 0px;
+  }
+  100% {
+    right: 180px;
+    left: 0px;
+  }
+}
+
+[data-bg] {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.box-fade-in {
+  opacity: 1;
+}
+
+.box--bgimage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.7s;
+  pointer-events: none;
+  z-index: 0; /* Or adjust if needed for content layering */
+}
+
+@media (scripting: enabled) {
+  [loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.7s;
+  }
+}
 
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
 
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 
 @keyframes animatetop {
   from {
@@ -1146,27 +1229,26 @@ form {
   }
 }
 
-@-webkit-keyframes fadein {
-  from {
-    background-color: rgba($body-bg,0);
-  }
-
-  to {
-    background-color: rgba($body-bg,1);
-  }
-}
 
 @keyframes fadein {
-  from {
-    background-color: rgba($body-bg,0);
-  }
+	from {
+		opacity: 0;
+	}
 
-  to {
-    background-color: rgba($body-bg,1);
-  }
+	to {
+		opacity: 1;
+	}
 }
 
+@keyframes fadeout {
+	from {
+		opacity: 1;
+	}
 
+	to {
+		opacity: 0;
+	}
+}
 
 
 @keyframes bounce {
