@@ -26,9 +26,9 @@ $gray-lighter:           lighten($gray-base, 75%); // #eee
 
 
 $font-family-sans-serif:  "Bricolage Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "Roboto Slab", "Times New Roman", Times, serif !default;
+$font-family-serif:       "Georgia", "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   "IBM Plex Mono", Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-monospace:   "Courier New", Menlo, Monaco, Consolas, monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base: 18px;

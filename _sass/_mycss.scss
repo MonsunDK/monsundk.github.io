@@ -931,11 +931,13 @@ a.box--size-inner {
 // hero
 
 .hero {
+
   background-color: transparent;
   background-position: right;
   background-size: cover;
   max-height: 400px;
   overflow: hidden;
+  position: relative;
 
   .box--size-outer {
     &:before {
