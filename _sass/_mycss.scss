@@ -98,6 +98,7 @@ img {
 		display: inline-block;
 		margin-left: 10px;
 	}
+	
 
 	&:hover,
 	&:focus {
@@ -314,7 +315,7 @@ $stagger-exit  : 100ms;
 
 // section-separator
 
-.section-separator {
+.divider {
 	display: block;
 	width: 100%;
 	background-color: $body-bg;
@@ -323,51 +324,40 @@ $stagger-exit  : 100ms;
 	height: 50px;
 	text-align: center;
 
-	a {
+	.divider-link {
 		display: block;
 		text-decoration: none;
 		text-align: center;
-	}
+		height: 100%;
+		width: 100%;
+	
 
-	.separator-title {
-		display: inline-block;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 700;
-		letter-spacing: 0.05em;
-		font-size: 14px;
-		line-height:50px;
-		background-color: $body-bg;
-		padding: 0 20px;
-	}
-
-	.separator-arrow {
-		display: inline-block;
-		background-color: $body-bg;
-		padding: 0;
-		width: 50px;
-		height: 50px;
-		box-sizing: content-box;
-		position: relative;
-		text-align: center;
-
-		svg {
+		.divider-arrow {
+			display: inline-block;
+			background-color: $body-bg;
+			padding: 0;
+			width: 50px;
+			height: 50px;
+			box-sizing: content-box;
 			position: relative;
-			@include transition($slow);
-			color: rgba($gray-lighter, 1);
-			height: 30px;
-			width: auto;
-			top:10px;
-			-webkit-animation: bounce 1s 1s 4 alternate;
-			-moz-animation: bounce 1s 1s 4 alternate;
-			-o-animation: bounce 1s 1s 4 alternate;
-			animation: bounce 1s 1s 4 alternate;
+			text-align: center;
+
+			svg {
+				position: relative;
+				color: rgba($gray-dark, 1);
+				aspect-ratio: 1 / 1;
+				width: 32px;
+				height: 32px;
+				top: 8px;
+				position: relative;
+				animation: bounce 1s 2 ease-in-out;
+				transition: color 0.35s ease-in-out;
+			}
 		}
 
-		&:hover, &:focus {
+		&:hover {
 			text-decoration: none;
 			svg {
-				@include transition($fast);
 				color: rgba($brand-primary, 1);
 			}
 		}
@@ -532,11 +522,16 @@ $stagger-exit  : 100ms;
 .footer-socials {
 	list-style: none;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	gap: 0;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 5px;
 	margin: 0;
 	padding: 0;
+
+	li {
+		margin: 0;
+		padding: 0;
+	}
 
 	a {
 		width: 30px;
@@ -546,6 +541,7 @@ $stagger-exit  : 100ms;
 		justify-content: center;
 		color: $brand-primary;
 		text-decoration: none;
+		font-size: 22px;
 
 		&:hover,
 		&:focus {
@@ -1268,12 +1264,21 @@ form {
 
 
 @keyframes bounce {
-from {
-    transform: translateY(0px);
+	0%, 100% {
+		top: 8px;
+		animation-timing-function: ease-in;
+		transform: scaleX(1);
+	}
 
-  }
-to {
-    transform: translateY(-10px);
-    color: $brand-primary;
-  }
+	40% {
+		transform: scaleX(1);
+		color: rgba($gray-dark, 1);
+	}
+
+	50% {
+		top: 30px;
+		animation-timing-function: ease-out;
+		transform: scaleX(1.3);
+		color: rgba($brand-primary, 1);
+	}
 }
