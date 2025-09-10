@@ -1,7 +1,7 @@
 ---
 layout: page
 title: >
-  Om os
+  Om
 description: >
    Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk
 permalink: /om/
