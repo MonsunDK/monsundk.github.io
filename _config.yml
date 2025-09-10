@@ -48,10 +48,10 @@ collections:
 defaults:
   -
     scope:
-      type: "blocks"
+      path: ""
     values:
       layout: page
-      image: /assets/img/default-ogimage.jpg
+      image: "/assets/img/default-ogimage.jpg"
 
 
 
