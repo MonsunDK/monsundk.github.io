@@ -4,7 +4,7 @@ title: >
   Om
 description: >
    Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk
-permalink: /om/
+permalink: /om
 image: 
 hero_video: IncredibleMachines_bluelines-loop.mp4
 hero_img:  

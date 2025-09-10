@@ -20,9 +20,10 @@ address: |
   Nørrebrogade 5C, 
   Stuen og 1. sal
 address2: 2200 København N
-description: "Vi skaber løsninger til alle former for visuel kommunikation – fra webudvikling, grafisk design og fotografi til alverdens unikke tryksager."
+description: "Alt fra webudvikling, grafisk design og fotografi til alverdens unikke tryksager."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://monsun.dk" # the base hostname & protocol for your site, e.g. http://example.com
+lang: da
 google_analytics: "G-VCFHJX741J"
 
 # Social accounts
@@ -50,6 +51,7 @@ defaults:
       type: "blocks"
     values:
       layout: page
+      image: /assets/img/default-ogimage.jpg
 
 
 
