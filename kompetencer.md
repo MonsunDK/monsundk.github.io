@@ -2,7 +2,7 @@
 layout: page
 label: Kompetencer
 title: "Kompetencer"
-permalink: /kompetencer/
+permalink: /kompetencer
 ---
 
 Monsun leverer æstetiske og effektive medieløsninger for virksomheder, organisationer, privatpersoner. Vi er specialister i ord, foto, grafik og web. Monsun løser enkeltopgaver, men designer også mediekampagner i tværfagligt samarbejde.
