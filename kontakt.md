@@ -4,7 +4,7 @@ title: >
     Kontakt
 description: >
     Ring, skriv eller kig forbi til en kop kaffe i vores lokaler på Nørrebro
-permalink: /kontakt/
+permalink: /kontakt
 image:
 hero_video: experimentsinmotiongraphics_circle3-loop.mp4
 hero_img: 
