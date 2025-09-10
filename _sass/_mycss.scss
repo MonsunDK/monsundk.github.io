@@ -7,14 +7,26 @@
 // Base styles
 
 a {
-  text-decoration: underline;
+  	text-decoration: underline;
 }
 
 a, button {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+	transition: color 0.35s ease-in-out;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-top: 0;
+	margin-bottom: ($line-height-computed / 2);
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 blockquote {
@@ -63,6 +75,13 @@ hr {
 img {
   width: 100%;
   height: auto;
+}
+
+.copyright {
+	font-size: 12px;
+	margin: 0;
+	padding: $site-padding-horizontal 0;
+	font-weight: 200;
 }
 
 // Buttons and links
@@ -218,7 +237,7 @@ img {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	padding: $site-padding-horizontal;
+	padding: 0 $site-padding-horizontal;
 	z-index: 98;
 	pointer-events: none;
 }
@@ -477,19 +496,34 @@ $stagger-exit  : 100ms;
 // Site Footer
 
 .site-footer {
-	padding: calc(#{$site-padding-horizontal} * 2);
-	
-	.footer-col-wrapper {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: $site-padding-horizontal;
+	padding: calc(#{$site-padding-horizontal} * 3) calc(#{$site-padding-horizontal} * 2) 0;
+	border-top: 1px solid $gray-darker;
+	margin-top: $site-padding-horizontal;
 
-		.footer-col {
-			flex: 1 1 auto;
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
+	.footer-content {
+		padding-bottom: calc(#{$site-padding-horizontal} * 2);
+	}
+}
+
+.footer-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 $padding-base-horizontal 0;
+
+	li {
+		display: block;
+		margin: 0;
+
+		a {
+			color: $text-color;
+			text-decoration: none;
+			font-weight: 400;
+
+			&:hover,
+			&:focus {
+				color: $brand-primary;
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -520,6 +554,9 @@ ul.some_list {
 			&:focus {
 				background-color: darken($brand-primary, 10%);
 			}
+
+			
+			
 		}
 
 		.svg-inline--fa {
@@ -544,8 +581,8 @@ ul.some_list {
 
 
 address {
-  margin-bottom: 0;
-  font-style: normal;
+	margin-bottom: $padding-base-horizontal;
+	font-style: normal;
 }
 
 picture {
@@ -969,7 +1006,7 @@ a.box--size-inner {
 
 		.hero--text {
 			color: $text-color;
-			font-size: 18vw;
+			font-size: 12vw;
 			font-weight: 900;
 			line-height: 0.75;
 			mix-blend-mode: difference;
@@ -1089,6 +1126,15 @@ form {
 		text-transform: uppercase;
 	}
 }
+
+// Cookie consent banner
+#silktide-banner .actions-row,
+#silktide-cookie-icon { 
+	display: none !important; 
+}
+
+
+// Loader
 
 .loader-wrapper {
 	position: absolute;
