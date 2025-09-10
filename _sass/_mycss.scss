@@ -107,10 +107,11 @@ img {
 
 
 // Utilities
-
-.mt4 {
-  	margin-top: 4rem;
-}
+.mt0 { margin-top: 0rem; }
+.mt1 { margin-top: 1rem; }
+.mt2 { margin-top: 2rem; }
+.mt3 { margin-top: 3rem; }
+.mt4 { margin-top: 4rem; }
 
 .mb0 { margin-bottom: 0rem; }
 .mb1 { margin-bottom: 1rem; }
@@ -496,12 +497,12 @@ $stagger-exit  : 100ms;
 // Site Footer
 
 .site-footer {
-	padding: calc(#{$site-padding-horizontal} * 3) calc(#{$site-padding-horizontal} * 2) 0;
+	padding: calc(#{$site-padding-horizontal} * 2) calc(#{$site-padding-horizontal} * 2) 0;
 	border-top: 1px solid $gray-darker;
 	margin-top: $site-padding-horizontal;
 
 	.footer-content {
-		padding-bottom: calc(#{$site-padding-horizontal} * 2);
+		font-size: 16px;
 	}
 }
 
@@ -528,57 +529,49 @@ $stagger-exit  : 100ms;
 	}
 }
 
-ul.some_list {
+.footer-socials {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	gap: 0;
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	overflow: hidden;
 
-	li {
-		margin-left: 5px;
+	a {
+		width: 30px;
+		aspect-ratio: 1 / 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $brand-primary;
+		text-decoration: none;
 
-		.some_icon {
-			background-color: $brand-primary;
-			height: 36px;
-			width: 36px;
-			border-radius: 100px;
-			display: inline-block;
-			text-align: center;
-			line-height: 38px;
-
-			&:hover,
-			&:focus {
-				background-color: darken($brand-primary, 10%);
-			}
-
-			
-			
-		}
-
-		.svg-inline--fa {
-			font-size: 16px;
-			color: $body-bg;
+		&:hover,
+		&:focus {
+			color: $text-color;
 		}
 	}
 }
 
 .contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
 
-  .footer-heading {
-	text-transform: uppercase;
-	font-weight: 800;
-	font-size: 24px;
-  }
+	.footer-heading {
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 24px;
+	}
+
+	.cvr { 
+		font-weight: 200;
+		font-size: 14px;
+		margin-top: 2rem;
+	}
 }
-
 
 address {
 	margin-bottom: $padding-base-horizontal;

@@ -17,6 +17,8 @@ $border-radius-base: 3px;
 $text-color: #f9f9f9;
 $headings-color: #f9f9f9;
 
+$link-hover-color: $text-color !default;
+
 $gray-base:              $body-bg;
 $gray-darker:            lighten($gray-base, 13.5%) ; // #222
 $gray-dark:              lighten($gray-base, 20%) ;   // #333
