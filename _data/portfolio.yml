@@ -15,10 +15,24 @@
   published: true
   id: "30"
   items:
-    - title: 
-      description: www.ep-valgtest2024.dk
+    - title: Webapplikation til EU-Parlamentsvalg 2024
+      description: Design og udvikling i samarbejde med DEO. 
       image: DEO-EP-valgtest.jpg
-
+    - title: 
+      description:  
+      image: ep-valgtest24-front.jpg
+    - title: 
+      description:  
+      image: ep-valgtest24-slide1.jpg
+    - title:  
+      description:  
+      image: ep-valgtest24-slide2.jpg
+    - title:  
+      description:  
+      image: ep-valgtest24-popup.jpg
+    - title:  
+      description:  
+      image: ep-valgtest24-resultat.jpg
 
 - title: Makarenko - Styrk fællesskabet
   client: FIU

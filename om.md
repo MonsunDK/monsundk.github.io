@@ -1,16 +1,17 @@
 ---
 layout: page
 title: >
-  Om Monsun
+  Om os
 description: >
-  Siden 2000 har Monsun forvandlet idéer og behov til gennemførte løsninger
-manchet: Fra den store valgkampagne til enkelte visitkort eller folder, grafisk design af magasin og udvikling af hjemmesider. Hos Monsun er ingen opgave for omfattende eller for lille, og vi bistår også organisationer og foreninger med at udvikle kampagner, kommunikationsstrategier og visuelle identiteter, der gør deres budskaber skarpe og nærværende.
+   Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk
 permalink: /om/
-image:
-hero: monsun_etagen.jpg
+image: 
+hero_video: IncredibleMachines_bluelines-loop.mp4
+hero_img:  
 ---
-Vi leverer solidt håndværk på tværs af fagligheder, hvor ord og billeder spiller sammen og skaber en tydelig sammenhæng mellem design, identitet og budskab.
-Hos Monsun arbejder vi med alt fra webudvikling og grafisk design til foto- og videoproduktion – altid med fokus på kvalitet og helhed.
+Fra den store valgkampagne til enkelte visitkort eller folder, grafisk design af magasin og udvikling af hjemmesider. Hos Monsun er ingen opgave for omfattende eller for lille, og vi bistår også organisationer og foreninger med at udvikle kampagner, kommunikationsstrategier og visuelle identiteter, der gør deres budskaber skarpe og nærværende.
+
+Vi leverer solidt håndværk på tværs af fagligheder, hvor ord og billeder spiller sammen og skaber en tydelig sammenhæng mellem design, identitet og budskab. Hos Monsun arbejder vi med alt fra webudvikling og grafisk design til foto- og videoproduktion – altid med fokus på kvalitet og helhed.
 
 Når det gælder hjemmesider, bygger vi løsninger i WordPress, Next.js og Ghost, alt efter hvad der bedst matcher kundens behov og ambitioner. Vi udvikler både fleksible virksomhedssites, kampagnesider og blogs, og vi lægger vægt på funktionalitet, brugervenlighed og et visuelt udtryk, der understøtter kundens brand.
 

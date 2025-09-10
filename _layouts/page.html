@@ -1,34 +1,15 @@
 ---
 layout: default
 ---
-{% if page.image %}
-<div class="image-wrapper">
-  <img class="lazy" src="/assets/img/{{ page.image }}.jpg" alt="" style="width:100%;"/>
-</div>
+
+{% if page.hero_video or page.hero_img %}
+	{% include hero.html %}
 {% endif %}
 
-{% if page.iframe %}
-<div class="iframe-wrap" style="height:400px; width:100%; display:inline-block; overflow:hidden;">
-	<iframe class="custom-google-map lazy" style="position:relative; top:-50px; border:none;" src="{{ page.iframe }}" width="100%" height="450"></iframe>
-</div>
-
-{% endif %}
-{% if page.hero %}
-{% include hero.html %}
-{% endif %}
-<article class="post">
-
-  <header class="post-header">
-    <span class="trompet">{{ page.title | escape }}</span>
-    <h1 class="post-title">
-        <span class="">  {{ page.description | escape }}</span>
-    </h1>
-    {% if page.manchet %}
-    <p class="post-manchet"><span class="wrap">{{ page.manchet | escape }}</span></p>
-    {% endif %}
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
+<article class="bg-xlines page-grid">
+	
+	<h1 class="page-grid--title font-size-xlarge"> {{ page.description | escape }}</h1>
+	<div class="page-grid--content">
+		{{ content }}
+	</div>
 </article>

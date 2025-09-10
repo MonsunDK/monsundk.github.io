@@ -1,10 +1,26 @@
-<div class="hero" >
+<section class="hero">
+	{% if page.hero_video %}
+	<video width="640" height="360" autoplay muted loop playsinline>
+		<source src="/assets/video/{{ page.hero_video }}" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	{% elsif page.hero_img %}
+	<img class="" src="/assets/img/hero/{{ page.hero_img }}" alt="" loading="lazy" decoding="async"/>
+	{% endif %}
 	
-	<div class="box--size-outer">
-		<div class="box--size-inner"></div>
-	</div>
-	
-		 	
-	<img class="box--bgimage" src="{{ '/assets/img/hero/' | relative_url }}{{ page.hero }}" alt="Hero image: {{ page.label | default: site.title }}" loading="lazy" decoding="async">
-	
+    <div class="hero-inner">
+      	<span class="hero--text">
+			{{ page.title | escape }}
+		</span>
+    </div>
+</section>
+
+<div class="section-separator">
+	<a href="#scr-portfolio">
+		<span class="separator-arrow"><i class="fal fa-chevron-down"></i></span>
+		<span class="v-lines">
+			<span></span>
+		</span>
+	</a>
+	<a id="scr-portfolio"></a>
 </div>
