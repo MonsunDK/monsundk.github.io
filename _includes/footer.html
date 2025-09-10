@@ -1,37 +1,68 @@
 <footer class="site-footer">
+		<div class="footer-content row">
 
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <address>
-        <ul class="contact-list">
-            <li class="footer-heading">{{ site.title | escape }}</li>
-            {% if site.address %}
-            <li>{{ site.address | escape }}<br>{{ site.address2 | escape }}</li>
-            {% endif %}
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-            {% if site.phone %}
-            <li>{{ site.phone }}</li>
-            {% endif %}
-            <!--<li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li>-->
-        </ul>
-        </address>
-      </div>
-      <div class="footer-col footer-col-2">
-      </div>
+		<div class="col-sm-4">
+			<address>
+				<ul class="contact-list">
+					<li class="footer-heading">{{ site.title | escape }}</li>
+					{% if site.address %}
+					<li>{{ site.address | escape }}<br>{{ site.address2 | escape }}</li>
+					{% endif %}
+					{% if site.email %}
+					<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+					{% endif %}
+					{% if site.phone %}
+					<li>{{ site.phone }}</li>
+					{% endif %}
+				</ul>
+			</address>
+		</div>
 
+		<div class="col-sm-2">
+			<!-- Empty column for spacing or future content -->
+		</div>
 
-      <div class="footer-col footer-col-3"></div>
-      <div class="footer-col footer-col-4">
-        <ul class="some_list">
-          <li><a class="some_icon" href="https://www.facebook.com/monsun.dk/"><i class="fab fa-facebook-f"></i></a></li>
-        </ul>
+		<div class="col-sm-3">
+			<ul class="footer-menu">
+				<li><i class="fal fa-shield-alt"></i>&nbsp; <a href="/privatlivspolitik/">Privatlivspolitik</a></li>
+				<li><i class="fal fa-cookie"></i>&nbsp; <a href="#" id="cookie-consent-link">Cookie præferencer</a></li>
+			</ul>
+			
+		</div>
 
-      </div>
-    </div>
-
-  </div>
-
+		<div class="col-sm-3">
+			<ul class="some_list list-inline">
+			<li>
+				<a class="some_icon" href="https://www.facebook.com/monsun.dk/">
+				<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			</ul>
+		</div>
+		
+		</div>
+		<!-- COPYRIGHT AREA -->
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="copyright text-center">
+					&copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}. Alle rettigheder forbeholdes.
+					</p>
+				</div>
+			</div>
 </footer>
+
+
+
+<script>
+    document.getElementById('cookie-consent-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (
+            window.silktideCookieBannerManager &&
+            window.silktideCookieBannerManager.cookieBanner &&
+            typeof window.silktideCookieBannerManager.cookieBanner.showBannerAgain === 'function'
+        ) {
+            window.silktideCookieBannerManager.cookieBanner.showBannerAgain();
+        }
+    });
+</script>
+

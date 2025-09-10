@@ -6,8 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>MONSUN ⁝ Om
-</title>
+	<title>MONSUN ⁝ Om</title>
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="Om" />
@@ -44,6 +43,53 @@
 	<script src="/assets/js/lazy-bg.js" defer></script>
 
 	
+
+	<link rel="stylesheet" id="silktide-consent-manager-css" href="/assets/cookie-banner/silktide-consent-manager.css">
+	<script src="/assets/cookie-banner/silktide-consent-manager.js"></script>
+	<script>
+		silktideCookieBannerManager.updateCookieBannerConfig({
+			background: {
+				showBackground: false
+			},
+			cookieTypes: [
+				{
+					id: "analytics",
+					name: "Analytics",
+					description: "",
+					required: false,
+					onAccept: function() {
+						if (typeof gtag === 'function') {
+							gtag('consent', 'update', {
+								analytics_storage: 'granted',
+							});
+						}
+						if (typeof dataLayer !== 'undefined') {
+							dataLayer.push({
+								'event': 'consent_accepted_analytics',
+							});
+						}
+					},
+					onReject: function() {
+						if (typeof gtag === 'function') {
+							gtag('consent', 'update', {
+								analytics_storage: 'denied',
+							});
+						}
+					}
+				}
+			],
+			text: {
+				banner: {
+					title: " Tilpas dine cookie-præferencer",
+					description: "<h4>Vi bruger Google Analytics</h4>\n\n<p>Ved at klikke OK accepterer du vores cookies til webstatistik, eller hvis du foretrækker, kan du vælge at afvise dem. Vi bruger en cookie til at huske dit svar. &nbsp; <a href=\"/privatlivspolitik\" target=\"_blank\">Privatlivspolitik.</a></p>",
+					acceptAllButtonText: "OK",
+					acceptAllButtonAccessibleLabel: "Accepter alle cookies",
+					rejectNonEssentialButtonText: "Nej tak",
+					rejectNonEssentialButtonAccessibleLabel: "Afvis alle cookies",
+				},
+			}
+		});
+	</script>
 </head>
 
 
@@ -118,7 +164,6 @@
     <div class="hero-inner">
       	<span class="hero--text">
 			Om
-
 		</span>
     </div>
 </section>
@@ -136,8 +181,7 @@
 
 <article class="bg-xlines page-grid">
 	
-	<h1 class="page-grid--title font-size-xlarge"> Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk
-</h1>
+	<h1 class="page-grid--title font-size-xlarge"> Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk</h1>
 	<div class="page-grid--content">
 		<p>Fra den store valgkampagne til enkelte visitkort eller folder, grafisk design af magasin og udvikling af hjemmesider. Hos Monsun er ingen opgave for omfattende eller for lille, og vi bistår også organisationer og foreninger med at udvikle kampagner, kommunikationsstrategier og visuelle identiteter, der gør deres budskaber skarpe og nærværende.</p>
 
@@ -161,44 +205,75 @@
 		</main>
 
     	<footer class="site-footer">
+		<div class="footer-content row">
 
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <address>
-        <ul class="contact-list">
-            <li class="footer-heading">MONSUN</li>
-            
-            <li>Nørrebrogade 5C, 
+		<div class="col-sm-4">
+			<address>
+				<ul class="contact-list">
+					<li class="footer-heading">MONSUN</li>
+					
+					<li>Nørrebrogade 5C, 
 Stuen og 1. sal
 <br>2200 København N</li>
-            
-            
-            <li><a href="mailto:info@monsun.dk">info@monsun.dk</a></li>
-            
-            
-            <li>+45 3539 7331</li>
-            
-            <!--<li><p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></li>-->
-        </ul>
-        </address>
-      </div>
-      <div class="footer-col footer-col-2">
-      </div>
+					
+					
+					<li><a href="mailto:info@monsun.dk">info@monsun.dk</a></li>
+					
+					
+					<li>+45 3539 7331</li>
+					
+				</ul>
+			</address>
+		</div>
 
+		<div class="col-sm-2">
+			<!-- Empty column for spacing or future content -->
+		</div>
 
-      <div class="footer-col footer-col-3"></div>
-      <div class="footer-col footer-col-4">
-        <ul class="some_list">
-          <li><a class="some_icon" href="https://www.facebook.com/monsun.dk/"><i class="fab fa-facebook-f"></i></a></li>
-        </ul>
+		<div class="col-sm-3">
+			<ul class="footer-menu">
+				<li><i class="fal fa-shield-alt"></i>&nbsp; <a href="/privatlivspolitik/">Privatlivspolitik</a></li>
+				<li><i class="fal fa-cookie"></i>&nbsp; <a href="#" id="cookie-consent-link">Cookie præferencer</a></li>
+			</ul>
+			
+		</div>
 
-      </div>
-    </div>
-
-  </div>
-
+		<div class="col-sm-3">
+			<ul class="some_list list-inline">
+			<li>
+				<a class="some_icon" href="https://www.facebook.com/monsun.dk/">
+				<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			</ul>
+		</div>
+		
+		</div>
+		<!-- COPYRIGHT AREA -->
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="copyright text-center">
+					&copy; 2025 MONSUN. Alle rettigheder forbeholdes.
+					</p>
+				</div>
+			</div>
 </footer>
+
+
+
+<script>
+    document.getElementById('cookie-consent-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (
+            window.silktideCookieBannerManager &&
+            window.silktideCookieBannerManager.cookieBanner &&
+            typeof window.silktideCookieBannerManager.cookieBanner.showBannerAgain === 'function'
+        ) {
+            window.silktideCookieBannerManager.cookieBanner.showBannerAgain();
+        }
+    });
+</script>
+
 
 
 		<script
