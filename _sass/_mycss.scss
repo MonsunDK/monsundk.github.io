@@ -972,7 +972,7 @@ a.box--size-inner {
 		z-index: -1;
 	}
 
-  	.hero-inner {
+  	.hero--inner {
 		padding: calc(#{$navbar-height} + #{$site-padding-vertical}) $site-padding-vertical calc(#{$navbar-height} + #{$site-padding-vertical});
 		height: 100%;
 		display: flex;
@@ -986,6 +986,7 @@ a.box--size-inner {
 			line-height: 0.75;
 			mix-blend-mode: difference;
 			letter-spacing: -0.01em;
+			pointer-events: none;
 		}
 
 		.hero--slideshow { 
