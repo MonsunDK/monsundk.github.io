@@ -16,6 +16,7 @@ a {
 
 a, button {
 	transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	
 }
 
 h1, .h1,
@@ -228,15 +229,15 @@ span.material-symbols-sharp {
 .nav-toggle { 
 	background: none; 
 	border: none; 
-	font-size: 50px;
-	padding: 10px;
+	font-size: 40px;
+	padding: $site-padding-vertical;
 	cursor: pointer;
 	line-height: 0;
 	pointer-events: all;
 	transition: transform 0.35s ease-in-out, color 0.35s ease-in-out;
 	
 	@media only screen and (min-width: $screen-sm) {
-		padding: calc(#{$site-padding-horizontal} + 10px);
+		padding: calc(#{$site-padding-horizontal} + 15px);
 	}
 
 	&:hover {
@@ -326,6 +327,9 @@ $stagger-exit  : 100ms;
 	padding: $site-padding-horizontal;
 	max-width: 100%;
 	margin: 0 auto;
+	a { 
+		word-break: break-all;
+	}
 	
 	*:first-child { margin-top: 0; }
 
@@ -415,7 +419,7 @@ $stagger-exit  : 100ms;
 
 	.page-grid--title {
 		margin-top: 0;
-		margin-bottom: 8rem;
+		margin-bottom: clamp(40px, 8vw, 100px);
 		color: rgba($text-color,1);
 		grid-column: 1 / span 3;
 		grid-row: 1;
@@ -448,9 +452,13 @@ $stagger-exit  : 100ms;
 // Site Footer
 
 .site-footer {
-	padding: calc(#{$site-padding-horizontal} * 2) calc(#{$site-padding-horizontal} * 2) 0;
+	padding: calc(#{$site-padding-horizontal} * 1) calc(#{$site-padding-horizontal} * 1) 0;
 	border-top: 1px solid $gray-darker;
 	margin-top: $site-padding-horizontal;
+
+	@media only screen and (min-width: $screen-sm) {
+		padding: calc(#{$site-padding-horizontal} * 2) calc(#{$site-padding-horizontal} * 2) 0;
+	}
 
 	.footer-content {
 		font-size: 16px;
@@ -464,14 +472,14 @@ $stagger-exit  : 100ms;
 
 	li {
 		display: flex;
-		align-items: center;
 		flex-direction: row;
-		margin: 0;
+		margin: 0 0 4px 0;
 
 		a {
 			color: $text-color;
 			text-decoration: none;
 			font-weight: 400;
+			line-height: 1.3;
 
 			&:hover,
 			&:focus {
@@ -492,7 +500,7 @@ $stagger-exit  : 100ms;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	gap: 15px;
+	gap: 12px;
 	margin: 0;
 	padding: 0;
 
