@@ -2203,9 +2203,11 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @media print { .hidden-print { display: none !important; } }
 * { box-sizing: border-box; }
 
+body { position: relative; }
+
 a { text-decoration: underline; }
 
-a, button { transition: color 0.35s ease-in-out; }
+a, button { transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { margin-top: 0; margin-bottom: 14px; }
 
@@ -2414,8 +2416,9 @@ a.box--size-inner:focus { text-decoration: none; }
 .box--quote .box--text-container .box-title { font-size: 5vw; line-height: 6vw; letter-spacing: normal; text-transform: none; margin-bottom: 20px; font-weight: 900; }
 @media only screen and (min-width: 768px) { .box--quote .box--text-container .box-title { font-size: 4vw; line-height: 5vw; } }
 
-.modal { display: none; width: 100%; height: 100%; overflow: auto; background-color: rgba(10, 10, 18, 0.95); left: 0; top: 0; position: fixed; transition: background-color 0.35s ease-in-out; }
-.modal button.close { opacity: 1; cursor: pointer; color: #FF4D62; flex: 0 0 auto; aspect-ratio: 1 / 1; font-size: 50px; width: 90px; line-height: 0; position: fixed; top: 0; right: 15px; }
+.modal { display: none; width: 100%; height: 100%; overflow: auto; background-color: rgba(10, 10, 18, 0.95); left: 0; top: 0; position: fixed; animation: bgfadein 1s ease-in-out forwards; }
+.modal button.close { opacity: 1; cursor: pointer; color: #FF4D62; aspect-ratio: 1 / 1; font-size: 50px; padding: calc(3rem * 1.2); position: fixed; top: 0; right: 0; }
+.modal button.close svg { aspect-ratio: 1 / 1; }
 .modal button.close:focus, .modal button.close:hover { color: #f9f9f9; cursor: pointer; }
 .modal .modal-dialog { width: 100%; max-width: 100%; padding: 3rem; position: relative; margin: calc(3rem * 2) auto; pointer-events: none; }
 .modal .modal-dialog *:first-child { margin-top: 0; }
@@ -2428,7 +2431,10 @@ a.box--size-inner:focus { text-decoration: none; }
 @media only screen and (min-width: 768px) { .modal .modal-dialog .modal-content .modal-header { padding: 0 0 15px 0; } }
 .modal .modal-dialog .modal-content .modal-body { position: relative; padding: 0; }
 .modal .modal-dialog .modal-content .modal-body .modal-item { margin-bottom: 20px; border: none; }
+.modal .modal-dialog .modal-content .modal-body .modal-item .media-content { animation: fadein .35s ease-in-out; }
 .modal .modal-dialog .modal-content .modal-body .modal-item--description { margin: 0; padding: 15px 20px 0px 2px; font-size: 14px; line-height: 1.65; font-weight: 300; }
+
+.modal-open .modal { background-color: rgba(10, 10, 18, 0.95); }
 
 .hero, .frontpage-hero { max-height: calc(90vh - 50px); min-height: 300px; overflow: hidden; position: relative; aspect-ratio: 16 / 9; width: 100%; }
 .hero video, .frontpage-hero video { width: 100%; height: 100%; object-fit: cover; object-position: center; position: absolute; top: 0; left: 0; z-index: -1; }
@@ -2481,6 +2487,8 @@ form textarea { min-width: 100%; max-width: 100%; height: 230px; min-height: 230
 /* Add Animation */
 @keyframes animatetop { from { top: -300px; opacity: 0; }
   to { top: 0; opacity: 1; } }
+@keyframes bgfadein { from { background-color: rgba(10, 10, 18, 0); }
+  to { background-color: rgba(10, 10, 18, 0.95); } }
 @keyframes fadein { from { opacity: 0; }
   to { opacity: 1; } }
 @keyframes fadeout { from { opacity: 1; }

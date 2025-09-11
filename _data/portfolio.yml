@@ -9,11 +9,11 @@
   image: DEO-EP-valgtest.jpg
   width: four
   mob-width:
-  order: 40
+  order: 01
   text-color: "#0A0A12"
   color: "#f1f2f4"
   published: true
-  id: "30"
+  id: "01"
   items:
     - title: Webapplikation til EU-Parlamentsvalg 2024
       description: Design og udvikling i samarbejde med DEO. 
@@ -41,11 +41,11 @@
   type: background
   width: three
   mob-width: two
-  order: 50
+  order: 02
   text-color: "#f9f9f9"
   color: "#2f333e"
   published: true
-  id: "04"
+  id: "02"
   items:
     - title: Fagbevægelsens Interne Uddannelser, FIU
       description: Brætspil, Makarenko - Styrk fællesskabet.
@@ -59,7 +59,7 @@
   type: background
   width: one
   mob-width: four
-  order: 02
+  order: 03
   text-color: "#f9f9f9"
   color: "#1b0416"
   published: true
@@ -109,11 +109,11 @@
   type: background
   width: one
   mob-width: two
-  order: 130
+  order: 04
   text-color: "#0A0A12"
   color: "#f9f9f9"
   published: true
-  id: "12"
+  id: "04"
   items:
     - title:
       description:
@@ -138,11 +138,11 @@
   type: background
   width: three
   mob-width: four
-  order: 180
+  order: 05
   text-color: "#0A0A12"
   color: "#f9f9f9"
   published: true
-  id: "21"
+  id: "05"
   items:
     - title:
       description:
@@ -155,15 +155,15 @@
   image: aug_web@2x_w4.jpg
   width: four
   mob-width:
-  order: 40
+  order: 06
   text-color: "#f9f9f9"
   color: "#cf4c52"
   published: true
-  id: "20"
+  id: "06"
   items:
     - title: Arkitekter Uden Grænser
       description: aug.ngo - Wordpress hjemmeside
-      image: aug_web@2x_w4.png
+      image: aug_web@2x_w4.jpg
 
 - title: 
   client: NOAH
@@ -172,11 +172,11 @@
   type: background
   width: three
   mob-width: two
-  order: 90
+  order: 07
   text-color: "#0A0A12"
   color: "#f9f9f9"
   published: true
-  id: "08"
+  id: "07"
   items:
     - title:
       description:
@@ -201,11 +201,11 @@
   type: background
   width: one
   mob-width: two
-  order: 140
+  order: 08
   text-color: "#0A0A12"
   color: "#bdcd51"
   published: true
-  id: "13"
+  id: "08"
   items:
     - title:
       description:
@@ -220,11 +220,11 @@
   type: "quote"
   width: two
   mob-width: two
-  order: 70
+  order: 09
   color: "#0A0A12"
   text-color: GOLD
   published: true
-  id: "06"
+  id: "09"
 
 - title: deo.dk
   client: DEO
@@ -233,11 +233,11 @@
   image: deo_rejser.jpg
   width: one
   mob-width: four
-  order: 40
+  order: 10
   text-color: "#0A0A12"
   color: "#d2dde3"
   published: true
-  id: "21"
+  id: "10"
   items:
     - title: DEO
       description: Wordpress hjemmeside
@@ -250,11 +250,11 @@
   image: plakat_breakthesilence@2x_w2.jpg
   width: one
   mob-width:
-  order: 40
+  order: 11
   text-color: "#0A0A12"
   color: "#ffc605"
   published: true
-  id: "03"
+  id: "11"
   items:
     - title: PsykInfo - Region Hovedstaden
       description: Plakater og flyers - Break the silence.
@@ -268,11 +268,11 @@
   type: background
   width: four
   mob-width: two
-  order: 10
+  order: 12
   text-color: "#f9f9f9"
   color: "#242c43"
   published: true
-  id: "01b"
+  id: "12"
   items:
     - title: Iain Cameron, Grafiker
       description: "Foto: Mark Knudsen"
@@ -342,11 +342,11 @@
   type: background
   width: three
   mob-width:
-  order: 60
+  order: 13
   text-color: "#f9f9f9"
   color: "#cd384b"
   published: true
-  id: "05"
+  id: "14"
   items:
     - title:
       description:
@@ -365,7 +365,7 @@
   type: background
   width: one
   mob-width: two
-  order: 160
+  order: 15
   text-color: "#0A0A12"
   color: "#dad1ca"
   published: true
@@ -391,11 +391,11 @@
   type: background
   width: one
   mob-width: two
-  order: 110
+  order: 16
   text-color: "#0A0A12"
   color: "#dad1ca"
   published: true
-  id: "10"
+  id: "16"
   items:
     - title:
       description:
@@ -415,11 +415,11 @@
   type: background
   width: one
   mob-width: two
-  order: 170
+  order: 17
   text-color: "#f9f9f9"
   color: "#00b4c3"
   published: true
-  id: "16"
+  id: "17"
   items:
     - title:
       description:
@@ -439,11 +439,11 @@
   type: background
   width: two
   mob-width: two
-  order: 100
+  order: 18
   text-color: "#f9f9f9"
   color: "#f84040"
   published: true
-  id: "09"
+  id: "18"
   items:
     - title: 3F Kastrup
       description: Design –og strukturudvikling for medlemsbladet Avisen
@@ -456,11 +456,11 @@
   type: background
   width: two
   mob-width:
-  order: 120
+  order: 19
   text-color: "#0A0A12"
   color: "#dbd2cb"
   published: true
-  id: "11"
+  id: "19"
   items:
     - title: noah.dk
       description: Drupal 8 website
@@ -473,11 +473,11 @@
   type: background
   width: two
   mob-width:
-  order: 120
+  order: 20
   text-color: "#0A0A12"
   color: "#f8f4e8"
   published: true
-  id: "11"
+  id: "20"
   items:
     - title: spisornli.nu
       description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
