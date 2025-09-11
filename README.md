@@ -42,7 +42,7 @@ This repository contains the source for MONSUN’s company website, showcasing o
 - Data-driven layout using YAML files in `_data`
 
 ## Installation & Development
-- git clone https://github.com/monsundk/site.git
+- git clone https://github.com/monsundk/monsundk.github.io.git
 - cd site
 - bundle install
 - bundle exec jekyll serve
