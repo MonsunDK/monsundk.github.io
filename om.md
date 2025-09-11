@@ -4,7 +4,7 @@ title: Om os
 description: "Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk"
 permalink: /om
 image:
-hero_video: IncredibleMachines_bluelines-loop.mp4
+hero_video: https://res.cloudinary.com/maxrh/video/upload/v1757605106/monsun.dk/Videos/IncredibleMachines_bluelines-loop_ugimzb.mp4
 hero_img:  
 ---
 Fra den store valgkampagne til enkelte visitkort eller en enkel folder – hos Monsun er ingen opgave for omfattende eller for lille. Vi hjælper også organisationer og foreninger med at udvikle kampagner, kommunikationsstrategier og visuelle identiteter, der skærper og styrker deres budskaber.

@@ -26,7 +26,7 @@
 			<div class="loader-wrapper" style="background-color: {{ box.color }};">
 				<div class="loader" style="background-color: {{ box.color }};"></div>
 			</div>
-			<img class="box--bgimage" src="/assets/img/portfolio/{{ box.image }}" alt="" loading="lazy" decoding="async">
+			<img class="box--bgimage" src="{{ box.image }}" alt="" loading="lazy" decoding="async">
 		{% endif %}	
   </div>
 
@@ -50,7 +50,7 @@
 				<div class="modal-item">
 					<figure class="media-content" >
 						{% if item.image %}
-						<img alt="{{ item.title }}" src="/assets/img/portfolio/{{ item.image }}" style="width:100%;" loading="lazy" decoding="async">
+						<img alt="{{ item.title }}" src="{{ item.image }}" style="width:100%;" loading="lazy" decoding="async">
 						{% endif %}
 						{% if item.video %}
 						<div class="embed-responsive embed-responsive-16by9">

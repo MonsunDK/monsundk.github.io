@@ -1,11 +1,11 @@
 <section class="hero">
 	{% if page.hero_video %}
 	<video width="640" height="360" autoplay muted loop playsinline>
-		<source src="/assets/video/{{ page.hero_video }}" type="video/mp4">
+		<source src="{{ page.hero_video }}" type="video/mp4">
 		Your browser does not support the video tag.
 	</video>
 	{% elsif page.hero_img %}
-	<img class="" src="/assets/img/hero/{{ page.hero_img }}" alt="" loading="lazy" decoding="async"/>
+	<img src="{{ page.hero_img }}" alt="" loading="lazy" decoding="async"/>
 	{% endif %}
 	
     <div class="hero-inner">
