@@ -88,6 +88,11 @@ img {
 	font-weight: 200;
 }
 
+
+span.material-symbols-sharp {
+	font-size: inherit;
+}
+
 // Buttons and links
 
 .arrow-link {
@@ -223,20 +228,15 @@ img {
 .nav-toggle { 
 	background: none; 
 	border: none; 
-	font-size: 28px;
-	font-weight: 100;
-	padding: 26px;
+	font-size: 50px;
+	padding: 10px;
 	cursor: pointer;
 	line-height: 0;
 	pointer-events: all;
-	transition: transform 0.35s ease-in-out;
-
+	transition: transform 0.35s ease-in-out, color 0.35s ease-in-out;
+	
 	@media only screen and (min-width: $screen-sm) {
-		padding: calc(#{$site-padding-horizontal} * 1.65);
-	}
-
-	svg {
-		aspect-ratio: 1 / 1;
+		padding: calc(#{$site-padding-horizontal} + 10px);
 	}
 
 	&:hover {
@@ -352,33 +352,36 @@ $stagger-exit  : 100ms;
 		height: 100%;
 		width: 100%;
 	
-
 		.divider-arrow {
-			display: inline-block;
+			display: flex;
+			align-items: center;   // vertical centering
+			justify-content: center; // horizontal centering
 			background-color: $body-bg;
 			padding: 0;
 			width: 50px;
 			height: 50px;
-			box-sizing: content-box;
+			box-sizing: border-box; // better for sizing
 			position: relative;
-			text-align: center;
+			margin: 0 auto;
 
-			svg {
-				position: relative;
+			.material-symbols-sharp {
 				color: rgba($gray-dark, 1);
+				width: 50px;
+				height: 50px;
+				font-size: 40px;
 				aspect-ratio: 1 / 1;
-				width: 32px;
-				height: 32px;
-				top: 8px;
-				position: relative;
+				line-height: 32px;
 				animation: bounce 1s 2 ease-in-out;
 				transition: color 0.35s ease-in-out;
+				display: flex;
+				align-items: center;   // vertical centering
+				justify-content: center; // horizontal centering
 			}
 		}
 
 		&:hover {
 			text-decoration: none;
-			svg {
+			.material-symbols-sharp {
 				color: rgba($brand-primary, 1);
 			}
 		}
@@ -460,7 +463,9 @@ $stagger-exit  : 100ms;
 	margin: 0 0 $padding-base-horizontal 0;
 
 	li {
-		display: block;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
 		margin: 0;
 
 		a {
@@ -474,6 +479,11 @@ $stagger-exit  : 100ms;
 				text-decoration: none;
 			}
 		}
+
+		.material-symbols-outlined {
+			margin-right: 8px;
+			font-size: 18px;
+		}
 	}
 }
 
@@ -482,7 +492,7 @@ $stagger-exit  : 100ms;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	gap: 10px;
+	gap: 15px;
 	margin: 0;
 	padding: 0;
 
@@ -492,18 +502,19 @@ $stagger-exit  : 100ms;
 	}
 
 	a {
-		width: 20px;
+		width: 16px;
 		aspect-ratio: 1 / 1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		color: $brand-primary;
 		text-decoration: none;
-		font-size: 20px;
+		fill: rgba($brand-primary, 1);
+		transition: fill 0.35s ease-in-out, color 0.35s ease-in-out;
 
 		&:hover,
 		&:focus {
-			color: $text-color;
+			fill: $text-color;
 		}
 	}
 }
@@ -829,6 +840,7 @@ a.box--size-inner {
 		position: fixed;
 		top: 0;
 		right: 0;
+		text-shadow: none;
 
 		svg {
 			aspect-ratio: 1 / 1;
@@ -1242,7 +1254,6 @@ form {
 
 @keyframes bounce {
 	0%, 100% {
-		top: 8px;
 		animation-timing-function: ease-in;
 		transform: scaleX(1);
 	}
@@ -1253,7 +1264,6 @@ form {
 	}
 
 	50% {
-		top: 30px;
 		animation-timing-function: ease-out;
 		transform: scaleX(1.3);
 		color: rgba($brand-primary, 1);
