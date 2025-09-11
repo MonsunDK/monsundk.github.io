@@ -48,19 +48,20 @@
 				<div class="modal-body" id="yt-player">
 				{% for item in box.items %}
 				<div class="modal-item">
-					<div class="media-content" >
-					{% if item.image %}
+					<figure class="media-content" >
+						{% if item.image %}
 						<img alt="{{ item.title }}" src="/assets/img/portfolio/{{ item.image }}" style="width:100%;" loading="lazy" decoding="async">
-					{% endif %}
-					{% if item.video %}
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="{{ item.video }}?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-					</div>
-					{% endif %}
-					</div>
-					{% if item.title or item.description %}
-					<p class="modal-item--description"><span class="modal-item--title">{{ item.title }}</span> {% if item.description %}/ {{ item.description }}</p>{% endif %}
-					{% endif %}
+						{% endif %}
+						{% if item.video %}
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="{{ item.video }}?enablejsapi=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+						</div>
+						{% endif %}
+						{% if item.title or item.description %}
+						<figcaption class="modal-item--description"><span class="modal-item--title">{{ item.title }}</span> {% if item.description %}/ {{ item.description }}</figcaption>{% endif %}
+						{% endif %}
+					</figure>
+					
 				</div>
 				{% endfor %}
 				</div>
