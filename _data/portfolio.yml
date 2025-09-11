@@ -40,7 +40,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757608463/monsun.dk/Images/Portfolio/FIU/makarenko_facebook_2021_r3bwal.jpg
   type: background
   width: three
-  mob-width: two
+  mob-width: 
   order: 02
   text-color: "#f9f9f9"
   color: "#2f333e"
@@ -58,7 +58,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757611871/monsun.dk/Images/Portfolio/Logoer/kickstart_logo_2x_vtbthy.jpg
   type: background
   width: one
-  mob-width: four
+  mob-width: 
   order: 03
   text-color: "#f9f9f9"
   color: "#1b0416"
@@ -106,7 +106,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757612343/monsun.dk/Images/Portfolio/KU/studenterraadet_illu1_2x_w2_fkxa3y.jpg
   type: background
   width: one
-  mob-width: two
+  mob-width: 
   order: 04
   text-color: "#0A0A12"
   color: "#f9f9f9"
@@ -135,7 +135,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757612602/monsun.dk/Images/Portfolio/NOAH/noah-plakater_2x_w3_ai4pao.jpg
   type: background
   width: three
-  mob-width: four
+  mob-width: 
   order: 05
   text-color: "#0A0A12"
   color: "#f9f9f9"
@@ -169,7 +169,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757612726/monsun.dk/Images/Portfolio/NOAH/noah_folder_2x_w3_twhvdb.jpg
   type: background
   width: three
-  mob-width: two
+  mob-width: 
   order: 07
   text-color: "#0A0A12"
   color: "#f9f9f9"
@@ -198,7 +198,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757612961/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien_2x_w2_me0cho.jpg
   type: background
   width: one
-  mob-width: two
+  mob-width:
   order: 08
   text-color: "#0A0A12"
   color: "#bdcd51"
@@ -217,7 +217,7 @@
   tag:
   type: "quote"
   width: two
-  mob-width: two
+  mob-width:
   order: 09
   color: "#0A0A12"
   text-color: GOLD
@@ -230,7 +230,7 @@
   type: background
   image: https://res.cloudinary.com/maxrh/image/upload/v1757607125/monsun.dk/Images/Portfolio/DEO/deo_rejser_gzhlss.jpg
   width: one
-  mob-width: four
+  mob-width: 
   order: 10
   text-color: "#0A0A12"
   color: "#d2dde3"
@@ -265,7 +265,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757613221/monsun.dk/Images/Portfolio/Portr%C3%A6tter/portraits_cover_2x_w4_viqtxn.jpg
   type: background
   width: four
-  mob-width: two
+  mob-width: 
   order: 12
   text-color: "#f9f9f9"
   color: "#242c43"
@@ -362,7 +362,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757613923/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog_2x_w2_akw9bf.jpg
   type: background
   width: one
-  mob-width: two
+  mob-width: 
   order: 15
   text-color: "#0A0A12"
   color: "#dad1ca"
@@ -388,7 +388,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757614048/monsun.dk/Images/Portfolio/WeShelter/weshelter_2x_w3_ibytrh.jpg
   type: background
   width: one
-  mob-width: two
+  mob-width: 
   order: 16
   text-color: "#0A0A12"
   color: "#dad1ca"
@@ -412,7 +412,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
   type: background
   width: one
-  mob-width: two
+  mob-width: 
   order: 17
   text-color: "#f9f9f9"
   color: "#00b4c3"
@@ -436,7 +436,7 @@
   image: https://res.cloudinary.com/maxrh/image/upload/v1757614318/monsun.dk/Images/Portfolio/3F-Kastrup/3f_avis_forside_2x_jsfboe.jpg
   type: background
   width: two
-  mob-width: two
+  mob-width: 
   order: 18
   text-color: "#f9f9f9"
   color: "#f84040"
