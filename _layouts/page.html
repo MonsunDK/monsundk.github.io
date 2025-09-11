@@ -6,10 +6,11 @@ layout: default
 	{% include hero.html %}
 {% endif %}
 
-<article class="bg-xlines page-grid">
-	
-	<h1 class="page-grid--title font-size-xlarge"> {{ page.description | escape }}</h1>
-	<div class="page-grid--content">
-		{{ content }}
+<article class="bg-xlines ">
+	<div class="content-wrapper page-grid">
+		<h1 class="page-grid--title font-size-xlarge"> {{ page.description | escape }}</h1>
+		<div class="page-grid--content">
+			{{ content }}
+		</div>
 	</div>
 </article>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Om
+title: Om os
 description: "Fra idé til færdigt produkt forvandler vi dine visioner og behov til gennemførte løsninger til både web og tryk"
 permalink: /om
 image:
