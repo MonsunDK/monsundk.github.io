@@ -6,7 +6,7 @@ description: >
     Ring, skriv eller kig forbi til en kop kaffe i vores lokaler på Nørrebro
 permalink: /kontakt
 image:
-hero_video: experimentsinmotiongraphics_circle3-loop.mp4
+hero_video: https://res.cloudinary.com/maxrh/video/upload/v1757605107/monsun.dk/Videos/experimentsinmotiongraphics_circle3-loop_wxw692.mp4
 hero_img: 
 iframe:
 ---

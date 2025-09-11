@@ -4,7 +4,7 @@ title: Privatlivspolitik
 description: "Her kan du læse om hvordan vi behandler data i forbindelse med dit besøg på vores hjemmeside"
 permalink: /privatlivspolitik
 image:
-hero_video: IncredibleMachines_bluelines-loop.mp4
+hero_video: https://res.cloudinary.com/maxrh/video/upload/v1757605106/monsun.dk/Videos/IncredibleMachines_bluelines-loop_ugimzb.mp4
 hero_img:  
 ---
 

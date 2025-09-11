@@ -6,7 +6,7 @@
   client: DEO
   tag: Webapplikation
   type: background
-  image: DEO-EP-valgtest.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
   width: four
   mob-width:
   order: 01
@@ -17,27 +17,27 @@
   items:
     - title: Webapplikation til EU-Parlamentsvalg 2024
       description: Design og udvikling i samarbejde med DEO. 
-      image: DEO-EP-valgtest.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
     - title: 
       description:  
-      image: ep-valgtest24-front.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607127/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-front_iglwdj.jpg
     - title: 
       description:  
-      image: ep-valgtest24-slide1.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607130/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-slide1_kc9dm2.jpg
     - title:  
       description:  
-      image: ep-valgtest24-slide2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607132/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-slide2_baun1h.jpg
     - title:  
       description:  
-      image: ep-valgtest24-popup.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607128/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-popup_wutfxv.jpg
     - title:  
       description:  
-      image: ep-valgtest24-resultat.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607129/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-resultat_oginbw.jpg
 
 - title: Makarenko - Styrk fællesskabet
   client: FIU
   tag: Brætspil
-  image: makarenko_facebook_2021.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757608463/monsun.dk/Images/Portfolio/FIU/makarenko_facebook_2021_r3bwal.jpg
   type: background
   width: three
   mob-width: two
@@ -49,13 +49,13 @@
   items:
     - title: Fagbevægelsens Interne Uddannelser, FIU
       description: Brætspil, Makarenko - Styrk fællesskabet.
-      image: makarenko_facebook_2021.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757608463/monsun.dk/Images/Portfolio/FIU/makarenko_facebook_2021_r3bwal.jpg
 
 
 - title: 
   client: blandet
   tag: Logoer
-  image: kickstart_logo@2x.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757611871/monsun.dk/Images/Portfolio/Logoer/kickstart_logo_2x_vtbthy.jpg
   type: background
   width: one
   mob-width: four
@@ -65,47 +65,45 @@
   published: true
   id: "03"
   items:
-    - title: Kickstart
-      description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
-      image: logo_kickstart1@2x_w3.jpg
-    - title: Brønshøj Kirke
-      description: Design af logo til Brønshøj Kirke.
-      image: logo_brønshøjkirke@2x_w3.jpg
-    - title: Københavns Universitet
-      description: Logo til Biologisk Fagråd.
-      image: logo_biologiskfagråd@2x_w3.jpg
-    - title: Københavnerier
-      description: Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.
-      image: logo_københavnerier@2x_w3.jpg
-    - title: Unge Stemmer
-      description: Kasseret Logo
-      image: logo_ungestemmer1@2x_w3.jpg
-    - title: Unge Stemmer
-      description: Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS
-      image: logo_ungestemmer3@2x_w3.jpg
-    - title: Frinova 1
-      description:
-      image: logo_frinova1@2x_w3.jpg
-    - title: Frinova 2
-      description:
-      image: logo_frinova2@2x_w3.jpg
-    - title: Defocus
-      description:
-      image: logo_defocus@2x_w3.jpg
-    - title: Concord
-      description:
-      image: logo_concord@2x_w3.jpg
     - title: PROSA
       description:
-      image: logo_prosa@2x_w3.jpg
-    - title: Danske Gymnasieelevers Sammenslutning
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612018/monsun.dk/Images/Portfolio/Logoer/logo_prosa_2x_w3_q2gf4k.jpg
+    - title: Kickstart
+      description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611901/monsun.dk/Images/Portfolio/Logoer/logo_kickstart1_2x_w3_dpmgqe.jpg
+    - title: Brønshøj Kirke
+      description: Design af logo til Brønshøj Kirke.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611918/monsun.dk/Images/Portfolio/Logoer/logo_br%C3%B8nsh%C3%B8jkirke_2x_w3_wm5v3b.jpg
+    - title: Københavns Universitet
+      description: Logo til Biologisk Fagråd.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611924/monsun.dk/Images/Portfolio/Logoer/logo_biologiskfagr%C3%A5d_2x_w3_ooufo8.jpg
+    - title: Københavnerier
+      description: Logo for facebookside for Ulrik Kohl, valgt til Københavns Borgerrepræsentation for Enhedslisten.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611934/monsun.dk/Images/Portfolio/Logoer/logo_k%C3%B8benhavnerier_2x_w3_hvznbu.jpg
+    - title: Unge Stemmer
+      description: Kasseret Logo
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611956/monsun.dk/Images/Portfolio/Logoer/logo_ungestemmer1_2x_w3_gqflsp.jpg
+    - title: Unge Stemmer
+      description: Logo, visuel identitet og materialer for kampagne for Danske Gymnasieelevers sammenslutning, DGS
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611964/monsun.dk/Images/Portfolio/Logoer/logo_ungestemmer3_2x_w3_uilq8e.jpg
+    - title: Frinova 1
       description:
-      image: logo_dgs1@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611991/monsun.dk/Images/Portfolio/Logoer/logo_frinova1_2x_w3_y2pvs2.jpg
+    - title: Frinova 2
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757611977/monsun.dk/Images/Portfolio/Logoer/logo_frinova2_2x_w3_uxzqm5.jpg
+    - title: Defocus
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612000/monsun.dk/Images/Portfolio/Logoer/logo_defocus_2x_w3_aeopyz.jpg
+    - title: Concord
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612009/monsun.dk/Images/Portfolio/Logoer/logo_concord_2x_w3_ghhiaq.jpg
+
 
 - title: 
   client: Studenterrådet på KU
   tag: Studiebog
-  image: studenterraadet_illu1@2x_w2.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757612343/monsun.dk/Images/Portfolio/KU/studenterraadet_illu1_2x_w2_fkxa3y.jpg
   type: background
   width: one
   mob-width: two
@@ -116,25 +114,25 @@
   id: "04"
   items:
     - title:
-      description:
-      image: studenterraadet-bog1@2x_w2.jpg
-    - title:
-      description:
-      image: studenterraadet@2x_w3.jpg
-    - title:
-      description:
-      image: studenterraadet2@2x_w3.jpg
-    - title:
-      description:
-      image: studenterraadet_illu1@2x_w2.jpg
-    - title: Studenterrådet på KU
       description: Studiehåndbog. Design og illustrationer.
-      image: studenterraadet_illu2@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612343/monsun.dk/Images/Portfolio/KU/studenterraadet_illu1_2x_w2_fkxa3y.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612365/monsun.dk/Images/Portfolio/KU/studenterraadet-bog1_2x_w2_ocdbag.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612392/monsun.dk/Images/Portfolio/KU/studenterraadet_2x_w3_hgcoye.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612408/monsun.dk/Images/Portfolio/KU/studenterraadet2_2x_w3_ckrsrt.jpg
+    - title: 
+      description: 
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612416/monsun.dk/Images/Portfolio/KU/studenterraadet_illu2_2x_w2_n3rpcd.jpg
 
 - title: 
   client: NOAH
   tag: Plakatserie
-  image: noah-plakater@2x_w3.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757612602/monsun.dk/Images/Portfolio/NOAH/noah-plakater_2x_w3_ai4pao.jpg
   type: background
   width: three
   mob-width: four
@@ -146,13 +144,13 @@
   items:
     - title:
       description:
-      image: noah-plakater@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612602/monsun.dk/Images/Portfolio/NOAH/noah-plakater_2x_w3_ai4pao.jpg
 
 - title: aug.ngo
   client: Arkitekter Uden Grænser
   tag: Website
   type: background
-  image: aug_web@2x_w4.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757612639/monsun.dk/Images/Portfolio/AUG/aug_web_2x_w4_nsudvy.jpg
   width: four
   mob-width:
   order: 06
@@ -163,12 +161,12 @@
   items:
     - title: Arkitekter Uden Grænser
       description: aug.ngo - Wordpress hjemmeside
-      image: aug_web@2x_w4.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612639/monsun.dk/Images/Portfolio/AUG/aug_web_2x_w4_nsudvy.jpg
 
 - title: 
   client: NOAH
   tag: Pjece & Folder
-  image: noah_cover@2x_w2.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757612726/monsun.dk/Images/Portfolio/NOAH/noah_folder_2x_w3_twhvdb.jpg
   type: background
   width: three
   mob-width: two
@@ -180,24 +178,24 @@
   items:
     - title:
       description:
-      image: noah_folder1@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612726/monsun.dk/Images/Portfolio/NOAH/noah_folder_2x_w3_twhvdb.jpg
     - title:
       description:
-      image: noah_folder2@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612710/monsun.dk/Images/Portfolio/NOAH/noah_folder2_2x_w3_c2lmi3.jpg
     - title:
       description:
-      image: noah_folder3@2x_w3.jpg
-    - title: NOAH, Friends of the Earth
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612712/monsun.dk/Images/Portfolio/NOAH/noah_folder3_2x_w3_yvqsc7.jpg
+    - title: 
       description: Folder om bæredygtige boliger.
-      image: noah_folder@2x_w3.jpg
-    - title: NOAH, Friends of the Earth
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612715/monsun.dk/Images/Portfolio/NOAH/noah_folder1_2x_w3_juydmh.jpg
+    - title: 
       description: Program Zig-Zag folder
-      image: noah_zigzag@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612748/monsun.dk/Images/Portfolio/NOAH/noah_zigzag_2x_w3_rfy4bp.jpg
 
 - title: 
   client: Vindmølleindustrien
   tag: Pjece
-  image: vindmølleindustrien@2x_w2.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757612961/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien_2x_w2_me0cho.jpg
   type: background
   width: one
   mob-width: two
@@ -209,10 +207,10 @@
   items:
     - title:
       description:
-      image: vindmølleindustrien@2x_w2.jpg
-    - title: Vindmølleindustrien folder
-      description: Design og illustrationer.
-      image: vindmølleindustrien2@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612961/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien_2x_w2_me0cho.jpg
+    - title: 
+      description: 
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757612959/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien2_2x_w3_pb9htl.jpg
 
 - title: Skal du have løst en opgave så ring på 35397331
   description: info@monsun.dk
@@ -230,7 +228,7 @@
   client: DEO
   tag: Website
   type: background
-  image: deo_rejser.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757607125/monsun.dk/Images/Portfolio/DEO/deo_rejser_gzhlss.jpg
   width: one
   mob-width: four
   order: 10
@@ -241,13 +239,13 @@
   items:
     - title: DEO
       description: Wordpress hjemmeside
-      image: deo_rejser.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607125/monsun.dk/Images/Portfolio/DEO/deo_rejser_gzhlss.jpg
 
 - title: 
-  client: PsykInfo
+  client: PsykInfo - Region Hovedstaden
   tag: Plakater & flyers
   type: background
-  image: plakat_breakthesilence@2x_w2.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757613054/monsun.dk/Images/Portfolio/PsykInfo/plakat_breakthesilence_2x_w2_kvreuf.jpg
   width: one
   mob-width:
   order: 11
@@ -256,15 +254,15 @@
   published: true
   id: "11"
   items:
-    - title: PsykInfo - Region Hovedstaden
+    - title: 
       description: Plakater og flyers - Break the silence.
-      image: plakat_breakthesilence@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613054/monsun.dk/Images/Portfolio/PsykInfo/plakat_breakthesilence_2x_w2_kvreuf.jpg
 
 
 - title: 
   client: Blandet
   tag: Portrætter
-  image: portraits/portraits_cover@1x_w4.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757613221/monsun.dk/Images/Portfolio/Portr%C3%A6tter/portraits_cover_2x_w4_viqtxn.jpg
   type: background
   width: four
   mob-width: two
@@ -276,69 +274,69 @@
   items:
     - title: Iain Cameron, Grafiker
       description: "Foto: Mark Knudsen"
-      image: portraits/MG_8021_mk.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613202/monsun.dk/Images/Portfolio/Portr%C3%A6tter/MG_8021_mk_ajab5r.jpg
     - title: Johanne Schmidt-Nielsen, politiker og Pernille Skipper, politiker
       description: "Foto: Mark Knudsen"
-      image: portraits/johanne_pernille@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613169/monsun.dk/Images/Portfolio/Portr%C3%A6tter/johanne_pernille_2x_w2_lxgixa.jpg
     - title: Jens August Willes, teaterdirektør
       description: "Foto: Morten Rode"
-      image: portraits/Jens_August_Willes_04.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613172/monsun.dk/Images/Portfolio/Portr%C3%A6tter/Jens_August_Willes_04_tfl9rm.jpg
     - title: Michael Falch, musiker
       description: "Foto: Morten Rode"
-      image: portraits/Michael_Falch_12.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613205/monsun.dk/Images/Portfolio/Portr%C3%A6tter/Michael_Falch_12_omrnlb.jpg
     - title: Jens Ege, formand Danske Vetaraner (tv). Jesper Langberg, skuespiller & Kristina Langberg, operasanger (th)
       description: "Foto: Morten Rode"
-      image: portraits/morten-foto@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613208/monsun.dk/Images/Portfolio/Portr%C3%A6tter/morten-foto_2x_w2_v1zc0x.jpg
     - title:
       description:
-      image: portraits/Frederik_Vedersoe_17.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613163/monsun.dk/Images/Portfolio/Portr%C3%A6tter/Frederik_Vedersoe_17_tlhb56.jpg
     - title: Frederik Vedersoe, musiker
       description: "Foto: Morten Rode"
-      image: portraits/Frederik_Vedersoe_09.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613237/monsun.dk/Images/Portfolio/Portr%C3%A6tter/Frederik_Vedersoe_09_dxkcxq.jpg
     - title: Johan Peter Paludan, fremtidsforsker
       description: "Foto: Mark Knudsen"
-      image: portraits/johan_peter_paludan@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613175/monsun.dk/Images/Portfolio/Portr%C3%A6tter/johan_peter_paludan_2x_w2_fctc0c.jpg
     - title: Christine Antorini, politiker
       description: "Foto: Mark Knudsen"
-      image: portraits/christine antorini_mk.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613233/monsun.dk/Images/Portfolio/Portr%C3%A6tter/christine_antorini_mk_kgayrj.jpg
     - title: Stine Bosse, tidligere koncernchef i Tryg
       description: "Foto: Mark Knudsen"
-      image: portraits/stine_bosse_mk.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613227/monsun.dk/Images/Portfolio/Portr%C3%A6tter/stine_bosse_mk_sbbliu.jpg
     - title: Sten Lundager, forfatter
       description: "Foto: Mark Knudsen"
-      image: portraits/Sten_lundager06.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613224/monsun.dk/Images/Portfolio/Portr%C3%A6tter/Sten_lundager06_iu1hvr.jpg
     - title:
       description:
-      image: portraits/martin_brygmann08.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613199/monsun.dk/Images/Portfolio/Portr%C3%A6tter/martin_brygmann08_yg2xkz.jpg
     - title: Martin Brygmann, skuespiller
       description: "Foto: Mark Knudsen"
-      image: portraits/martin_brygmann_07.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613196/monsun.dk/Images/Portfolio/Portr%C3%A6tter/martin_brygmann_07_feggfq.jpg
     - title:
       description:
-      image: portraits/manu_sareen_mk.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613193/monsun.dk/Images/Portfolio/Portr%C3%A6tter/manu_sareen_mk_shxhz0.jpg
     - title: Manu Sareen, politiker
       description: "Foto: Mark Knudsen"
-      image: portraits/manu_sareen_2_mk@2x.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613190/monsun.dk/Images/Portfolio/Portr%C3%A6tter/manu_sareen_2_mk_2x_bdggyj.jpg
     - title: Thomas Blachman, tv-vært (tv) & Malika Graff, musiker (th)
       description: "Foto: Morten Rode"
-      image: portraits/MalikaGraff_Blachman@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613187/monsun.dk/Images/Portfolio/Portr%C3%A6tter/MalikaGraff_Blachman_2x_w2_tow7th.jpg
     - title: Kim Simonsen, formand HK
       description: "Foto: Mark Knudsen"
-      image: portraits/kim_simonsen_mk.jpg
-    - title: Signe Molde, tv-vært (tv) &  Niels Thorborg, ervhversleder (th)
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613181/monsun.dk/Images/Portfolio/Portr%C3%A6tter/kim_simonsen_mk_n5q6d2.jpg
+    - title: Signe Molde, tv-vært (tv) &  Niels Thorborg, erhvervsleder (th)
       description: "Foto: Morten Rode"
-      image: portraits/Niels_Thorborg@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613211/monsun.dk/Images/Portfolio/Portr%C3%A6tter/Niels_Thorborg_2x_w2_zrvfta.jpg
     - title: Keith Thomas Lohse, radiovært
       description: "Foto: Mark Knudsen"
-      image: portraits/keith_thomas_lohse.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613178/monsun.dk/Images/Portfolio/Portr%C3%A6tter/keith_thomas_lohse_yfm3mw.jpg
     - title: Johan Bulow, erhvervsmand
       description: "Foto: Morten Rode"
-      image: portraits/JohanBulow@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613166/monsun.dk/Images/Portfolio/Portr%C3%A6tter/JohanBulow_2x_w2_vidovo.jpg
 
 - title: 
   client: SF København
   tag: Valgmaterialer & portrætter
-  image: sf_portrætter3@2x_w3.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757613729/monsun.dk/Images/Portfolio/SF-KBH/sf_portr%C3%A6tter3_2x_w3_oeamat.jpg
   type: background
   width: three
   mob-width:
@@ -348,20 +346,20 @@
   published: true
   id: "14"
   items:
-    - title:
-      description:
-      image: sf_cover@2x_w3.jpg
     - title: Kommunalvalget 2017
-      description: Portrætter af kandidater i København.
-      image: sf_portrætter2@2x_w3.jpg
+      description: Portrætter og plakater til kandidater i København.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613729/monsun.dk/Images/Portfolio/SF-KBH/sf_portr%C3%A6tter3_2x_w3_oeamat.jpg
     - title: Kommunalvalget 2013
       description: Portrætter af kandidater i København.
-      image: sf_portrætter3@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613727/monsun.dk/Images/Portfolio/SF-KBH/sf_portr%C3%A6tter2_2x_w3_onbuxl.jpg
+    - title: Kommunalvalget 2013
+      description: Portrætter af kandidater i København.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613732/monsun.dk/Images/Portfolio/SF-KBH/sf_cover_2x_w3_ia0zaw.jpg
 
-- title: 
+- title: Kampen om Ungdomshuset
   client: Monsun
   tag: Bog
-  image: ungdomshusbog@2x_w2.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757613923/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog_2x_w2_akw9bf.jpg
   type: background
   width: one
   mob-width: two
@@ -371,23 +369,23 @@
   published: true
   id: "15"
   items:
-    - title:
-      description:
-      image: ungdomshusbog@2x_w2.jpg
-    - title:
-      description:
-      image: ungdomshusbog2@2x_w3.jpg
-    - title:
-      description:
-      image: ungdomshusbog3@2x_w2.jpg
-    - title: Bogen Kampen om Ungdomshuset
+    - title: Kampen om Ungdomshuset
       description: Tilrettelæggelse, tekstindlæg, redigering, fotos og layout.
-      image: ungdomshusbog4@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613923/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog_2x_w2_akw9bf.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613916/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog3_2x_w2_oqzmkv.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613913/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog2_2x_w3_mzz9v8.jpg
+    - title: 
+      description: 
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613919/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog4_2x_w2_yluq63.jpg
 
 - title: 
   client: WeShelter
   tag: Magasin
-  image: weshelter@2x_w3.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757614048/monsun.dk/Images/Portfolio/WeShelter/weshelter_2x_w3_ibytrh.jpg
   type: background
   width: one
   mob-width: two
@@ -399,19 +397,19 @@
   items:
     - title:
       description:
-      image: weshelter@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614058/monsun.dk/Images/Portfolio/WeShelter/weshelter_2x_w2_gzrrlu.jpg
     - title:
       description:
-      image: weshelter_mag1@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614051/monsun.dk/Images/Portfolio/WeShelter/weshelter_mag1_2x_w3_cr2m39.jpg
     - title:
       description:
-      image: weshelter_mag2@2x_w2.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614055/monsun.dk/Images/Portfolio/WeShelter/weshelter_mag2_2x_w2_gx1h04.jpg
 
 
 - title: IndreBy Kirkemagasin
-  client:  Domkirken
+  client:  Domkirken Vor Frue Kirke
   tag: Magasin
-  image: indreby@2x_w2.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
   type: background
   width: one
   mob-width: two
@@ -421,21 +419,21 @@
   published: true
   id: "17"
   items:
-    - title:
-      description:
-      image: indreby@2x_w2.jpg
-    - title:
-      description:
-      image: indreby2@2x_w3.jpg
     - title: Domkirken Vor Frue Kirke og Sct. Andreas Kirke
-      description: Kirkemagasin til Vor Frue Sogn. Layout.
-      image: indreby3@2x_w3.jpg
+      description: Kirkemagasin til Vor Frue Sogn. Design og illustrationer.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614211/monsun.dk/Images/Portfolio/Domkirken/indreby2_2x_w3_ugield.jpg
+    - title: 
+      description: 
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614207/monsun.dk/Images/Portfolio/Domkirken/indreby3_2x_w3_kxf7ot.jpg
 
 
 - title: 
   client: 3F Kastrup
   tag: Avis
-  image: 3f_avis_forside@2x.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757614318/monsun.dk/Images/Portfolio/3F-Kastrup/3f_avis_forside_2x_jsfboe.jpg
   type: background
   width: two
   mob-width: two
@@ -447,12 +445,12 @@
   items:
     - title: 3F Kastrup
       description: Design –og strukturudvikling for medlemsbladet Avisen
-      image: 3f_avis@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614325/monsun.dk/Images/Portfolio/3F-Kastrup/3f_avis_2x_w3_qvym6a.jpg
 
 - title: 
   client: NOAH
   tag: Website
-  image: noahdk@2x_w3.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757614391/monsun.dk/Images/Portfolio/NOAH/noahdk_2x_w3_tp5w1u.jpg
   type: background
   width: two
   mob-width:
@@ -464,12 +462,12 @@
   items:
     - title: noah.dk
       description: Drupal 8 website
-      image: noahdk@2x_w3.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614391/monsun.dk/Images/Portfolio/NOAH/noahdk_2x_w3_tp5w1u.jpg
 
 - title: Undervisningsmateriale
   client: NOAH
   tag: Webapplikation
-  image: spisornli_noah@2x_w4.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
   type: background
   width: two
   mob-width:
@@ -481,5 +479,10 @@
   items:
     - title: spisornli.nu
       description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
-      image: spisornli_noah@2x_w4.jpg
-
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614899/monsun.dk/Images/Portfolio/NOAH/spisornli_2_etp8jn.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614904/monsun.dk/Images/Portfolio/NOAH/spisornli_1_zuzxx5.jpg
