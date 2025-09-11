@@ -42,7 +42,7 @@ This repository contains the source for MONSUN’s company website, showcasing o
 - Data-driven layout using YAML files in `_data`
 
 ## Installation & Development
-- git clone https://github.com/monsundk/site.git
+- git clone https://github.com/monsundk/monsundk.github.io.git
 - cd site
 - bundle install
 - bundle exec jekyll serve
@@ -66,10 +66,9 @@ This repository contains the source for MONSUN’s company website, showcasing o
   - `css/`, `js/`, images, media (referenced via Cloudinary)
   - `cookie-banner/` contains Silktide Consent Manager script & config
 
-- `pages/`, root `.md` files  
+- root `.md` files  
   Main content sections (`index.md`, `kontakt.md`, etc.)
-
-- `favicon`/`icons`, `CNAME`, and other deployment assets
+  - `favicon`/`icons`, `CNAME`, and other deployment assets
 
 ## Customization & Content
 
