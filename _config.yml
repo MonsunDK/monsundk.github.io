@@ -38,11 +38,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-collections:
-  blocks:
-    output: true
-    permalink: /:collection/:name
-
 defaults:
   -
     scope:
