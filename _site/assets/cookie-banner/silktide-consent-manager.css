@@ -10,7 +10,7 @@
 -------------------------------- */
 /* Wrapper (Global) */
 #silktide-wrapper {
-              --focus: 0 0 0 0 #f9f9f9, 0 0 0 5px #191929, 0 0 0 6px #f9f9f9;
+              --focus: 0 0 0 0 #f9f9f9, 0 0 0 5px #191929, 0 0 0 0px #f9f9f9;
               --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
               --fontFamily: inherit;
               --primaryColor: #FF4D62;
