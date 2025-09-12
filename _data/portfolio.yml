@@ -68,7 +68,7 @@
 
 - title: EP-Valgtest 2024
   client: DEO
-  tag: Webapplikation
+  tag: WebApp
   type: background
   image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
   width: four
@@ -216,7 +216,7 @@
 
 - title: SpisOrnli
   client: NOAH
-  tag: Webapplikation
+  tag: WebApp
   image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
   type: background
   width: four
