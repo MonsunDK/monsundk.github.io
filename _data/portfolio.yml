@@ -2,6 +2,70 @@
 # Width: ONE > one-quarter, TWO > two-quarters, THREE > three-quarters, FOUR > fullwidth
 # Type: quote, embed, media, spot, footer, employee, background, area
 
+
+- title: 
+  client: MigrantCenter
+  tag: Logo
+  type: background
+  image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757686843/monsun.dk/Images/Portfolio/MigrantCenter/MigrantCenter_LogoPakke_Page_6_il7gmz.jpg
+  width: one
+  mob-width:
+  order: 23
+  text-color: "#0A0A12"
+  color: "#f1f2f4"
+  published: true
+  id: "23"
+  items:
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757686843/monsun.dk/Images/Portfolio/MigrantCenter/MigrantCenter_LogoPakke_Page_6_il7gmz.jpg
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757686842/monsun.dk/Images/Portfolio/MigrantCenter/MigrantCenter_LogoPakke_Page_4_pe0txn.jpg
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757686842/monsun.dk/Images/Portfolio/MigrantCenter/MigrantCenter_LogoPakke_Page_3_vs7ss7.jpg
+
+- title: 
+  client: IFTP - Institut for Traumebevidst Praksis
+  tag: Minihåndbog
+  type: background
+  image: https://res.cloudinary.com/maxrh/image/upload/t_W2-960x720/v1757687655/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_2024_nbezvj.jpg
+  width: one
+  mob-width:
+  order: 21
+  text-color: "#0A0A12"
+  color: "#f1f2f4"
+  published: true
+  id: "21"
+  items:
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757687655/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_2024_nbezvj.jpg
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757687656/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_%C3%A5benbog_2024_prpwl4.jpg
+
+
+- title: Interaktiv PDF
+  client: LivaPeople
+  tag: Årsrapport
+  type: background
+  image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757693317/monsun.dk/Images/Portfolio/LivePeople/LivaPeople_%C3%A5rsberetning-2024_cover3_xzz7kc.jpg
+  width: two
+  mob-width:
+  order: 22
+  text-color: "#f9f9f9"
+  color: "#f1f2f4"
+  published: true
+  id: "22"
+  items:
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757691652/monsun.dk/Images/Portfolio/LivePeople/LivaPeople_%C3%A5rsberetning-2024_cover2_ontrcp.jpg
+
+
+
 - title: EP-Valgtest 2024
   client: DEO
   tag: Webapplikation
@@ -33,6 +97,9 @@
     - title:  
       description:  
       image: https://res.cloudinary.com/maxrh/image/upload/v1757607129/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-resultat_oginbw.jpg
+
+
+
 
 - title: Makarenko - Styrk fællesskabet
   client: FIU
