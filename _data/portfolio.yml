@@ -30,7 +30,7 @@
   client: IFTP
   tag: Minihåndbog
   type: background
-  image: https://res.cloudinary.com/maxrh/image/upload/t_W2-960x720/v1757687655/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_2024_nbezvj.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757695545/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_2024_fold-removed_fzxnrs.jpg
   width: one
   mob-width:
   order: 21
@@ -41,7 +41,7 @@
   items:
     - title: 
       description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757687655/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_2024_nbezvj.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757695545/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_2024_fold-removed_fzxnrs.jpg
     - title: 
       description:  
       image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757687656/monsun.dk/Images/Portfolio/IFTP/IFTP_Minih%C3%A5ndbog_%C3%A5benbog_2024_prpwl4.jpg
@@ -430,8 +430,8 @@
       description: Portrætter af kandidater i København.
       image: https://res.cloudinary.com/maxrh/image/upload/v1757613732/monsun.dk/Images/Portfolio/SF-KBH/sf_cover_2x_w3_ia0zaw.jpg
 
-- title: Kampen om Ungdomshuset
-  client: Monsun
+- title: 
+  client: Kampen om Ungdomshuset
   tag: Bog
   image: https://res.cloudinary.com/maxrh/image/upload/v1757613923/monsun.dk/Images/Portfolio/MONSUN/ungdomshusbog_2x_w2_akw9bf.jpg
   type: background
