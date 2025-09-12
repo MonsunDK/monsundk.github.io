@@ -68,7 +68,7 @@
 
 - title: EP-Valgtest 2024
   client: DEO
-  tag: Webapplikation
+  tag: WebApp
   type: background
   image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
   width: four
@@ -196,7 +196,7 @@
       description: 
       image: https://res.cloudinary.com/maxrh/image/upload/v1757612416/monsun.dk/Images/Portfolio/KU/studenterraadet_illu2_2x_w2_n3rpcd.jpg
 
-- title: 
+- title: Det Europa vi ønsker
   client: NOAH
   tag: Plakatserie
   image: https://res.cloudinary.com/maxrh/image/upload/v1757612602/monsun.dk/Images/Portfolio/NOAH/noah-plakater_2x_w3_ai4pao.jpg
@@ -212,6 +212,30 @@
     - title:
       description:
       image: https://res.cloudinary.com/maxrh/image/upload/v1757612602/monsun.dk/Images/Portfolio/NOAH/noah-plakater_2x_w3_ai4pao.jpg
+
+
+- title: SpisOrnli
+  client: NOAH
+  tag: WebApp
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
+  type: background
+  width: four
+  mob-width:
+  order: 20
+  text-color: "#0A0A12"
+  color: "#f8f4e8"
+  published: true
+  id: "20"
+  items:
+    - title: spisornli.nu
+      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614899/monsun.dk/Images/Portfolio/NOAH/spisornli_2_etp8jn.jpg
+    - title:
+      description:
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757614904/monsun.dk/Images/Portfolio/NOAH/spisornli_1_zuzxx5.jpg
 
 - title: aug.ngo
   client: Arkitekter Uden Grænser
@@ -259,25 +283,24 @@
       description: Program Zig-Zag folder
       image: https://res.cloudinary.com/maxrh/image/upload/v1757612748/monsun.dk/Images/Portfolio/NOAH/noah_zigzag_2x_w3_rfy4bp.jpg
 
+
 - title: 
-  client: Vindmølleindustrien
-  tag: Pjece
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757612961/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien_2x_w2_me0cho.jpg
+  client: PsykInfo - Region Hovedstaden
+  tag: Plakater & flyers
   type: background
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757613054/monsun.dk/Images/Portfolio/PsykInfo/plakat_breakthesilence_2x_w2_kvreuf.jpg
   width: one
   mob-width:
-  order: 08
+  order: 11
   text-color: "#0A0A12"
-  color: "#bdcd51"
+  color: "#ffc605"
   published: true
-  id: "08"
+  id: "11"
   items:
-    - title:
-      description:
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757612961/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien_2x_w2_me0cho.jpg
     - title: 
-      description: 
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757612959/monsun.dk/Images/Portfolio/Vindm%C3%B8lleindustrien/vindm%C3%B8lleindustrien2_2x_w3_pb9htl.jpg
+      description: Plakater og flyers - Break the silence.
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757613054/monsun.dk/Images/Portfolio/PsykInfo/plakat_breakthesilence_2x_w2_kvreuf.jpg
+
 
 - title: Skal du have løst en opgave så ring på 35397331
   description: info@monsun.dk
@@ -296,7 +319,7 @@
   tag: Website
   type: background
   image: https://res.cloudinary.com/maxrh/image/upload/v1757607125/monsun.dk/Images/Portfolio/DEO/deo_rejser_gzhlss.jpg
-  width: one
+  width: two
   mob-width: 
   order: 10
   text-color: "#0A0A12"
@@ -308,22 +331,6 @@
       description: Wordpress hjemmeside
       image: https://res.cloudinary.com/maxrh/image/upload/v1757607125/monsun.dk/Images/Portfolio/DEO/deo_rejser_gzhlss.jpg
 
-- title: 
-  client: PsykInfo - Region Hovedstaden
-  tag: Plakater & flyers
-  type: background
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757613054/monsun.dk/Images/Portfolio/PsykInfo/plakat_breakthesilence_2x_w2_kvreuf.jpg
-  width: one
-  mob-width:
-  order: 11
-  text-color: "#0A0A12"
-  color: "#ffc605"
-  published: true
-  id: "11"
-  items:
-    - title: 
-      description: Plakater og flyers - Break the silence.
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757613054/monsun.dk/Images/Portfolio/PsykInfo/plakat_breakthesilence_2x_w2_kvreuf.jpg
 
 
 - title: 
@@ -454,7 +461,7 @@
   tag: Magasin
   image: https://res.cloudinary.com/maxrh/image/upload/v1757614048/monsun.dk/Images/Portfolio/WeShelter/weshelter_2x_w3_ibytrh.jpg
   type: background
-  width: one
+  width: two
   mob-width: 
   order: 16
   text-color: "#0A0A12"
@@ -473,28 +480,28 @@
       image: https://res.cloudinary.com/maxrh/image/upload/v1757614055/monsun.dk/Images/Portfolio/WeShelter/weshelter_mag2_2x_w2_gx1h04.jpg
 
 
-- title: IndreBy Kirkemagasin
-  client:  Domkirken Vor Frue Kirke
-  tag: Magasin
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
-  type: background
-  width: one
-  mob-width: 
-  order: 17
-  text-color: "#f9f9f9"
-  color: "#00b4c3"
-  published: true
-  id: "17"
-  items:
-    - title: Domkirken Vor Frue Kirke og Sct. Andreas Kirke
-      description: Kirkemagasin til Vor Frue Sogn. Design og illustrationer.
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
-    - title:
-      description:
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614211/monsun.dk/Images/Portfolio/Domkirken/indreby2_2x_w3_ugield.jpg
-    - title: 
-      description: 
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614207/monsun.dk/Images/Portfolio/Domkirken/indreby3_2x_w3_kxf7ot.jpg
+# - title: IndreBy Kirkemagasin
+#   client:  Domkirken Vor Frue Kirke
+#   tag: Magasin
+#   image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
+#   type: background
+#   width: one
+#   mob-width: 
+#   order: 17
+#   text-color: "#f9f9f9"
+#   color: "#00b4c3"
+#   published: true
+#   id: "17"
+#   items:
+#     - title: Domkirken Vor Frue Kirke og Sct. Andreas Kirke
+#       description: Kirkemagasin til Vor Frue Sogn. Design og illustrationer.
+#       image: https://res.cloudinary.com/maxrh/image/upload/v1757614203/monsun.dk/Images/Portfolio/Domkirken/indreby_2x_w2_ysbqsb.jpg
+#     - title:
+#       description:
+#       image: https://res.cloudinary.com/maxrh/image/upload/v1757614211/monsun.dk/Images/Portfolio/Domkirken/indreby2_2x_w3_ugield.jpg
+#     - title: 
+#       description: 
+#       image: https://res.cloudinary.com/maxrh/image/upload/v1757614207/monsun.dk/Images/Portfolio/Domkirken/indreby3_2x_w3_kxf7ot.jpg
 
 
 - title: 
@@ -514,42 +521,21 @@
       description: Design –og strukturudvikling for medlemsbladet Avisen
       image: https://res.cloudinary.com/maxrh/image/upload/v1757614325/monsun.dk/Images/Portfolio/3F-Kastrup/3f_avis_2x_w3_qvym6a.jpg
 
-- title: 
-  client: NOAH
-  tag: Website
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757614391/monsun.dk/Images/Portfolio/NOAH/noahdk_2x_w3_tp5w1u.jpg
-  type: background
-  width: two
-  mob-width:
-  order: 19
-  text-color: "#0A0A12"
-  color: "#dbd2cb"
-  published: true
-  id: "19"
-  items:
-    - title: noah.dk
-      description: Drupal 8 website
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614391/monsun.dk/Images/Portfolio/NOAH/noahdk_2x_w3_tp5w1u.jpg
+# - title: 
+#   client: NOAH
+#   tag: Website
+#   image: https://res.cloudinary.com/maxrh/image/upload/v1757614391/monsun.dk/Images/Portfolio/NOAH/noahdk_2x_w3_tp5w1u.jpg
+#   type: background
+#   width: two
+#   mob-width:
+#   order: 19
+#   text-color: "#0A0A12"
+#   color: "#dbd2cb"
+#   published: true
+#   id: "19"
+#   items:
+#     - title: noah.dk
+#       description: Drupal 8 website
+#       image: https://res.cloudinary.com/maxrh/image/upload/v1757614391/monsun.dk/Images/Portfolio/NOAH/noahdk_2x_w3_tp5w1u.jpg
 
-- title: Undervisningsmateriale
-  client: NOAH
-  tag: Webapplikation
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
-  type: background
-  width: two
-  mob-width:
-  order: 20
-  text-color: "#0A0A12"
-  color: "#f8f4e8"
-  published: true
-  id: "20"
-  items:
-    - title: spisornli.nu
-      description: Online undervisningsmaterialer til Folkeskolen 1. – 4. Klasse. Design, udvikling og illustrationer.
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
-    - title:
-      description:
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614899/monsun.dk/Images/Portfolio/NOAH/spisornli_2_etp8jn.jpg
-    - title:
-      description:
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757614904/monsun.dk/Images/Portfolio/NOAH/spisornli_1_zuzxx5.jpg
+
