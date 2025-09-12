@@ -36,8 +36,8 @@
 	{% include google-analytics.html %}
 	{% endif %}
 
-	<link rel="stylesheet" id="silktide-consent-manager-css" href="/assets/cookie-banner/silktide-consent-manager.css">
-	<script src="/assets/cookie-banner/silktide-consent-manager.js"></script>
+	<link rel="stylesheet" id="silktide-consent-manager-css" href="{{ '/assets/cookie-banner/silktide-consent-manager.css' | relative_url }}">
+	<script src="{{ '/assets/cookie-banner/silktide-consent-manager.js' | relative_url }}"></script>
 	<script>
 		silktideCookieBannerManager.updateCookieBannerConfig({
 			background: {
