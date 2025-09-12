@@ -3,6 +3,40 @@
 # Type: quote, embed, media, spot, footer, employee, background, area
 
 
+
+- title: EP-Valgtest 2024
+  client: DEO
+  tag: WebApp
+  type: background
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
+  width: four
+  mob-width:
+  order: 01
+  text-color: "#0A0A12"
+  color: "#f1f2f4"
+  published: true
+  id: "01"
+  items:
+    - title: Webapplikation til EU-Parlamentsvalg 2024
+      description: Design og udvikling i samarbejde med DEO. 
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607127/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-front_iglwdj.jpg
+    - title: 
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607130/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-slide1_kc9dm2.jpg
+    - title:  
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607132/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-slide2_baun1h.jpg
+    - title:  
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607128/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-popup_wutfxv.jpg
+    - title:  
+      description:  
+      image: https://res.cloudinary.com/maxrh/image/upload/v1757607129/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-resultat_oginbw.jpg
+
+
 - title: 
   client: MigrantCenter
   tag: Logo
@@ -65,38 +99,6 @@
       image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757691652/monsun.dk/Images/Portfolio/LivePeople/LivaPeople_%C3%A5rsberetning-2024_cover2_ontrcp.jpg
 
 
-
-- title: EP-Valgtest 2024
-  client: DEO
-  tag: WebApp
-  type: background
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
-  width: four
-  mob-width:
-  order: 01
-  text-color: "#0A0A12"
-  color: "#f1f2f4"
-  published: true
-  id: "01"
-  items:
-    - title: Webapplikation til EU-Parlamentsvalg 2024
-      description: Design og udvikling i samarbejde med DEO. 
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757607126/monsun.dk/Images/Portfolio/DEO/DEO-EP-valgtest_zyhrzd.jpg
-    - title: 
-      description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757607127/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-front_iglwdj.jpg
-    - title: 
-      description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757607130/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-slide1_kc9dm2.jpg
-    - title:  
-      description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757607132/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-slide2_baun1h.jpg
-    - title:  
-      description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757607128/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-popup_wutfxv.jpg
-    - title:  
-      description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/v1757607129/monsun.dk/Images/Portfolio/DEO/ep-valgtest24-resultat_oginbw.jpg
 
 
 
