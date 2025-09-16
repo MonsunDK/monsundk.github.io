@@ -6,5 +6,5 @@ layout: home
 hero_video: https://res.cloudinary.com/maxrh/video/upload/v1757605109/monsun.dk/Videos/experimentsinmotiongraphics_24_uuzoki.mp4
 hero_img: 
 title: 
-description: "Monsun har i 25 år udviklet unikke løsninger til web og tryk fra hjertet af Nørrebro – med blik for design, fotografi og det gode ord."
+description: "Monsun har i 25 år udviklet unikke løsninger til både web og tryk og fra hjertet af Nørrebro."
 ---
