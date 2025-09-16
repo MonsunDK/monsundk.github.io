@@ -96,7 +96,7 @@
   items:
     - title: 
       description:  
-      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757691652/monsun.dk/Images/Portfolio/LivePeople/LivaPeople_%C3%A5rsberetning-2024_cover2_ontrcp.jpg
+      image: https://res.cloudinary.com/maxrh/image/upload/t_Scale-1920w/v1757693317/monsun.dk/Images/Portfolio/LivePeople/LivaPeople_%C3%A5rsberetning-2024_cover3_xzz7kc.jpg
 
 
 
@@ -108,7 +108,7 @@
   tag: Brætspil
   image: https://res.cloudinary.com/maxrh/image/upload/t_W3-1440x720/v1757608463/monsun.dk/Images/Portfolio/FIU/makarenko_facebook_2021_r3bwal.jpg
   type: background
-  width: three
+  width: two
   mob-width: 
   order: 02
   text-color: "#f9f9f9"
@@ -124,18 +124,18 @@
 - title: 
   client: blandet
   tag: Logoer
-  image: https://res.cloudinary.com/maxrh/image/upload/v1757611871/monsun.dk/Images/Portfolio/Logoer/kickstart_logo_2x_vtbthy.jpg
+  image: https://res.cloudinary.com/maxrh/image/upload/v1757612018/monsun.dk/Images/Portfolio/Logoer/logo_prosa_2x_w3_q2gf4k.jpg
   type: background
-  width: one
+  width: two
   mob-width: 
   order: 03
-  text-color: "#f9f9f9"
-  color: "#1b0416"
+  text-color: "#0A0A12"
+  color: "#f9f9f9"
   published: true
   id: "03"
   items:
     - title: PROSA
-      description:
+      description: 
       image: https://res.cloudinary.com/maxrh/image/upload/v1757612018/monsun.dk/Images/Portfolio/Logoer/logo_prosa_2x_w3_q2gf4k.jpg
     - title: Kickstart
       description: Logo for kampagne til Danske Gymnasieelevers sammenslutning, DGS.
@@ -221,7 +221,7 @@
   tag: WebApp
   image: https://res.cloudinary.com/maxrh/image/upload/v1757614890/monsun.dk/Images/Portfolio/NOAH/spisornli_3_o0iric.jpg
   type: background
-  width: four
+  width: two
   mob-width:
   order: 20
   text-color: "#0A0A12"
@@ -244,7 +244,7 @@
   tag: Website
   type: background
   image: https://res.cloudinary.com/maxrh/image/upload/v1757612639/monsun.dk/Images/Portfolio/AUG/aug_web_2x_w4_nsudvy.jpg
-  width: four
+  width: two
   mob-width:
   order: 06
   text-color: "#f9f9f9"
